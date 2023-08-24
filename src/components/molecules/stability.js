@@ -1,7 +1,8 @@
 import React from "react";
-import map from "/static/infrastructureMap.svg";
-import lock from "/static/lock.svg";
-import trophy from "/static/Trophy.svg";
+
+import map from "../../assets/infrastructureMap.svg";
+import lock from "../../assets/lock.svg";
+import trophy from "../../assets//Trophy.svg";
 
 function Stability() {
   return (

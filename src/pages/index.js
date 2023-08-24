@@ -1,4 +1,6 @@
 import React from "react";
+import "../styles/App.scss";
+
 import Intro from "../components/organisms/intro";
 import Infrastructure from "../components/organisms/infrastructure";
 import Join from "../components/molecules/join";

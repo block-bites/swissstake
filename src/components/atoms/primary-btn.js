@@ -1,11 +1,7 @@
 import React from "react";
 
 function Primarybtn() {
-  return (
-    <div>
-      <button>Get Started</button>
-    </div>
-  );
+  return <button className="primary-btn">Get Started</button>;
 }
 
 export default Primarybtn;

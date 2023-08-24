@@ -1,6 +1,8 @@
 import React from "react";
-import stakeLogo from "/static/Logo.svg";
+
 import Primarybtn from "../atoms/primary-btn";
+
+import stakeLogo from "../../assets/Logo.svg";
 
 function Navbar() {
   return (

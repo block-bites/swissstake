@@ -1,5 +1,5 @@
 import React from "react";
-import Frame2 from "/static/Frame 2.svg";
+import Frame2 from "../../assets/Frame 2.svg";
 
 function Whychoose() {
   return (
