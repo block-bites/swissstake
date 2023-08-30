@@ -6,7 +6,6 @@ function Infrastructure() {
   return (
     <div> 
     <SwissInfrastructure />
-    <Stability />
     </div>
   )
 }
