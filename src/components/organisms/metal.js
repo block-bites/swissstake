@@ -4,7 +4,7 @@ import Bare from "../molecules/bare";
 
 function Metal() {
   return (
-    <div>
+    <div className="metal">
       <Bare />
     </div>
   );

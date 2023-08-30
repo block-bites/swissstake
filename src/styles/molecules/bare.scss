@@ -1,0 +1,55 @@
+//Tu by się przydał scss mógłbym predefiniować p,h3,h4 i je tylko wywołac w poszczególnych divach
+
+@mixin mixin-h4 {
+  color: white;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 10%;
+}
+
+@mixin mixin-h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  letter-spacing: 5%;
+}
+
+@mixin mixin-p {
+  p {
+    color: white;
+    font-weight: 300;
+    size: 24px;
+    line-height: 36px;
+    letter-spacing: 10%; //letter w figmie odnosi się od przerw pomiędzy?
+  }
+}
+
+.machine {
+  border-color: pink;
+  border-style: solid;
+  background-color: #583275;
+  width: 1292px;
+  height: 708px;
+  justify-content: space-between;
+  padding: 32px;
+  border-radius: 24px;
+  
+}
+
+.bareMetal {
+  @include mixin-p;
+  @include mixin-h4;
+  //@include mixin-h3; po odkomenowaniu od zmienia się cały div na parametry h3 nie wiem dlaczego
+}
+
+.independence {
+  
+}
+
+.control {
+}
+
+.reliability {
+}
