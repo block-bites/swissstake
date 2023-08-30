@@ -1,0 +1,30 @@
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  h4 {
+    color: var(--black, #1d1d1f);
+    font-family: Casper Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+    letter-spacing: 1.2px;
+
+    p {
+      color: var(--black, #1d1d1f);
+      font-family: Casper Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+.privacy{
+    
+}
+
+//chciałbym ustawić tutaj dwa boxy obok siebie zachowując układ używając flex

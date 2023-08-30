@@ -6,34 +6,27 @@ import trophy from "../../assets//Trophy.svg";
 
 function Stability() {
   return (
-    <div>
-      <div>
-        <div>
-          <h4> Stability</h4>
-          <p>
-            Benefit from Switzerland's renowned political and economic
-            stability.
-          </p>
-          <img src={map} alt="infrastructureMap" />
-        </div>
+    <div className="content">
+      <div className="stability">
+        <h4> Stability</h4>
+        <p>
+          Benefit from Switzerland's renowned <br/> political and economic stability.
+        </p>
+        <img src={map} alt="infrastructureMap" />
+      </div>
 
-        <div>
-          <div>
-            <h3> Privacy</h3>
-            <p>
-              Enjoy the stringent privacy laws that Switzerland is famous for.
-            </p>
-            <img src={lock} alt="lockImg" />
-          </div>
-          <div c>
-            <h3> Quality</h3>
-            <p>
-              Experience top-tier service quality backed by Swiss precision and
-              reliability.
-            </p>
-            <img src={trophy} alt="trophyImg" />
-          </div>
-        </div>
+      <div className="privacy">
+        <h4> Privacy</h4>
+        <p>Enjoy the stringent privacy laws that<br/> Switzerland is famous for.</p>
+        <img src={lock} alt="lockImg" />
+      </div>
+      <div className="quality">
+        <h4> Quality</h4>
+        <p>
+          Experience top-tier service quality<br/> backed by Swiss precision and<br/>
+          reliability.
+        </p>
+        <img src={trophy} alt="trophyImg" />
       </div>
     </div>
   );
