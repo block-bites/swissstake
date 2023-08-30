@@ -7,4 +7,8 @@
   background-color: transparent;
   text-align: center;
   border-color: #2B44E7;
+  outline: none;
+  &:hover {
+    background-color: red;
+  }
 }

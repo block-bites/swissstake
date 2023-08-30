@@ -1,17 +1,24 @@
-.navBar {
-    
+.navbar-positioner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar  {
     display: flex;
     align-items: center;
-    width: auto;
+    width: 100%;
+    max-width: 1440px;
     height: 48px;
     margin-top: 19px;
     margin: auto;
     margin-left: 69px;
     margin-right: 69px;
     justify-content: space-between;
-}
-
-.swisslogo{
-    width: 201px;
-    height: 32px;
+    
+    &__logo{
+        width: 201px;
+        height: auto;
+    }
 }

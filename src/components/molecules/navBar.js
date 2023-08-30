@@ -6,10 +6,14 @@ import stakeLogo from "../../assets/Logo.svg";
 
 function Navbar() {
   return (
-    <div className="navBar">
-      <img className="swisslogo" src={stakeLogo} alt="SwissStake Logo" />
+    <div className="navbar-positioner">
+      <div className="navbar">
+      <img className="navbar__logo" src={stakeLogo} alt="SwissStake Logo" />
       <Primarybtn />
     </div>
+    </div>
+    
+    
   );
 }
 

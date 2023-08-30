@@ -15,7 +15,7 @@ function Whychoose() {
           </p>
         </div>
       </div>
-      <img className="casperLogo" src={Frame2} alt="casper ecosystem img" />
+      <img className="whychoose__casper" src={Frame2} alt="casper ecosystem img" />
     </div>
   );
 }

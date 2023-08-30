@@ -8,11 +8,12 @@
   border-color: red;
   border-style: solid;
   display: flex;
-  gap: 200px;
+  gap: 50px;
   width: auto;
   height: 194px;
   background-color: #eff9fc;
   align-items: center;
+  overflow: hidden;
 
   img {
     width: 130px;

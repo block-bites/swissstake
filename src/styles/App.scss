@@ -1,17 +1,18 @@
 // Atoms
 @import "./atoms/primary-btn";
 @import "./atoms/secondary-btn";
+
+//Molecules
 @import "./molecules/navBar";
 @import "./molecules/validator";
 @import "./molecules/whychoose";
 @import "./molecules/business";
 @import "./molecules/bare";
-@import "./organisms/metal";
-@import "./organisms/intro";
 @import "./molecules/swissinfrastructure";
 @import "./molecules/stability";
-@import "./organisms/infrastructure";
-
-//Molecules
+@import "./molecules/infrastructure-block";
 
 //Organisms
+@import "./organisms/metal";
+@import "./organisms/intro";
+@import "./organisms/infrastructure";

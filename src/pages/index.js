@@ -1,15 +1,15 @@
 import React from "react";
 import "../styles/App.scss";
-
 import Intro from "../components/organisms/intro";
 import Infrastructure from "../components/organisms/infrastructure";
 import Join from "../components/molecules/join";
 import Metal from "../components/organisms/metal";
-
+import Navbar from "../components/molecules/navBar";
 
 function index() {
   return (
     <div>
+      <Navbar />
       <Intro />
       <Metal />
       <Infrastructure />
