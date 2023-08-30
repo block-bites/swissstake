@@ -4,7 +4,7 @@ import Stability from '../molecules/stability'
 
 function Infrastructure() {
   return (
-    <div> 
+    <div className='infrastructure'> 
     <SwissInfrastructure />
     </div>
   )
