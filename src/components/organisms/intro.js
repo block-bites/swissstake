@@ -6,7 +6,7 @@ import Business from "../molecules/business";
 
 function Intro() {
   return (
-    <div>
+    <div className="page">
       <Navbar />
       <Validator />
       <Whychoose />

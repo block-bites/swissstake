@@ -1,0 +1,39 @@
+.whychooseBlock {
+  background: rgb(88, 50, 117);
+  background: linear-gradient(
+    40deg,
+    rgba(88, 50, 117, 1) 18%,
+    rgba(43, 68, 231, 1) 55%,
+    rgba(68, 136, 139, 1) 80%
+  );
+  width: 1300px;
+  height: 236px;
+  margin-top: 150px;
+  border-radius: 24px;
+}
+
+.whychooseText {
+  //display: inline-block;
+  //text-align: left;
+  h2 {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    font-family: "Casper", sans-ser;
+  }
+
+  p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Casper", sans-ser;
+  }
+}
+
+.whychoose {
+  border-color: green;
+  border-style: solid;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+.validator {
+  border-color: black;
+  border-style: solid;
+}
+
+.validatorText {
+  text-align: center;
+  width: 1200px; //width podany w figmie jest za mały by słowo validator się zmieściło?
+  height: 420px;
+  margin: auto;
+  padding-top: 25px;
+  border-color: beige;
+  border-style: solid;
+}
+
+.validatorButton {
+  padding: 10px;
+  text-align: center;
+  border-color: red;
+  border-style: solid;
+}
+
+h1 {
+  font-size: 68px;
+  font-weight: 400px;
+  text-align: center;
+  font-family: "Casper", sans-serif;
+}
+
+h1::before {
+  content: "SwissStake ";
+  color: #2b44e7;
+}
+
+.validatorP {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Casper", sans-serif;
+}

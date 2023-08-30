@@ -6,6 +6,7 @@ import Infrastructure from "../components/organisms/infrastructure";
 import Join from "../components/molecules/join";
 import Metal from "../components/organisms/metal";
 
+
 function index() {
   return (
     <div>
