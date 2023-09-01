@@ -1,40 +1,50 @@
-.validator {
+.validator-positioner {
+  display: flex;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
   border-color: black;
   border-style: solid;
 }
 
-.validatorText {
-  text-align: center;
-  width: 1200px; //width podany w figmie jest za mały by słowo validator się zmieściło?
-  height: 420px;
-  margin: auto;
-  padding-top: 25px;
-  border-color: beige;
-  border-style: solid;
-}
+.validator {
+  &__header {
+    color: var(--Black, #1d1d1f);
+    text-align: center;
 
-.validatorButton {
-  padding: 10px;
-  text-align: center;
-  border-color: red;
-  border-style: solid;
-}
+    h1 {
+      font-family: Casper Sans;
+      font-size: 68px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 88.4px */
+      letter-spacing: 3.4px;
+    }
+    h1::before {
+      color: #2b44e7;
+      content: "SwissStake ";
+    }
+  }
 
-h1 {
-  font-size: 68px;
-  font-weight: 400px;
-  text-align: center;
-  font-family: "Casper", sans-serif;
-}
+  &__text {
+    color: var(--Black, #1d1d1f);
+    text-align: center;
 
-h1::before {
-  content: "SwissStake ";
-  color: #2b44e7;
-}
-
-.validatorP {
-  font-weight: 400;
-  font-size: 16px;
-  text-align: center;
-  font-family: "Casper", sans-serif;
+    /* p */
+    font-family: Casper Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.8px;
+    
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+  }
 }

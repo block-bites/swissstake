@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "../molecules/navBar";
 import Validator from "../molecules/validator";
-import Whychoose from "../molecules/whychoose";
+import Whychoose from "../molecules/why-choose";
 import Business from "../molecules/business";
 
 function Intro() {
