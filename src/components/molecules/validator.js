@@ -19,10 +19,10 @@ function Validator() {
             way.
           </p>
         </div>
-        <div className="validator__button">
-          <Primarybtn />
-          <Secondarybtn />
-        </div>
+      </div>
+      <div className="validator__button">
+        <Primarybtn />
+        <Secondarybtn />
       </div>
     </div>
   );
