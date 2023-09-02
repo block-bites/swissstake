@@ -1,50 +1,63 @@
-.whychooseBlock {
-  background: rgb(88, 50, 117);
-  background: linear-gradient(
-    40deg,
-    rgba(88, 50, 117, 1) 18%,
-    rgba(43, 68, 231, 1) 55%,
-    rgba(68, 136, 139, 1) 80%
-  );
-  width: 1300px;
-  height: 236px;
-  margin-top: 150px;
-  border-radius: 24px;
-  //position: relative;
-}
-
-.whychooseText {
-  //display: inline-block;
-  //text-align: left;
-  h2 {
-    color: white;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 36px;
-    font-family: "Casper", sans-ser;
-  }
-
-  p {
-    color: white;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    font-family: "Casper", sans-ser;
-  }
+.whychoose-positioner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid green;
 }
 
 .whychoose {
-  border-color: green;
-  border-style: solid;
-  text-align: center;
+  display: flex;
+  align-items: center;
   position: relative;
+  max-width: 1440px;
+  margin-left: 70px;
+  margin-right: 70px;
+  padding: 300px;
 
-  &__casper{
+  &__block {
+    background: rgb(88, 50, 117);
+    background: linear-gradient(
+      40deg,
+      rgba(88, 50, 117, 1) 18%,
+      rgba(43, 68, 231, 1) 55%,
+      rgba(68, 136, 139, 1) 80%
+    );
+    display: flex;
+    position: relative;
+    padding: 56px 48px;
+    width: 1200px;
+    border-radius: 24px;
+  }
 
+  &__text {
+    h2 {
+      color: #fff;
+      font-family: Casper Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 150%; /* 36px */
+      letter-spacing: 1.2px;
+    }
+    p {
+      color: #fff;
+
+      /* p */
+      font-family: Casper Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__casper {
     position: absolute;
-    right: 45px;
-    top: 0;
-    padding: 40px;
-
+    right: -80px;
+    top: -110px;
+    border: 10px soldi purple;
+    //pytanie odnośnie wielkości samego zdjęcia!
   }
 }

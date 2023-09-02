@@ -1,15 +1,23 @@
 .validator-positioner {
-  display: flex;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   display: inline-flex;
   flex-direction: column;
-  align-items: center;
   gap: 64px;
-  border-color: black;
-  border-style: solid;
+  border: 1px solid black;
 }
 
 .validator {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin-left: 178px;
+  margin-right: 178px;
+  padding: 24px;
+
+  max-width: 1440px;
   &__header {
     color: var(--Black, #1d1d1f);
     text-align: center;
@@ -18,7 +26,7 @@
       font-family: Casper Sans;
       font-size: 68px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: 500;
       line-height: 130%; /* 88.4px */
       letter-spacing: 3.4px;
     }
@@ -45,5 +53,6 @@
     justify-content: center;
     align-items: center;
     gap: 18px;
+    
   }
 }
