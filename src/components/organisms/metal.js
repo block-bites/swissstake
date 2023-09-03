@@ -1,11 +1,12 @@
 import React from "react";
-import Bare from "../molecules/bare";
-
+import Baremetalblock from "../molecules/baremetal-block";
 
 function Metal() {
   return (
-    <div className="metal">
-      <Bare />
+    <div className="baremetal-positioner">
+      <div className="baremetal-bck">
+      <Baremetalblock />
+      </div>
     </div>
   );
 }

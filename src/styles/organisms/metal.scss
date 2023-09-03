@@ -1,11 +1,17 @@
-.metal {
-  border-color: blue;
-  border-style: solid;
-  width: auto;
-  height: 975px;
-  //top: 1623px;
-  background-color: #031735;
+.baremetal-positioner {
   display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: center;
+  align-items: center;
+  border: 10px solid sandybrown;
+}
+
+.baremetal-bck {
+  display: flex;
+  border: 1px solid gold;
+  width: 1440px;
+  height: 975px;
+  justify-content: center;
+  align-items: center;
+  background: #031735;
 }

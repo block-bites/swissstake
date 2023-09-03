@@ -4,10 +4,10 @@ import Frame2 from "../../assets/Frame 2.svg";
 
 function Whychoose() {
   return (
-    <div className="whychoose-positioner">
-      <div className="whychoose">
-        <div className="whychoose__block">
-          <div className="whychoose__text">
+    <div className="why-choose-positioner">
+      <div className="why-choose">
+        <div className="why-choose__block">
+          <div className="why-choose__text">
             <h2>Why Choose SwissStake?</h2>
             <p>
               SwissStake is not just another validator; we offer unique
@@ -16,7 +16,7 @@ function Whychoose() {
               choice for staking on the Casper Network.
             </p>
           </div>
-          <div className="whychoose__casper">
+          <div className="why-choose__casper">
             <img src={Frame2} alt="casper ecosystem img" />
           </div>
         </div>
