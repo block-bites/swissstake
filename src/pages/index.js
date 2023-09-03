@@ -2,9 +2,9 @@ import React from "react";
 import "../styles/App.scss";
 import Intro from "../components/organisms/intro";
 import Infrastructure from "../components/organisms/infrastructure";
-import Join from "../components/molecules/join";
 import Metal from "../components/organisms/metal";
-import Navbar from "../components/molecules/navBar";
+import Navbar from "../components/molecules/navbar";
+import Experienced from "../components/organisms/experienced";
 
 function index() {
   return (
@@ -13,21 +13,9 @@ function index() {
       <Intro />
       <Metal />
       <Infrastructure />
+      <Experienced />
 
-      <div>
-        <h2>Experienced Casper Adopter</h2>
-        <p>
-          Managed by an individual deeply involved with the Casper ecosystem,
-          SwissStake brings unparalleled expertise to the table:
-        </p>
-      </div>
-      <p>
-        Knowledge: In-depth understanding of the Casper Network's intricacies.
-        Commitment: Running since the beginning of the Casper mainnet,
-        reflecting dedication and trust. Innovation: Constantly staying ahead of
-        the curve with the latest developments and best practices.
-      </p>
-      <Join />
+      
     </div>
   );
 }

@@ -1,0 +1,33 @@
+.experienced-blocks {
+  display: flex;
+  width: 1440px;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid red;
+}
+
+.experienced-blocks-text {
+  &__title {
+    color: #000;
+
+    /* H4 */
+    font-family: Casper Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 150%; /* 36px */
+    letter-spacing: 2.4px;
+  }
+
+  &__text {
+    color: #000;
+
+    /* Body */
+    font-family: Casper Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.8px;
+  }
+}
