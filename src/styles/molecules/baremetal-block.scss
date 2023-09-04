@@ -1,6 +1,7 @@
 .baremetal {
   display: flex;
-  width: 1292px;
+  width: 100%;
+  max-width: 1292px;
   padding: 32px;
   justify-content: space-between;
   align-items: flex-start;

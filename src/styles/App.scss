@@ -17,3 +17,10 @@
 @import "./organisms/intro";
 @import "./organisms/infrastructure";
 @import "./organisms/experienced";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }

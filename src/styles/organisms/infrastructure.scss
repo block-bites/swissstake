@@ -18,6 +18,7 @@
   &__subtitle {
     color: var(--Black, #1d1d1f);
     text-align: center;
+    
 
     font-family: Casper Sans;
     font-size: 24px;
@@ -25,6 +26,7 @@
     font-weight: bold;
     line-height: 150%; /* 36px */
     letter-spacing: 2.4px;
+    
   }
 
   &__title {
@@ -39,7 +41,7 @@
     letter-spacing: 2.8px;
   }
 
-  p {
+  &__text {
     color: var(--Black, #1d1d1f);
     text-align: center;
     font-family: Casper Sans;

@@ -2,9 +2,6 @@ import React from "react";
 
 import InfrastructureBlock from "../molecules/infrastructure-block";
 
-import PrivacyImage from "../../assets/infrastructureMap.svg";
-import Lock from "../../assets/Lock.svg";
-import Trophy from "../../assets/Trophy.svg";
 import Image from "../../assets/Image.svg";
 import Image2 from "../../assets/Image2.svg";
 import Healthiconstrophy from "../../assets/Healthiconstrophy.svg";
@@ -21,7 +18,7 @@ function Infrastructure() {
             Our server is proudly hosted in Basel, Switzerland, leveraging the
             robust Swiss infrastructure.
           </h4>
-          <p> This location offers:</p>
+          <p className="infrastructure__text"> This location offers:</p>
         </div>
         <InfrastructureBlock
           title={"Stability"}
