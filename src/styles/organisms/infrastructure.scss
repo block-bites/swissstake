@@ -1,23 +1,28 @@
 .infrastructure-positioner {
   display: flex;
   width: 100%;
-  //max-width: 1440px;
   justify-content: center;
   align-items: center;
-
   flex-direction: column;
-  border: 1px solid red;
+  //border: 1px solid red;
 }
 
 .infrastructure {
-  border: 1px solid red;
+  //border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
   &__blocks-in-row {
     display: flex;
+    gap: 24px;
+    padding: 24px 0;
   }
   &__subtitle {
     color: var(--Black, #1d1d1f);
     text-align: center;
+    padding: 24px 0;
     
 
     font-family: Casper Sans;
@@ -32,6 +37,7 @@
   &__title {
     color: var(--Black, #1d1d1f);
     text-align: center;
+    //padding: 32px 0;
 
     font-family: Casper Sans;
     font-size: 56px;
@@ -42,6 +48,7 @@
   }
 
   &__text {
+    padding: 16px 0;
     color: var(--Black, #1d1d1f);
     text-align: center;
     font-family: Casper Sans;

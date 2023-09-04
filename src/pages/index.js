@@ -14,8 +14,6 @@ function index() {
       <Metal />
       <Infrastructure />
       <Experienced />
-
-      
     </div>
   );
 }

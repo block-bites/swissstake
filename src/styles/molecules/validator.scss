@@ -3,21 +3,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  display: inline-flex;
   flex-direction: column;
-  gap: 64px;
-  border: 1px solid black;
+  //border: 1px solid black;
 }
 
 .validator {
   display: flex;
+  width: 100%;
   align-items: center;
-  max-width: 1440px;
-  margin-left: 178px;
-  margin-right: 178px;
-  padding: 24px;
+  justify-content: center;
+  padding: 25px;
 
-  max-width: 1440px;
   &__header {
     color: var(--Black, #1d1d1f);
     text-align: center;
@@ -39,7 +35,8 @@
   &__text {
     color: var(--Black, #1d1d1f);
     text-align: center;
-
+    padding: 60px;
+    
     /* p */
     font-family: Casper Sans;
     font-size: 16px;

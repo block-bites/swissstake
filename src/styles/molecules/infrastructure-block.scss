@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid green;
-  border-radius: 15px;
-  padding: 50px 0px;
+  //border: 1px solid green;
+  padding: 25px 0;
   
 
   &__title {
+    padding: 10px 0;
     color: var(--Black, #1d1d1f);
     font-family: Casper Sans;
     font-size: 24px;
@@ -21,6 +21,7 @@
   }
 
   &__text {
+    padding: 24px 0;
     color: var(--Black, #1d1d1f);
     text-align: center;
     font-family: Casper Sans;
