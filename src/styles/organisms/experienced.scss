@@ -1,4 +1,14 @@
 .experienced-positioner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  
+}
+
+
+.experienced-block-positioner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,11 +19,14 @@
   gap: 350px;
   display: flex;
   flex-direction: column;
+  border: 1px solid green;
+
+
 }
 
 .experienced {
   &__title {
-    color: var(--Black, #1d1d1f);
+    color: #000;
     text-align: center;
 
     /* H2 */
@@ -26,7 +39,7 @@
   }
 
   &__text {
-    color: var(--Black, #1d1d1f);
+    color: #000;
     text-align: center;
     font-family: Casper Sans;
     font-size: 24px;
@@ -36,5 +49,5 @@
     letter-spacing: 1.2px;
   }
 
-  
+
 }
