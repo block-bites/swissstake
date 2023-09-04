@@ -5,6 +5,11 @@ import InfrastructureBlock from "../molecules/infrastructure-block";
 import PrivacyImage from "../../assets/infrastructureMap.svg";
 import Lock from "../../assets/Lock.svg";
 import Trophy from "../../assets/Trophy.svg";
+import Image from "../../assets/Image.svg";
+import Image2 from "../../assets/Image2.svg";
+import Healthiconstrophy from "../../assets/Healthiconstrophy.svg";
+
+
 
 function Infrastructure() {
   return (
@@ -21,18 +26,18 @@ function Infrastructure() {
         <InfrastructureBlock
           title={"Stability"}
           text="Benefit from Switzerland's renowned political and economic stability."
-          image={PrivacyImage}
+          image={Image}
         />
         <div className="infrastructure__blocks-in-row">
           <InfrastructureBlock
             title={"Privacy"}
             text="Enjoy the stringent privacy laws that Switzerland is famous for."
-            image={Lock}
+            image={Image2}
           />
           <InfrastructureBlock
             title={"Quality"}
             text="Experience top-tier service quality backed by Swiss precision and reliability."
-            image={Trophy}
+            image={Healthiconstrophy}
           />
         </div>
       </div>
