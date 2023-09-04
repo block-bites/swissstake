@@ -1,3 +1,6 @@
+//Basics
+@import "./basic/breakpoints";
+
 // Atoms
 @import "./atoms/primary-btn";
 @import "./atoms/secondary-btn";
@@ -18,9 +21,8 @@
 @import "./organisms/infrastructure";
 @import "./organisms/experienced";
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
