@@ -4,6 +4,7 @@
 // Atoms
 @import "./atoms/primary-btn";
 @import "./atoms/secondary-btn";
+@import "./atoms/tertiary-btn";
 
 //Molecules
 @import "./molecules/navbar";
@@ -13,7 +14,7 @@
 @import "./molecules/baremetal-block";
 @import "./molecules/infrastructure-block";
 @import "./molecules/experienced-block";
-@import "./molecules/join";
+@import "./molecules/footer";
 
 //Organisms
 @import "./organisms/metal";

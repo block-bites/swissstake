@@ -1,0 +1,103 @@
+.footer-positioner {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 48px;
+
+  border-top: 1px solid var(--grey-disable, #7E7F88);
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 239px;
+  flex-wrap: wrap;
+
+  &__logo {
+    width: 200px;
+    height: 32px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+
+    &--title {
+      color: var(--primary-blue-main, #2b44e7);
+      text-align: center;
+
+      /* H4 */
+      font-family: Casper Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 36px */
+      letter-spacing: 2.4px;
+    }
+    &--subtitle {
+      color: #000;
+      text-align: center;
+
+      /* Body */
+      font-family: Casper Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.8px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    &--title {
+      color: var(--primary-blue-main, #2b44e7);
+      text-align: center;
+
+      /* H4 */
+      font-family: Casper Sans;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 36px */
+      letter-spacing: 2.4px;
+    }
+    &--subtitle {
+      color: #000;
+      text-align: center;
+
+      /* Body */
+      font-family: Casper Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      letter-spacing: 0.8px;
+    }
+  }
+}
+
+.watermark {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: right;
+  &__title {
+    color: var(--grey-disable, #7e7f88);
+    text-align: center;
+
+    /* Body */
+    font-family: Casper Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.8px;
+  }
+}

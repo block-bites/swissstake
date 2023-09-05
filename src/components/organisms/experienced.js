@@ -1,6 +1,5 @@
 import React from "react";
 
-import Join from "../molecules/join";
 import ExperiencedBlock from "../molecules/experienced-block";
 
 function Experienced() {
@@ -15,9 +14,6 @@ function Experienced() {
         <div className="experienced__block">
           <ExperiencedBlock />
         </div>
-        {/* <div className="experienced__join">
-          <Join />
-        </div> */}
       </div>
     </div>
   );

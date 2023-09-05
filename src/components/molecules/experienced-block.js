@@ -1,6 +1,6 @@
 import React from "react";
 
-import Primarybtn from "../atoms/primary-btn";
+import Tertiarybtn from "../atoms/tertiary-btn";
 
 function ExperiencedBlock() {
   return (
@@ -30,7 +30,7 @@ function ExperiencedBlock() {
           <h2> Join SwissStake Today</h2>
         </div>
         <div className="experiencedblocks__join--button">
-          <Primarybtn />
+          <Tertiarybtn />
         </div>
       </div>
     </div>
