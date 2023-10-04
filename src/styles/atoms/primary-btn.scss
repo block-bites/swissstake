@@ -1,13 +1,22 @@
 .primary-btn {
-  
   border-radius: 100px;
   padding: 12px 24px;
-  width: 132px;
-  height: 48px;
-  color: #FFFFFF;
-  background-color: #2B44E7;
+  display: flex;
+  width: 258px;
+  height: 79px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  background: #2b44e7;
   text-align: center;
   border: none;
+  
   &:hover {
     background-color: green;
   }

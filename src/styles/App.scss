@@ -2,6 +2,7 @@
 @import "./basic/breakpoints";
 
 // Atoms
+@import "./atoms/nav-btn";
 @import "./atoms/primary-btn";
 @import "./atoms/secondary-btn";
 @import "./atoms/tertiary-btn";
@@ -10,7 +11,6 @@
 @import "./molecules/navbar";
 @import "./molecules/validator";
 @import "./molecules/why-choose";
-@import "./molecules/business";
 @import "./molecules/baremetal-block";
 @import "./molecules/infrastructure-block";
 @import "./molecules/experienced-block";

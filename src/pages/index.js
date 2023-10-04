@@ -12,10 +12,10 @@ function index() {
     <div>
       <Navbar />
       <Intro />
-      <Metal />
+      {/* <Metal />
       <Infrastructure />
       <Experienced />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
