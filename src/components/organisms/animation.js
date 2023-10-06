@@ -1,11 +1,11 @@
 import React from "react";
-import Baremetalblock from "../molecules/baremetal-block";
+import Animation from "../molecules/animation-function";
 
-function Metal() {
+function Animationblock() {
   return (
     <div className="baremetal-positioner">
       <div className="baremetal-bck">
-      <Baremetalblock />
+      <Animation />
       </div>
     </div>
   );
@@ -13,4 +13,4 @@ function Metal() {
 
 // próba
 
-export default Metal;
+export default Animationblock;
