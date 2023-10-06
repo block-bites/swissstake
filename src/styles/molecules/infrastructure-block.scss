@@ -5,32 +5,30 @@
   justify-content: center;
   align-items: center;
   //border: 1px solid green;
-  padding: 25px 0;
-  
+  padding: 30px;
+
+  border-radius: 24px;
+  border: 1px solid rgba(56, 56, 138, 0.12);
 
   &__title {
-    padding: 10px 0;
+    padding: 30px;
     color: var(--Black, #1d1d1f);
-    font-family: Casper Sans;
+    font-family: Inter;
     font-size: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 36px */
-    letter-spacing: 1.2px;
-    text-align: center;
   }
 
   &__text {
-    padding: 24px 0;
+    padding: 20px;
     color: var(--Black, #1d1d1f);
     text-align: center;
-    font-family: Casper Sans;
-    font-size: 16px;
+    font-family: Inter;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.8px;
-    max-width: 270px;
+    line-height: 150%; /* 27px */
   }
 
   &__img {
