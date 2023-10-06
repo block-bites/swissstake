@@ -18,10 +18,10 @@ function Validator() {
             seasoned pro, we're here to <br /> support you every step of the
             way.
           </p>
+          <div className="validator__button">
+            <Primarybtn />
+          </div>
         </div>
-      </div>
-      <div className="validator__button">
-        <Primarybtn />
       </div>
     </div>
   );

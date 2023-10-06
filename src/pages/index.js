@@ -12,8 +12,8 @@ function index() {
     <div>
       <Navbar />
       <Intro />
-      {/* <Metal />
-      <Infrastructure />
+      <Metal />
+      {/* <Infrastructure />
       <Experienced />
       <Footer /> */}
     </div>
