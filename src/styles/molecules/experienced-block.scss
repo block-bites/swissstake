@@ -1,15 +1,59 @@
-.experiencedblocks {
+.experiencedblocks-positioner {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  gap: 10px;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
 
-  //border: 1px solid red;
+  background: #003b93;
+}
+
+.experienced-header {
+  display: flex;
+  padding-top: 50px;
+  &__subtitle {
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 60px */
+  }
 
   &__text {
-    &--title {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+  }
+}
+.blocks {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  padding-bottom: 130px;
+  padding-top: 80px;
+  padding-left: 70px;
+  padding-right: 70px;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  .experiencedblocks {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      padding: 20px;
       color: #fff;
       text-align: center;
       font-family: Inter;
@@ -18,10 +62,8 @@
       font-weight: 500;
       line-height: 150%; /* 36px */
     }
-    &--text {
-      color: #000;
-      padding: 35px;
 
+    &__text {
       color: #fff;
       text-align: center;
       font-family: Inter;
@@ -32,26 +74,10 @@
     }
   }
 
-  // &__join {
-  //   width: 100%;
-  //   display: flex;
-  //   max-width: 1440px;
-  //   padding: 130px 0px;
-  //   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  //   gap: 50px;
-  //   border-radius: 24px;
-  //   background: #583275;
+  .experiencedblocks-image{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
 
-  //   &--title {
-  //     color: #fff;
-  //     text-align: center;
-  //     font-family: Inter;
-  //     font-size: 50px;
-  //     font-style: normal;
-  //     font-weight: 500;
-  //     line-height: 130%; /* 65px */
-  //   }
-  // }
+  }
 }

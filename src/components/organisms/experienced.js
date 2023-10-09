@@ -5,10 +5,8 @@ import ExperiencedBlock from "../molecules/experienced-block";
 function Experienced() {
   return (
     <div className="experienced-positioner">
-      <div className="experienced">
-        <div className="experienced__block">
-          <ExperiencedBlock />
-          </div>
+      <div className="experienced__block">
+        <ExperiencedBlock />
       </div>
     </div>
   );
