@@ -2,62 +2,56 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 0 345px;
+  gap: 10px;
   justify-content: center;
   align-items: flex-start;
+
   //border: 1px solid red;
 
   &__text {
-    padding: 100px 0;
-
-    &--title {
-      color: #000;
-
-      /* H4 */
-      font-family: Casper Sans;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: bold;
-      line-height: 150%; /* 36px */
-      letter-spacing: 2.4px;
-    }
-    &--text {
-      color: #000;
-
-      /* Body */
-      font-family: Casper Sans;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
-      letter-spacing: 0.8px;
-      max-width: 270px;
-    }
-  }
-
-  &__join {
-    width: 100%;
-    display: flex;
-    max-width: 1440px;
-    padding: 130px 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    border-radius: 24px;
-    background: #2b44e7;
-
     &--title {
       color: #fff;
       text-align: center;
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 36px */
+    }
+    &--text {
+      color: #000;
+      padding: 35px;
 
-      /* H1 */
-      font-family: Casper Sans;
-      font-size: 68px;
+      color: #fff;
+      text-align: center;
+      font-family: Inter;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 130%; /* 88.4px */
-      letter-spacing: 3.4px;
+      line-height: 150%; /* 27px */
     }
   }
+
+  // &__join {
+  //   width: 100%;
+  //   display: flex;
+  //   max-width: 1440px;
+  //   padding: 130px 0px;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 50px;
+  //   border-radius: 24px;
+  //   background: #583275;
+
+  //   &--title {
+  //     color: #fff;
+  //     text-align: center;
+  //     font-family: Inter;
+  //     font-size: 50px;
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     line-height: 130%; /* 65px */
+  //   }
+  // }
 }
