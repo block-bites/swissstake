@@ -12,10 +12,10 @@ function index() {
     <div>
       {/* <Navbar />
       <Intro />
-      <Animation /> */}
-      {/* <Infrastructure /> */}
-      <Experienced />
-      {/* <Footer /> */}
+      <Animation />
+      <Infrastructure />
+      <Experienced /> */}
+      <Footer />
     </div>
   );
 }

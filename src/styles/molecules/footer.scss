@@ -7,7 +7,7 @@
   margin: auto;
   gap: 48px;
 
-  border-top: 1px solid var(--grey-disable, #7E7F88);
+  border-top: 1px solid var(--grey-disable, #7e7f88);
 }
 
 .footer {
@@ -15,8 +15,9 @@
   width: 100%;
   align-items: flex-start;
   align-self: stretch;
-  gap: 239px;
+  gap: 240px;
   flex-wrap: wrap;
+  padding: 50px;
 
   &__logo {
     width: 200px;
@@ -26,78 +27,82 @@
   &__left {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 
     &--title {
       color: var(--primary-blue-main, #2b44e7);
       text-align: center;
-
-      /* H4 */
-      font-family: Casper Sans;
+      font-family: Inter;
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
       line-height: 150%; /* 36px */
-      letter-spacing: 2.4px;
+      border: none;
+      background: none;
     }
     &--subtitle {
       color: #000;
       text-align: center;
-
-      /* Body */
-      font-family: Casper Sans;
-      font-size: 16px;
+      font-family: Inter;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 24px */
-      letter-spacing: 0.8px;
+      line-height: 150%; /* 27px */
+      border: none;
+      background: none;
     }
   }
 
   &__right {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+
     &--title {
       color: var(--primary-blue-main, #2b44e7);
       text-align: center;
-
-      /* H4 */
-      font-family: Casper Sans;
+      font-family: Inter;
       font-size: 24px;
       font-style: normal;
       font-weight: 500;
       line-height: 150%; /* 36px */
-      letter-spacing: 2.4px;
+      border: none;
+      background: none;
     }
     &--subtitle {
       color: #000;
       text-align: center;
-
-      /* Body */
-      font-family: Casper Sans;
-      font-size: 16px;
+      font-family: Inter;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 24px */
-      letter-spacing: 0.8px;
+      line-height: 150%; /* 27px */
+      border: none;
+      background: none;
+    }
+
+    &--icon {
+      width: 30px;
+      height: 30px;
     }
   }
 }
 
-.watermark {
-  width: 100%;
-  max-width: 1440px;
-  display: flex;
-  justify-content: right;
-  &__title {
-    color: var(--grey-disable, #7e7f88);
-    text-align: center;
+// .watermark {
+//   width: 100%;
+//   max-width: 1440px;
+//   display: flex;
+//   justify-content: right;
+//   &__title {
+//     color: var(--grey-disable, #7e7f88);
+//     text-align: center;
 
-    /* Body */
-    font-family: Casper Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
-    letter-spacing: 0.8px;
-  }
-}
+//     /* Body */
+//     font-family: Casper Sans;
+//     font-size: 16px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 150%; /* 24px */
+//     letter-spacing: 0.8px;
+//   }
+// }
