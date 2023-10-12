@@ -4,6 +4,7 @@
     max-width: 1440px; 
     margin: 0 auto; 
     padding: 0 70px; 
+    background: url('../assets/Intro-background.svg') center/cover no-repeat;
     
 }
 
@@ -20,6 +21,7 @@
   border-radius: 909px;
   opacity: 0.3;
   filter: blur(268px);
+  
   z-index: -1;
 }
 .page::after {

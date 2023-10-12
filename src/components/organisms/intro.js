@@ -3,7 +3,7 @@ import React from "react";
 import Validator from "../molecules/validator";
 import Whychoose from "../molecules/why-choose";
 
-import background from "../../assets/Intro-background.svg";
+
 
 function Intro() {
   return (
