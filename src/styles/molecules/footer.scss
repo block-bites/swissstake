@@ -39,6 +39,10 @@
       line-height: 150%; /* 36px */
       border: none;
       background: none;
+
+      &:hover {
+        background-color: green;
+      }
     }
     &--subtitle {
       color: #000;
@@ -50,6 +54,10 @@
       line-height: 150%; /* 27px */
       border: none;
       background: none;
+
+      &:hover {
+        background-color: green;
+      }
     }
   }
 
@@ -68,6 +76,10 @@
       line-height: 150%; /* 36px */
       border: none;
       background: none;
+
+      &:hover {
+        background-color: green;
+      }
     }
     &--subtitle {
       color: #000;
@@ -79,6 +91,10 @@
       line-height: 150%; /* 27px */
       border: none;
       background: none;
+
+      &:hover {
+        background-color: green;
+      }
     }
 
     &--icon {
