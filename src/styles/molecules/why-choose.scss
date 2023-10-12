@@ -17,10 +17,10 @@
   &__block {
     background: rgb(88, 50, 117);
     background: linear-gradient(
-      40deg,
-      rgba(88, 50, 117, 1) 18%,
-      rgba(43, 68, 231, 1) 55%,
-      rgba(68, 136, 139, 1) 80%
+      267deg,
+      #44888b 7.52%,
+      #2b44e7 41.97%,
+      #583275 96.83%
     );
     display: flex;
     width: 100%;
@@ -28,6 +28,7 @@
     position: relative;
     padding: 56px 48px;
     border-radius: 24px;
+    box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
   }
 
   &__text {

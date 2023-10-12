@@ -10,11 +10,11 @@ import Footer from "../components/molecules/footer";
 function index() {
   return (
     <div>
-      {/* <Navbar />
+      <Navbar />
       <Intro />
       <Animation />
       <Infrastructure />
-      <Experienced /> */}
+      <Experienced />
       <Footer />
     </div>
   );
