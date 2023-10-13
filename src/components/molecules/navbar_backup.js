@@ -13,8 +13,7 @@ function Navbar() {
           <Navbutton text={"About"} />
           <Navbutton text={"Infrastructure"} />
           <Navbutton text={"Adopter"} />
-          </div>
-        
+        </div>
       </div>
     </div>
   );

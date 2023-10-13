@@ -9,14 +9,14 @@ import Footer from "../components/molecules/footer";
 
 function index() {
   return (
-    <div>
+    <>
       <Navbar />
       <Intro />
       <Animation />
       <Infrastructure />
       <Experienced />
       <Footer />
-    </div>
+    </>
   );
 }
 
