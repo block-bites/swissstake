@@ -11,6 +11,7 @@ function Intro() {
           <Whychoose />
         </div>
       </div>
+      <div className="page__block"></div>
     </div>
   );
 }
