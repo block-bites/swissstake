@@ -12,10 +12,10 @@ function index() {
     <>
       <Navbar />
       <Intro />
-      <Animation />
+      {/* <Animation />
       <Infrastructure />
       <Experienced />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
