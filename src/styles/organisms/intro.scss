@@ -3,9 +3,13 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background: url('../assets/Intro-background.svg') center top/100% auto no-repeat;
-  background-size: cover; 
-  background-position: calc(50% + 0px) top; 
+  background: url('../assets/Intro-background.svg') left top, right top; 
+  background-size: auto 100%; 
+  background-repeat: no-repeat; 
+  background-position: left 40% top; 
+  //background-position: calc(50% - 10px) top; 
+
+
 }
 
 
