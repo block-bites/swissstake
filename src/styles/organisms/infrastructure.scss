@@ -9,7 +9,7 @@
 }
 
 .infrastructure {
-  border: 1px solid red;
+  //border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +23,7 @@
   &__subtitle {
     color: var(--Black, #1d1d1f);
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 
     color: var(--Black, #1d1d1f);
     text-align: center;
@@ -48,6 +48,8 @@
   }
 
   &__text {
+    padding-top: 30px;
+    padding-bottom: 50px;
     color: var(--grey-disable, #7e7f88);
     text-align: center;
     font-family: Inter;
@@ -62,6 +64,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
   }
   
 }

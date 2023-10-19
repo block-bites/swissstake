@@ -6,9 +6,11 @@ import Joinblock from "../molecules/join-block";
 function Experienced() {
   return (
     <div className="experienced-positioner">
-      <div className="experienced__block">
+      <div className="experienced-block">
         <ExperiencedBlock />
-        <Joinblock/>
+      </div>
+      <div className="experienced-join">
+        <Joinblock />
       </div>
     </div>
   );

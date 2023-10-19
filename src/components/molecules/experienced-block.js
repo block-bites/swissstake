@@ -21,14 +21,14 @@ function ExperiencedBlock() {
       </div>
       <div className="blocks">
         <div className="experiencedblocks">
-        <img src={Iconknowledge} alt="" className="experiencedblocks-image" />
+        <img src={Iconknowledge} alt="" className="experiencedblocks__image1" />
           <h4 className="experiencedblocks__title">Knowledge</h4>
           <p className="experiencedblocks__text">
             In-depth understanding of the <br />Casper Network's intricacies.
           </p>
         </div>
         <div className="experiencedblocks">
-        <img src={IconInnovation} alt="" className="experiencedblocks-image" />
+        <img src={IconInnovation} alt="" className="experiencedblocks__image2" />
           <h4 className="experiencedblocks__title">Innovation</h4>
           <p className="experiencedblocks__text">
             Constantly staying ahead of the <br /> curve with the latest
@@ -36,7 +36,7 @@ function ExperiencedBlock() {
           </p>
         </div>
         <div className="experiencedblocks">
-        <img src={Iconcommitment} alt="" className="experiencedblocks-image" />
+        <img src={Iconcommitment} alt="" className="experiencedblocks__image3" />
           <h4 className="experiencedblocks__title">Commitment</h4>
           <p className="experiencedblocks__text">
             Running since the beginning of the <br /> Casper mainnet, reflecting
