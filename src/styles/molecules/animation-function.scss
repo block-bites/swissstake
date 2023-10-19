@@ -1,7 +1,10 @@
-.animation {
-  &__img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.animation-container {
+  width: 1440px;
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+}
+
+.parallax-image {
+  position: absolute;
 }
