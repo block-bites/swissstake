@@ -9,9 +9,9 @@ function Footer() {
       <div className="footer">
         <img className="footer__logo" src={stakeLogo} alt="footer-logo" />
         <div className="footer__left">
-          <button className="footer__left--title">
+          <p className="footer__left--title">
             <h4>Navigation</h4>
-          </button>
+          </p>
           <button className="footer__left--subtitle">About</button>
           <button className="footer__left--subtitle">Structure</button>
           <button className="footer__left--subtitle">Adopter</button>
@@ -19,9 +19,9 @@ function Footer() {
         </div>
 
         <div className="footer__right">
-          <button className="footer__right--title">
+          <p className="footer__right--title">
             <h4>Social</h4>
-          </button>
+          </p>
 
           <button className="footer__right--subtitle">
             <img
