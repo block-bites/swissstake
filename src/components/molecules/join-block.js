@@ -8,7 +8,7 @@ function Joinblock() {
   return (
     <div className="joinblock" style={{ backgroundImage: `url(${Join})` }}>
           <div className="joinblock__title">
-            <h2>Join SwissStake Today</h2>
+            <p>Join SwissStake Today</p>
 
           </div>
         
