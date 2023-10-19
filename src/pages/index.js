@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/App.scss";
 import Intro from "../components/organisms/intro";
 import Infrastructure from "../components/organisms/infrastructure";
@@ -7,17 +7,21 @@ import Navbar from "../components/molecules/navbar";
 import Experienced from "../components/organisms/experienced";
 import Footer from "../components/molecules/footer";
 
-function index() {
+function Index() {
+  useEffect(() => {
+    document.title = "SwissStake";
+  }, []);
+
   return (
     <>
       <Navbar />
       <Intro />
-      {/* <Animation />
+      <Animation />
       <Infrastructure />
       <Experienced />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
 
-export default index;
+export default Index;

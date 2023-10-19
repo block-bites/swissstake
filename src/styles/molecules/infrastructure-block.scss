@@ -1,12 +1,14 @@
+$color-block1: #effafd;
+$color-block2: #eefbf6;
+$color-block3: #fef1ff;
+
 .infrastructure-block {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  //border: 1px solid green;
   padding: 30px;
-
   border-radius: 24px;
   border: 1px solid rgba(56, 56, 138, 0.12);
 
@@ -34,5 +36,20 @@
   &__img {
     width: 100%;
     height: 170px;
+
+    &.image1 {
+      background-color: $color-block1;
+    }
+
+    &.image2 {
+      background-color: $color-block2;
+    }
+
+    &.image3 {
+      background-color: $color-block3;
+    }
+
+    &.default {
+    }
   }
 }
