@@ -13,7 +13,7 @@ function Footer() {
             <h4>Navigation</h4>
           </p>
           <button className="footer__left--subtitle">About</button>
-          <button className="footer__left--subtitle">Structure</button>
+          <button className="footer__left--subtitle">Infastructure</button>
           <button className="footer__left--subtitle">Adopter</button>
           <button className="footer__left--subtitle">Join</button>
         </div>
@@ -34,9 +34,6 @@ function Footer() {
           </button>
         </div>
       </div>
-      {/* <div className="watermark">
-        <p className="watermark__title">Swiss Stake 2023</p>
-      </div> */}
     </div>
   );
 }
