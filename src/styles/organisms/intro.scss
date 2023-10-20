@@ -1,7 +1,7 @@
 .page {
   position: relative;
   width: 100%;
- 
+
   // background: url("../assets/Intro-test.png") left top, right top;
   // background-size: auto 100%; /* Ustaw rozmiar tła na zmniejszenie szerokości i zachowanie oryginalnej wysokości */
   // background-repeat: no-repeat;
@@ -13,12 +13,11 @@
   &__content {
     position: flex;
     flex-direction: column;
-    
   }
 
   &__block {
     position: relative;
-    margin-top: 260px; 
+    margin-top: 260px;
     width: 100%;
     background-image: linear-gradient(
       161deg,
@@ -28,17 +27,16 @@
       #003b93 52.07%
     );
     z-index: 1;
-    height: 200px;
+    height: 300px;
     bottom: 0;
     transform: translateY(0%);
 
     &--whychoose {
       position: relative;
       width: 100%;
-      z-index: 2; 
-      top: -50px; 
+      z-index: 2;
+      top: -50px;
     }
-
   }
 }
 

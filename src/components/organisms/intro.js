@@ -11,7 +11,7 @@ function Intro() {
         </div>
       </div>
       <div className="page__block">
-        <div className="page__block--whychoose"></div>
+        {/* <div className="page__block--whychoose"></div> */}
         <Whychoose />
       </div>
     </div>

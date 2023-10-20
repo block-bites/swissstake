@@ -3,19 +3,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  position: absolute;
+  bottom: 135px;
 }
 
 .why-choose {
-  display: flex;
   width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  padding-left: 70px;
-  padding-right: 70px;
-  border: 1px solid red;
+  padding: 0 70px;
+  min-height: 240px;
+
   &__block {
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    gap: 50px;
+    position: relative;
     background: rgb(88, 50, 117);
     background: linear-gradient(
       267deg,
@@ -23,44 +28,90 @@
       #2b44e7 41.97%,
       #583275 96.83%
     );
-    display: flex;
-    width: 100%;
-    max-width: 1300px;
-    position: relative;
-    padding: 60px 50px;
     border-radius: 24px;
     box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
-    border: 1px solid yellow;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      gap: 0;
+    }
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      gap: 0;
+    }
   }
 
   &__text {
-    &--title {
-      color: #fff;
-      font-family: Inter;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 150%; /* 36px */
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 56px 0 56px 48px;
+    @include breakpoint(tablet) {
+      padding: 48px;
     }
-    &--subtitle {
-      color: #fff;
-      font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
+    @include breakpoint(mobile) {
+      padding: 48px;
+    }
+  }
+
+  &__title {
+    color: #fff;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 36px */
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+
+  &__logo-container {
+    width: 100%;
+    position: relative;
+    max-width: 560px;
+    @include breakpoint(laptop) {
+      max-width: 42px;
     }
   }
 
   &__casperlogo {
-    display: flex;
+    max-width: 50vw;
+    border-radius: 24px;
+    background: #bcfc07;
+    padding: 40px;
     position: absolute;
-    right: -80px;
-    top: -110px;
+    right: -40px;
+    bottom: 50px;
+    @include breakpoint(laptop) {
+      // background-color: red;
+      bottom: 200px;
+      width: 440px;
+    }
+    @include breakpoint(tablet) {
+      // background-color: yellow;
+
+      bottom: -130px;
+      width: 280px;
+    }
+    @include breakpoint(mobile) {
+      // background-color: yellow;
+
+      bottom: -130px;
+      width: 280px;
+    }
   }
+
   .why-chose-logo-size {
     width: 100%;
-    max-width: 610px;
     height: auto;
   }
 }
