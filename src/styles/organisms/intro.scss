@@ -2,22 +2,23 @@
   position: relative;
   width: 100%;
   margin: 0;
-  padding: 0;
-  background: url("../assets/Intro-background.svg") left top, right top;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: left 45% top;
-  height: calc(100% - 50px);
-  z-index: 1;
-  min-height: 100vh;
+  // background: url("../assets/Intro-test.png") left top, right top;
+  // background-size: auto 100%; /* Ustaw rozmiar tła na zmniejszenie szerokości i zachowanie oryginalnej wysokości */
+  // background-repeat: no-repeat;
+  // background-position: center top;
+  // height: calc(100% - 50px);
+  //z-index: 1;
+  // min-height: 100vh;
 
   &__content {
-    position: relative;
+    position: flex;
     z-index: 2;
+    margin-bottom: 100px;
   }
 
   &__block {
-    position: absolute;
+    position: flex;
+    margin-top: 260px; 
     width: 100%;
     background-image: linear-gradient(
       161deg,
@@ -27,10 +28,9 @@
       #003b93 52.07%
     );
     z-index: 0;
-    height: 300px;
-    bottom: 300px; 
-    transform: translateY(100%); 
-    //border: 1px solid green;
+    height: 200px;
+    bottom: 0;
+    transform: translateY(0%);
   }
 }
 
@@ -46,7 +46,7 @@
   background: #2b44e7;
   border-radius: 909px;
   opacity: 0.3;
-  filter: blur(268px);
+  filter: blur(270px);
   z-index: -1;
 }
 
@@ -61,6 +61,6 @@
   background: #2b44e7;
   border-radius: 909px;
   opacity: 0.3;
-  filter: blur(268px);
+  filter: blur(270px);
   z-index: -1;
 }
