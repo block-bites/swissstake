@@ -8,10 +8,12 @@ function Intro() {
       <div className="page__container">
         <div className="page__content">
           <Validator />
-          {/* <Whychoose /> */}
         </div>
       </div>
-      <div className="page__block"></div>
+      <div className="page__block">
+        <div className="page__block--whychoose"></div>
+        <Whychoose />
+      </div>
     </div>
   );
 }
