@@ -2,18 +2,13 @@
   position: relative;
   width: 100%;
 
-  // background: url("../assets/Intro-test.png") left top, right top;
-  // background-size: auto 100%; /* Ustaw rozmiar tła na zmniejszenie szerokości i zachowanie oryginalnej wysokości */
-  // background-repeat: no-repeat;
-  // background-position: center top;
-  // height: calc(100% - 50px);
-  //z-index: 1;
-  // min-height: 100vh;
-
-  &__content {
-    position: flex;
-    flex-direction: column;
-  }
+  background: url("../assets/Intro-test.png") left top, right top;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  // background-attachment: fixed;
+  background-position: 10% 50%; 
+  width: 100%;
+  max-height: 1300px;
 
   &__block {
     position: relative;
@@ -29,14 +24,7 @@
     z-index: 1;
     height: 300px;
     bottom: 0;
-    transform: translateY(0%);
-
-    &--whychoose {
-      position: relative;
-      width: 100%;
-      z-index: 2;
-      top: -50px;
-    }
+    // transform: translateY(100%);
   }
 }
 

@@ -16,7 +16,7 @@ function Index() {
     <>
       <Navbar />
       <Intro />
-      <Animation />
+      {/* <Animation /> */}
       {/* <Infrastructure />
       <Experienced />
       <Footer /> */}
