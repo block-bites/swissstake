@@ -6,22 +6,22 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   // background-attachment: fixed;
-  background-position: 10% 50%; 
+  background-position: 30% 40%;
   width: 100%;
-  max-height: 1300px;
 
   &__block {
     position: relative;
     margin-top: 260px;
     width: 100%;
-    background-image: linear-gradient(
-      161deg,
-      rgba(5, 78, 187, 0) 5.97%,
-      rgba(4, 72, 174, 0.43) 18.67%,
-      rgba(1, 62, 153, 0.79) 31.8%,
-      #003b93 52.07%
+    background: linear-gradient(
+      178deg,
+      rgba(5, 78, 187, 0) 1.81%,
+      rgba(4, 74, 179, 0.27) 11.14%,
+      rgba(4, 72, 174, 0.43) 16.2%,
+      rgba(1, 62, 153, 0.79) 32.1%,
+      #003b93 50.31%
     );
-    z-index: 1;
+    //z-index: 1;
     height: 300px;
     bottom: 0;
     // transform: translateY(100%);

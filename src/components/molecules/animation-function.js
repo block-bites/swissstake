@@ -1,9 +1,9 @@
 import React from 'react'
 
-function animation-function() {
+function Animationfunction() {
   return (
-    <div>animation-function</div>
+    <div></div>
   )
 }
 
-export default animation-function
+export default Animationfunction
