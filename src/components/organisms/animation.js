@@ -1,16 +1,9 @@
-import React from "react";
-import Animation from "../molecules/animation-function";
+import React from 'react'
 
-function Animationblock() {
+function animation() {
   return (
-    <div className="baremetal-positioner">
-      <div className="baremetal-bck">
-      <Animation />
-      </div>
-    </div>
-  );
+    <div>animation</div>
+  )
 }
 
-// próba
-
-export default Animationblock;
+export default animation
