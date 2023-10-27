@@ -7,62 +7,40 @@ import Fourth from "../../assets/Fourth-animation.png";
 const images = [First, Second, Third, Fourth];
 
 const Imageslider = () => {
-  const sliderBoxRef = useRef(null);
+  const sliderRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const [isHovering, setIsHovering] = useState(false);
-
-  const handleWheel = (event) => {
-    if (isHovering) {
-      let newIndex = activeIndex;
-
-      if (event.deltaY > 0 && activeIndex < images.length - 1) {
-        newIndex = activeIndex + 1;
-      } else if (event.deltaY < 0 && activeIndex > 0) {
-        newIndex = activeIndex - 1;
-      }
-
-      if (newIndex !== activeIndex) {
-        setActiveIndex(newIndex);
-        event.preventDefault();
-      }
-    }
-  };
+  const [scrolling, setScrolling] = useState(false);
 
   const handleScroll = () => {
-    if (sliderBoxRef.current) {
-      const scrollPosition = sliderBoxRef.current.scrollTop;
-      const newIndex = Math.floor(scrollPosition / 900);
+    if (!scrolling && sliderRef.current) {
+      const scrollHeight = sliderRef.current.scrollHeight;
+      const scrollTop = sliderRef.current.scrollTop;
+      const containerHeight = sliderRef.current.clientHeight;
+      const imageHeight = containerHeight / images.length;
 
-      if (newIndex !== activeIndex) {
-        setActiveIndex(newIndex);
-      }
+      const newIndex = Math.floor(scrollTop / imageHeight);
+      setActiveIndex(newIndex);
+
+      setScrolling(true);
+
+      setTimeout(() => {
+        setScrolling(false);
+      }, 1000);
     }
   };
 
-  useEffect(() => {}, [activeIndex]);
-
   useEffect(() => {
-    if (sliderBoxRef.current) {
-      sliderBoxRef.current.addEventListener("wheel", handleWheel, {
-        passive: false,
-      });
-      sliderBoxRef.current.addEventListener("scroll", handleScroll);
-
+    if (sliderRef.current) {
+      sliderRef.current.addEventListener("scroll", handleScroll);
       return () => {
-        sliderBoxRef.current.removeEventListener("wheel", handleWheel);
-        sliderBoxRef.current.removeEventListener("scroll", handleScroll);
+        sliderRef.current.removeEventListener("scroll", handleScroll);
       };
     }
-  }, [isHovering, activeIndex]);
+  }, []);
 
   return (
     <div className="slider-container">
-      <div
-        className="slider-box"
-        ref={sliderBoxRef}
-        onMouseEnter={() => setIsHovering(true)}
-        onMouseLeave={() => setIsHovering(false)}
-      >
+      <div className="slider-box" ref={sliderRef}>
         {images.map((image, index) => (
           <div
             key={index}
@@ -72,7 +50,6 @@ const Imageslider = () => {
             }}
           />
         ))}
-        <div className="hidden-content"></div>
       </div>
     </div>
   );
