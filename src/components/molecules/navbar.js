@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <div className="navbar-positioner">
       <div className="navbar">
-        <Link to="top" spy={true} smooth={true} duration={500} offset={50}>
+        <Link to="top" spy={true} smooth={true} duration={500} offset={-100} exact={true}>
           <img className="navbar__logo" src={stakeLogo} alt="SwissStake-Logo" />
         </Link>
 
