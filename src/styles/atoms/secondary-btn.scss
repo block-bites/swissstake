@@ -3,12 +3,12 @@
   padding: 12px 24px;
   width: 132px;
   height: 48px;
-  color: #2B44E7;
+  color: #2b44e7;
   background-color: transparent;
   text-align: center;
-  border-color: #2B44E7;
+  border-color: #2b44e7;
   outline: none;
-  // &:hover {
-  //   background-color: green;
-  // }
+}
+button:hover {
+  cursor: pointer;
 }

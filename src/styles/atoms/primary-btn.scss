@@ -16,8 +16,8 @@
   background: #2b44e7;
   text-align: center;
   border: none;
-  
-  // &:hover {
-  //   background-color: green;
-  // }
+}
+
+button:hover {
+  cursor: pointer;
 }
