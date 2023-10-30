@@ -38,6 +38,11 @@
     
   }
 
+  button:hover {
+    cursor: pointer;
+  }
+  
+
   // @include breakpoint(desktop) {
   //   background-color: red;
   // }
