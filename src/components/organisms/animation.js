@@ -17,7 +17,7 @@ function ParallaxImages() {
 
   return (
     <ParallaxProvider>
-      <div className="parallax-container">
+      <div className="parallax-container" id="about">
         <div
           className="parallax"
           onMouseEnter={disableBodyScroll}

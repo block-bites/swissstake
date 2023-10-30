@@ -8,7 +8,7 @@ import Trophy from "../../assets/Trophy.svg";
 
 function Infrastructure() {
   return (
-    <div className="infrastructure-positioner">
+    <div className="infrastructure-positioner" id="infractructure">
       <div className="infrastructure">
         <div className="infrastructure__header">
           <h2 className="infrastructure__title">Swiss Infrastructure</h2>

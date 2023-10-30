@@ -5,7 +5,7 @@ import Joinblock from "../molecules/join-block";
 
 function Experienced() {
   return (
-    <div className="experienced-positioner">
+    <div className="experienced-positioner" id="adopter">
       <div className="experienced-block">
         <ExperiencedBlock />
       </div>

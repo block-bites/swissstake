@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import stakeLogo from "../../assets/swissStake-logo.svg";
 import telegram from "../../assets/telegramicon.svg";
@@ -12,10 +13,18 @@ function Footer() {
           <p className="footer__left--title">
             <h4>Navigation</h4>
           </p>
-          <button className="footer__left--subtitle">About</button>
-          <button className="footer__left--subtitle">Infastructure</button>
-          <button className="footer__left--subtitle">Adopter</button>
-          <button className="footer__left--subtitle">Join</button>
+          <Link to="about" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <button className="footer__left--subtitle">About</button>
+          </Link>
+          <Link to="infractructure" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <button className="footer__left--subtitle">Infastructure</button>
+          </Link>
+          <Link to="adopter" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <button className="footer__left--subtitle">Adopter</button>
+          </Link>
+          <Link to="join" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <button className="footer__left--subtitle">Join</button>
+          </Link>
         </div>
 
         <div className="footer__right">

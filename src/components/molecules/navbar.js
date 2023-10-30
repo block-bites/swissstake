@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import Navbutton from "../atoms/nav-btn";
 
@@ -8,11 +9,22 @@ function Navbar() {
   return (
     <div className="navbar-positioner">
       <div className="navbar">
-        <img className="navbar__logo" src={stakeLogo} alt="SwissStake-Logo" />
+        <Link to="top" spy={true} smooth={true} duration={500} offset={50}>
+          <img className="navbar__logo" src={stakeLogo} alt="SwissStake-Logo" />
+        </Link>
+
         <div className="navbar__buttons">
-          <Navbutton text={"About"} />
-          <Navbutton text={"Infrastructure"} />
-          <Navbutton text={"Adopter"} />
+          <Link to="about" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <Navbutton text={"About"} />
+          </Link>
+
+          <Link to="infractructure" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <Navbutton text={"Infrastructure"} />
+          </Link>
+
+          <Link to="adopter" spy={true} smooth={true} duration={500} offset={-85} exact={true}>
+            <Navbutton text={"Adopter"} />
+          </Link>
         </div>
       </div>
     </div>

@@ -6,7 +6,7 @@ import Join from "../../assets/Mountainsvg.svg"
 
 function Joinblock() {
   return (
-    <div className="joinblock" style={{ backgroundImage: `url(${Join})` }}>
+    <div className="joinblock" style={{ backgroundImage: `url(${Join})` }} id="join">
           <div className="joinblock__title">
             <p>Join SwissStake Today</p>
 

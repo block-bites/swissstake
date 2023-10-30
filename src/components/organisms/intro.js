@@ -4,7 +4,7 @@ import Whychoose from "../molecules/why-choose";
 
 function Intro() {
   return (
-    <div className="page">
+    <div className="page" id="top">
       <div className="page__container">
         <div className="page__content">
           <Validator />
