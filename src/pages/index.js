@@ -14,8 +14,8 @@ function Index() {
 
   return (
     <>
-      {/* <Navbar />
-      <Intro /> */}
+      <Navbar />
+      <Intro />
       <Animation />
       {/* <Infrastructure />
       <Experienced />
