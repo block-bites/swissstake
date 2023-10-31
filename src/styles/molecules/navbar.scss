@@ -25,6 +25,10 @@
     width: 200px;
     height: auto;
     margin-left: 70px;
+
+    &:hover {
+      cursor: pointer;
+    }
     
   }
 
@@ -37,6 +41,7 @@
 
     
   }
+
 
  
   
