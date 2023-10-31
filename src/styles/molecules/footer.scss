@@ -7,7 +7,6 @@
   margin: auto;
   gap: 48px;
   padding-top: 70px;
-  border: 2px solid green;
   border-top: 1px solid var(--grey-disable, #7e7f88);
 }
 
@@ -92,6 +91,7 @@
       line-height: 150%; /* 27px */
       border: none;
       background: none;
+      text-decoration: none;
 
     }
     button:hover {
