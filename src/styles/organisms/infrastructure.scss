@@ -11,14 +11,18 @@
 .infrastructure {
   //border: 1px solid red;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  padding: 0;
 
   &__blocks-in-row {
     display: flex;
     gap: 24px;
-    padding: 24px 32px;
+    padding: 24px 0;
+    justify-content: space-between;
+    width: 100%;
   }
   &__subtitle {
     color: var(--Black, #1d1d1f);
@@ -64,8 +68,5 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
   }
-  
 }
-

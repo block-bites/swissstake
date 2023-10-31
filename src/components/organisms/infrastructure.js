@@ -20,20 +20,20 @@ function Infrastructure() {
         </div>
         <InfrastructureBlock
           title={"Stability"}
-          text="Benefit from Switzerland's renowned political and economic stability."
+          text={"Benefit from Switzerland's renowned<br />  political and economic stability."}
           image={Swiss}
           className="image1"
         />
         <div className="infrastructure__blocks-in-row">
           <InfrastructureBlock
             title={"Privacy"}
-            text="Enjoy the stringent privacy laws that Switzerland is famous for."
+            text="Enjoy the stringent privacy laws <br /> that Switzerland is famous for."
             image={Lock}
             className="image2"
           />
           <InfrastructureBlock
             title={"Quality"}
-            text="Experience top-tier service quality backed by Swiss precision and reliability."
+            text="Experience top-tier service quality <br /> backed by Swiss precision and reliability."
             image={Trophy}
             className="image3"
           />
