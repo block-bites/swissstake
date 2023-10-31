@@ -17,9 +17,9 @@ function Index() {
       {/* <Navbar />
       <Intro />
       <Animation /> */}
-      <Infrastructure />
-      {/* <Experienced />
-      <Footer /> */}
+      {/* <Infrastructure />
+      <Experienced /> */}
+      <Footer />
     </>
   );
 }
