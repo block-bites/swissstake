@@ -5,7 +5,7 @@ import Navbutton from "../atoms/nav-btn";
 
 import stakeLogo from "../../assets/swissStake-logo.svg";
 
-function Navbar() {
+function DesktopNavbar() {
   return (
     <div className="navbar-positioner">
       <div className="navbar">
@@ -31,4 +31,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default DesktopNavbar;

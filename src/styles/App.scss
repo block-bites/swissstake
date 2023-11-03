@@ -10,8 +10,9 @@
 @import "./atoms/tertiary-btn";
 
 //Molecules
+@import "./molecules/navbar-desktop";
+@import "./molecules/navbar-mobile";
 @import "./molecules/join-block";
-@import "./molecules/navbar";
 @import "./molecules/validator";
 @import "./molecules/why-choose";
 @import "./molecules/animation-function";
@@ -20,6 +21,7 @@
 @import "./molecules/footer";
 
 //Organisms
+@import "./organisms/navbar.scss";
 @import "./organisms/animation";
 @import "./organisms/intro";
 @import "./organisms/infrastructure";
