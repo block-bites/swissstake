@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 
 import Navbutton from "../atoms/nav-btn";
-import stakeLogo from "../../assets/swissStake-logo.svg";
+import SwissLogo from "../../assets/mobile-logo.svg";
 import { FiMenu, FiX } from "react-icons/fi";
 
 function MobileNavbar() {
@@ -17,8 +17,8 @@ function MobileNavbar() {
   };
 
   return (
-    <div className="navbar-positioner">
-      <div className="navbar">
+    <div className="mobile-positioner">
+      <div className="navbar-mobile">
         <Link
           to="top"
           spy={true}
@@ -27,15 +27,15 @@ function MobileNavbar() {
           offset={-100}
           exact={true}
         >
-          <img className="navbar__logo" src={stakeLogo} alt="SwissStake-Logo" />
+          <img className="navbar-mobile__logo" src={SwissLogo} alt="SwissStake-Logo" />
         </Link>
 
-        <div className="navbar__hamburger" onClick={toggleMenu}>
+        <div className="navbar-mobile__hamburger" onClick={toggleMenu}>
           {!isOpen && <FiMenu size={35} />}
         </div>
 
         {isOpen && (
-          <div className="navbar__hamburger-close" onClick={toggleMenu}>
+          <div className="navbar-mobile__hamburger-close" onClick={toggleMenu}>
             <FiX size={35} />
           </div>
         )}
@@ -43,7 +43,7 @@ function MobileNavbar() {
         {isOpen && (
           <div
             className={
-              isOpen ? "navbar__menu navbar__menu--open" : "navbar"
+              isOpen ? "navbar-mobile__menu navbar-mobile__menu--open" : "navbar-mobile"
             }
           >
             <div onClick={toggleMenu}>
