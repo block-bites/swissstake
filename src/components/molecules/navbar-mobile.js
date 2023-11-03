@@ -43,8 +43,7 @@ function MobileNavbar() {
         {isOpen && (
           <div
             className={
-              isOpen ? "navbar-mobile__menu navbar-mobile__menu--open" : "navbar-mobile"
-            }
+              isOpen ? "navbar-mobile__menu navbar-mobile__menu--open" : "navbar-mobile__menu"            }
           >
             <div onClick={toggleMenu}>
               <FiX size={30} />
