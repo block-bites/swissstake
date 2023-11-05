@@ -8,7 +8,7 @@ function Validator() {
         <div className="validator__header">
           <div>
             <h1>
-              - Your Swiss Validator <br /> on <br /> the Casper Network
+               <span class="blue">SwissStake</span>  Your Swiss Validator <br /> on <br /> the Casper Network
             </h1>
           </div>
           <p className="validator__text">

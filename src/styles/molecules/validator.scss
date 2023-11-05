@@ -13,7 +13,6 @@
   align-items: center;
   justify-content: center;
   padding: 190px;
-  
 
   &__header {
     color: var(--Black, #1d1d1f);
@@ -27,9 +26,20 @@
       font-weight: 500;
       line-height: 130%;
     }
-    h1::before {
+    .blue {
       color: #2b44e7;
-      content: "SwissStake ";
+      white-space: nowrap;
+    }
+
+    .blue::after {
+      content: " -";
+      color: black;
+    }
+    @include breakpoint(tablet) {
+      text-align: left;
+    }
+    @include breakpoint(mobile) {
+      text-align: left;
     }
   }
 
@@ -39,17 +49,38 @@
     padding: 60px;
 
     /* p */
-    text-align: center;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: 150%; /* 30px */
+
+    @include breakpoint(tablet) {
+      display: flex;
+      text-align: left;
+      justify-content: left;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      text-align: left;
+      justify-content: left;
+    }
   }
   &__button {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 15px;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
   }
 }
