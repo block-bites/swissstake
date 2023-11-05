@@ -1,4 +1,4 @@
-.experiencedblocks-positioner {
+.mobile-experiencedblocks-positioner {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -8,33 +8,34 @@
   background-color: #003b93;
 }
 
-.experienced-header {
+.mobile-experienced-header {
   display: flex;
   flex-wrap: wrap;
   padding-top: 80px;
 
   &__subtitle {
-    padding: 25px;
-    color: #fff;
-    text-align: center;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 60px */
-  }
-
-  &__text {
+    padding-top: 80px;
     color: #fff;
     text-align: center;
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 150%; /* 27px */
   }
+
+  &__text {
+    padding-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
 }
-.blocks {
+.mobile-blocks {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -44,33 +45,34 @@
   padding-bottom: 30px;
   gap: 240px;
 
-  .experiencedblocks {
+  .mobile-experiencedblocks {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
 
     &__title {
-      padding-top: 50px;
-      padding-bottom: 20px;
+      padding-top: 40px;
+      padding-bottom: 10px;
       color: #fff;
       text-align: center;
       font-family: Inter;
-      font-size: 24px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 500;
-      line-height: 150%; /* 36px */
+      line-height: 150%; /* 24px */
     }
 
     &__text {
       color: #fff;
       text-align: center;
       font-family: Inter;
-      font-size: 18px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 27px */
+      line-height: 150%; /* 21px */
     }
 
     &__image1 {
@@ -78,15 +80,31 @@
       max-width: 180px;
       height: auto;
     }
-    &__image2 {
-      width: 100%;
-      max-width: 160px;
-      height: auto;
-    }
-    &__image3 {
-      width: 100%;
-      max-width: 140px;
-      height: auto;
-    }
+    //   &__image2 {
+    //     width: 100%;
+    //     max-width: 160px;
+    //     height: auto;
+    //   }
+    //   &__image3 {
+    //     width: 100%;
+    //     max-width: 140px;
+    //     height: auto;
+    //   }
+  }
+
+  .arrow-left {
+    position: absolute;
+    left: -40%;
+    border: none;
+    background: none;
+    transform: rotate(180deg);
+  }
+  
+  .arrow-right {
+    position: absolute;
+    right: -40%; 
+    border: none;
+    background: none;
+    transform: rotate(180deg);
   }
 }
