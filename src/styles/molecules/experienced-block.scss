@@ -10,6 +10,7 @@
 
 .experienced-header {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 80px;
 
   &__subtitle {
@@ -36,8 +37,6 @@
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
-  max-width: 1440px;
   justify-content: center;
   align-items: center;
   flex-direction: row;
@@ -51,7 +50,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
-
+    flex-wrap: wrap;
 
     &__title {
       padding-top: 50px;
