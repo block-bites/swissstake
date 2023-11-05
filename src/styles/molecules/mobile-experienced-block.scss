@@ -44,6 +44,7 @@
   margin: 100px;
   padding-bottom: 30px;
   gap: 240px;
+  position: relative;
 
   .mobile-experiencedblocks {
     align-items: center;
@@ -51,7 +52,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    position: relative;
+
 
     &__title {
       padding-top: 40px;
@@ -77,19 +78,19 @@
 
     &__image1 {
       width: 100%;
-      max-width: 180px;
+      max-width: 160px;
       height: auto;
     }
-    //   &__image2 {
-    //     width: 100%;
-    //     max-width: 160px;
-    //     height: auto;
-    //   }
-    //   &__image3 {
-    //     width: 100%;
-    //     max-width: 140px;
-    //     height: auto;
-    //   }
+    &__image2 {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+    }
+    &__image3 {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+    }
   }
 
   .arrow-left {
@@ -99,10 +100,10 @@
     background: none;
     transform: rotate(180deg);
   }
-  
+
   .arrow-right {
     position: absolute;
-    right: -40%; 
+    right: -40%;
     border: none;
     background: none;
     transform: rotate(180deg);
