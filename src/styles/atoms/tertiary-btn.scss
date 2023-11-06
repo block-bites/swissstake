@@ -10,19 +10,19 @@
   background: #fff;
   text-decoration: none;
 
-  // @include breakpoint(tablet) {
-  //   display: flex;
-  //   width: 130px;
-  //   height: 40px;
-  //   padding: 5px 10px;
-  //   justify-content: center;
-  //   align-items: center;
-  //   gap: 5px;
-  //   border-radius: 135.034px;
-  //   background: #fff;
-  //   text-decoration: none;
-  // }
   @include breakpoint(mobile) {
+    display: flex;
+    width: 130px;
+    height: 40px;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 40px;
+    background: #fff;
+    text-decoration: none;
+  }
+  @include breakpoint(tablet) {
     display: flex;
     width: 130px;
     height: 40px;
@@ -44,15 +44,15 @@
     font-weight: 600;
     line-height: 150%; /* 27px */
 
-    // @include breakpoint(tablet) {
-    //   color: #583275;
-    //   text-align: center;
-    //   font-family: Inter;
-    //   font-size: 12px;
-    //   font-style: normal;
-    //   font-weight: 600;
-    //   line-height: 150%; /* 18px */
-    // }
+    @include breakpoint(tablet) {
+      color: #583275;
+      text-align: center;
+      font-family: Inter;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 18px */
+    }
     @include breakpoint(mobile) {
       color: #583275;
       text-align: center;

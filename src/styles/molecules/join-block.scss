@@ -5,16 +5,40 @@
   flex-direction: column;
   width: 100%;
   max-width: 1300px;
-  padding-top: 130px;
+  height: 500px;
+  padding-top: 90px;
   padding-bottom: 90px;
   border-radius: 24px;
   background: #583275;
   background-repeat: no-repeat;
 
   @include breakpoint(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 320px;
+    padding-top: 90px;
+    padding-bottom: 115px;
+    border-radius: 7px;
+    background: #583275;
+    background-repeat: no-repeat;
   }
   @include breakpoint(mobile) {
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    height: 320px;
+    padding-top: 90px;
+    padding-bottom: 115px;
+    border-radius: 7px;
+    background: #583275;
+    background-repeat: no-repeat;
   }
 
   &__title {
@@ -27,6 +51,13 @@
     line-height: 130%; /* 65px */
 
     @include breakpoint(tablet) {
+      color: #fff;
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 19.7px */
     }
     @include breakpoint(mobile) {
       color: #fff;
@@ -41,6 +72,15 @@
 
   &__button {
     display: flex;
-    margin: 70px;
+    padding-top: 70px;
+
+    @include breakpoint(tablet) {
+      display: flex;
+      padding-top: 30px;
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      padding-top: 30px;
+    }
   }
 }

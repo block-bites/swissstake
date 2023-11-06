@@ -1,23 +1,46 @@
 .experienced-positioner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.experienced-block{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+.experienced-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.experienced-join{
+.experienced-join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 170px;
+  width: 100%;
+  max-width: 1300px;
+  height: 500px;
+
+  @include breakpoint(tablet) {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 170px;
+    max-width: 600px;
+    height: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 70px;
     width: 100%;
+  }
+  @include breakpoint(mobile) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    height: 320px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 70px;
+    width: 100%;
+  }
 }
