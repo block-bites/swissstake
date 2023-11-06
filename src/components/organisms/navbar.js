@@ -6,13 +6,15 @@ import MobileNavbar from "../molecules/navbar-mobile";
 import DesktopNavbar from "../molecules/navbar-desktop";
 
 function Navbar() {
-  // const [width, setwidth] = useState(window.innerWidth);
+  const isBrowser = typeof window !== "undefined";
   const [isMobile, setIsMobile] = useState(null);
 
   useEffect(() => {
+    if (!isBrowser) {
+      return;
+    }
+
     const handleResize = () => {
-      // const newwidth = window.innerWidth;
-      // setwidth(newwidth);
       setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT);
     };
 
@@ -21,16 +23,11 @@ function Navbar() {
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [isBrowser]);
 
   return (
     <div className="navbar">
-      {/* {isMobile === null ? null : isMobile ? (
-        <MobileNavbar />
-      ) : (
-        <DesktopNavbar />
-      )} */}
-      {isMobile ? <MobileNavbar/> : <DesktopNavbar/>}
+      {isMobile ? <MobileNavbar /> : <DesktopNavbar />}
     </div>
   );
 }
