@@ -27,7 +27,11 @@ function MobileNavbar() {
           offset={-100}
           exact={true}
         >
-          <img className="navbar-mobile__logo" src={SwissLogo} alt="SwissStake-Logo" />
+          <img
+            className="navbar-mobile__logo"
+            src={SwissLogo}
+            alt="SwissStake-Logo"
+          />
         </Link>
 
         <div className="navbar-mobile__hamburger" onClick={toggleMenu}>
@@ -43,7 +47,10 @@ function MobileNavbar() {
         {isOpen && (
           <div
             className={
-              isOpen ? "navbar-mobile__menu navbar-mobile__menu--open" : "navbar-mobile__menu"            }
+              isOpen
+                ? "navbar-mobile__menu navbar-mobile__menu--open"
+                : "navbar-mobile__menu"
+            }
           >
             <div onClick={toggleMenu}>
               <FiX size={30} />

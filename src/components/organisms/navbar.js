@@ -1,34 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-import MobileNavbar from '../molecules/navbar-mobile';
-import DesktopNavbar from '../molecules/navbar-desktop';
+import { MOBILE_BREAKPOINT } from "../atoms/constans";
+
+import MobileNavbar from "../molecules/navbar-mobile";
+import DesktopNavbar from "../molecules/navbar-desktop";
 
 function Navbar() {
-  const [Width, setWidth] = useState(window.innerWidth);
+  // const [width, setwidth] = useState(window.innerWidth);
+  const [isMobile, setIsMobile] = useState(null);
 
   useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
+    const handleResize = () => {
+      // const newwidth = window.innerWidth;
+      // setwidth(newwidth);
+      setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT);
     };
+
+    window.addEventListener("resize", handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  let NavbarSize;
-  if (Width <= 480) {
-    NavbarSize = MobileNavbar;
-  } else if (Width > 480 && Width <= 768) {
-    NavbarSize = MobileNavbar; 
-  } else if (Width > 768 && Width <= 1200) {
-    NavbarSize = DesktopNavbar; 
-  } else {
-    NavbarSize = DesktopNavbar;
-  }
-
   return (
-    <div className='navbar'>
-      <NavbarSize />
+    <div className="navbar">
+      {/* {isMobile === null ? null : isMobile ? (
+        <MobileNavbar />
+      ) : (
+        <DesktopNavbar />
+      )} */}
+      {isMobile ? <MobileNavbar/> : <DesktopNavbar/>}
     </div>
   );
 }
