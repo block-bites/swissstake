@@ -15,7 +15,7 @@
     align-items: center;
     width: 100%;
     max-width: 330px;
-    padding-top: 60px;
+    padding-top: 45px;
   }
 
   @include breakpoint(mobile) {
@@ -24,7 +24,7 @@
     align-items: center;
     width: 100%;
     max-width: 330px;
-    padding-top: 60px;
+    padding-top: 45px;
   }
 }
 
@@ -32,7 +32,6 @@
   display: flex;
   width: 100%;
   align-items: flex-start;
-  align-self: stretch;
   gap: 240px;
   flex-wrap: wrap;
   padding-bottom: 70px;
@@ -42,7 +41,7 @@
     width: 100%;
     align-items: flex-start;
     gap: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   @include breakpoint(tablet) {
@@ -51,16 +50,19 @@
     align-items: flex-start;
     align-self: stretch;
     gap: 70px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
   }
 
   &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     @include breakpoint(mobile) {
       display: flex;
       width: 100%;
       align-items: flex-start;
       gap: 90px;
-      padding-bottom: 30px;
     }
 
     @include breakpoint(tablet) {
@@ -69,13 +71,10 @@
       align-items: flex-start;
       align-self: stretch;
       gap: 90px;
-      padding-bottom: 30px;
     }
 
     &__desktoplogo {
       display: flex;
-      width: 200px;
-      height: 25px;
 
       @include breakpoint(mobile) {
         display: none;
@@ -91,14 +90,10 @@
       @include breakpoint(mobile) {
         display: flex;
         justify-content: left;
-        //width: 200px;
-        //height: 70px;
       }
       @include breakpoint(tablet) {
         display: flex;
         justify-content: left;
-        // width: 200px;
-        // height: 50px;
       }
     }
 
@@ -125,7 +120,7 @@
         font-family: Inter;
         font-size: 24px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 150%; /* 36px */
         border: none;
         background: none;
@@ -137,7 +132,7 @@
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 150%; /* 24px */
           border: none;
           background: none;
@@ -149,7 +144,7 @@
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 150%; /* 24px */
           border: none;
           background: none;
@@ -225,7 +220,7 @@
         font-family: Inter;
         font-size: 24px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 400;
         line-height: 150%; /* 36px */
 
         @include breakpoint(mobile) {
@@ -238,7 +233,7 @@
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 150%; /* 24px */
         }
         @include breakpoint(tablet) {
@@ -251,7 +246,7 @@
           font-family: Inter;
           font-size: 16px;
           font-style: normal;
-          font-weight: 500;
+          font-weight: 400;
           line-height: 150%; /* 24px */
         }
       }

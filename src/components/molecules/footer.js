@@ -21,9 +21,7 @@ function Footer() {
         />
         <div className="footer__content">
           <div className="footer__content__left">
-            <p className="footer__content__left--title">
-              <h4>Navigation</h4>
-            </p>
+            <h4 className="footer__content__left--title">Navigation</h4>
             <Link
               to="about"
               spy={true}
@@ -42,7 +40,9 @@ function Footer() {
               offset={-85}
               exact={true}
             >
-              <button className="footer__content__left--subtitle">Infastructure</button>
+              <button className="footer__content__left--subtitle">
+                Infastructure
+              </button>
             </Link>
             <Link
               to="adopter"
@@ -52,7 +52,9 @@ function Footer() {
               offset={-85}
               exact={true}
             >
-              <button className="footer__content__left--subtitle">Adopter</button>
+              <button className="footer__content__left--subtitle">
+                Adopter
+              </button>
             </Link>
             <Link
               to="join"
@@ -67,9 +69,7 @@ function Footer() {
           </div>
 
           <div className="footer__content__right">
-            <p className="footer__content__right--title">
-              <h4>Social</h4>
-            </p>
+            <h4 className="footer__content__right--title">Social</h4>
 
             <a
               className="footer__content__right--subtitle"
