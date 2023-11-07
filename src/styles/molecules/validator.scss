@@ -10,14 +10,11 @@
 .validator {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  align-items: center;
   justify-content: center;
   padding: 190px;
 
   &__title {
-    width: 100%;
-    max-width: 1000px;
+    justify-content: center;
     display: flex;
     text-align: center;
     color: var(--Black, #1d1d1f);
@@ -27,15 +24,32 @@
     font-weight: 500;
     line-height: 130%;
 
-    &--blue {
-      color: #2b44e7;
-      white-space: nowrap;
-    }
+    // &--blue {
+    //   white-space: nowrap;
+    //   color: #2b44e7;
+    //   text-align: center;
+    //   font-family: Inter;
+    //   font-size: 55px;
+    //   font-style: normal;
+    //   font-weight: 500;
+    //   line-height: 130%; /* 71.5px */
+    // }
 
-    &--blue::after {
-      content: " -";
-      color: black;
-    }
+    // &--blue::after {
+    //   content: " -";
+    //   color: black;
+    // }
+    
+  }
+  &__title::before {
+    content: "SwissStake ";
+    color: #2b44e7;
+    text-align: center;
+    font-family: Inter;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 71.5px */
   }
 
   // &__desktopSubtitle {
