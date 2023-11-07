@@ -6,6 +6,7 @@
   height: 80px;
   justify-content: center;
   align-items: center;
+
   color: #fff;
   text-align: center;
   font-family: Inter;
@@ -17,6 +18,51 @@
   text-align: center;
   border: none;
   text-decoration: none;
+
+  @include breakpoint(tablet) {
+    border-radius: 100px;
+    padding: 12px 24px;
+    display: flex;
+    width: 180px;
+    height: 57px;
+    justify-content: center;
+    align-items: center;
+    background: #2b44e7;
+
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    
+    text-align: center;
+    border: none;
+    text-decoration: none;
+  }
+  @include breakpoint(mobile) {
+    border-radius: 100px;
+    padding: 12px 24px;
+    display: flex;
+    width: 260px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    background: #2b44e7;
+
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+    
+    text-align: center;
+    border: none;
+    text-decoration: none;
+  }
 }
 
 button:hover {

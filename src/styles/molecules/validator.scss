@@ -9,63 +9,164 @@
 
 .validator {
   display: flex;
+  flex-direction: column;
   width: 100%;
   align-items: center;
   justify-content: center;
   padding: 190px;
 
-  &__header {
-    color: var(--Black, #1d1d1f);
+  &__title {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
     text-align: center;
+    color: var(--Black, #1d1d1f);
+    font-family: Inter;
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
 
-    h1 {
-      color: var(--Black, #1d1d1f);
-      font-family: Inter;
-      font-size: 55px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 130%;
-    }
-    .blue {
+    &--blue {
       color: #2b44e7;
       white-space: nowrap;
     }
 
-    .blue::after {
+    &--blue::after {
       content: " -";
       color: black;
     }
-    @include breakpoint(tablet) {
-      text-align: left;
-    }
-    @include breakpoint(mobile) {
-      text-align: left;
-    }
   }
 
-  &__text {
-    color: var(--Black, #1d1d1f);
-    text-align: center;
-    padding: 60px;
+  // &__desktopSubtitle {
+  //   display: flex;
 
-    /* p */
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 150%; /* 30px */
+  //   color: var(--Black, #1d1d1f);
+  //   text-align: center;
+  //   padding: 60px;
 
-    @include breakpoint(tablet) {
-      display: flex;
-      text-align: left;
-      justify-content: left;
-    }
-    @include breakpoint(mobile) {
-      display: flex;
-      text-align: left;
-      justify-content: left;
-    }
-  }
+  //   font-family: Inter;
+  //   font-size: 20px;
+  //   font-style: normal;
+  //   font-weight: 300;
+  //   line-height: 150%;
+
+  //   @include breakpoint(mobile) {
+  //     display: none;
+  //   }
+  //   @include breakpoint(tablet) {
+  //     display: none;
+  //   }
+
+  //   &--mobile {
+  //     display: none;
+  //     padding-top: 20px;
+  //     padding-bottom: 50px;
+
+  //     @include breakpoint(tablet) {
+  //       display: flex;
+  //       text-align: left;
+  //       justify-content: left;
+
+  //       color: var(--Black, #1d1d1f);
+  //       font-family: Inter;
+  //       font-size: 16px;
+  //       font-style: normal;
+  //       font-weight: 300;
+  //       line-height: 150%; /* 24px */
+  //     }
+  //     @include breakpoint(mobile) {
+  //       display: flex;
+  //       text-align: left;
+  //       justify-content: left;
+
+  //       color: var(--Black, #1d1d1f);
+  //       font-family: Inter;
+  //       font-size: 16px;
+  //       font-style: normal;
+  //       font-weight: 300;
+  //       line-height: 150%; /* 24px */
+  //     }
+  //   }
+  // }
+
+  // &__title-mobile {
+  //   display: none;
+
+  //   @include breakpoint(tablet) {
+  //     display: flex;
+  //     text-align: left;
+  //     justify-content: left;
+
+  //     color: var(--Black, #1d1d1f);
+  //     font-family: Inter;
+  //     font-size: 40px;
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     line-height: 130%;
+  //   }
+  //   @include breakpoint(mobile) {
+  //     display: flex;
+  //     text-align: left;
+  //     justify-content: left;
+
+  //     color: var(--Black, #1d1d1f);
+  //     font-family: Inter;
+  //     font-size: 40px;
+  //     font-style: normal;
+  //     font-weight: 500;
+  //     line-height: 130%;
+  //   }
+
+  //   &--blue {
+  //     display: none;
+
+  //     @include breakpoint(tablet) {
+  //       color: #2b44e7;
+  //       font-family: Inter;
+  //       font-size: 40px;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       line-height: 130%; /* 52px */
+  //       white-space: nowrap;
+  //     }
+  //     @include breakpoint(mobile) {
+  //       color: #2b44e7;
+  //       font-family: Inter;
+  //       font-size: 40px;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       line-height: 130%; /* 52px */
+  //       white-space: nowrap;
+  //     }
+  //   }
+  //   &--blue::after {
+  //     display: none;
+
+  //     @include breakpoint(tablet) {
+  //       color: var(--Black, #1d1d1f);
+  //       font-family: Inter;
+  //       font-size: 40px;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       line-height: 130%;
+  //       content: " -";
+  //     }
+  //     @include breakpoint(mobile) {
+  //       color: var(--Black, #1d1d1f);
+  //       font-family: Inter;
+  //       font-size: 40px;
+  //       font-style: normal;
+  //       font-weight: 500;
+  //       line-height: 130%;
+  //       content: " -";
+  //     }
+  //   }
+  // }
+
+  // &__subtitle-mobile {
+  // }
+
   &__button {
     display: flex;
     justify-content: center;
