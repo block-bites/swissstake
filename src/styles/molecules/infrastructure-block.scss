@@ -14,8 +14,24 @@ $color-block3: #fef1ff;
   margin-left: 0;
   margin-right: 0;
 
-  
-  
+  @include breakpoint(tablet) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 10px;
+  }
 
   &__title {
     padding: 30px;
@@ -25,6 +41,25 @@ $color-block3: #fef1ff;
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 36px */
+
+    @include breakpoint(tablet) {
+      padding: 10px;
+      color: var(--Black, #1d1d1f);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+    }
+    @include breakpoint(mobile) {
+      padding: 10px;
+      color: var(--Black, #1d1d1f);
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+    }
   }
 
   &__text {
@@ -36,30 +71,87 @@ $color-block3: #fef1ff;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
+
+    @include breakpoint(tablet) {
+      padding: 10px;
+      color: var(--Black, #1d1d1f);
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+      width: 300px;
+    }
+    @include breakpoint(mobile) {
+      padding: 10px;
+      color: var(--Black, #1d1d1f);
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+      width: 300px;
+    }
   }
 
   &__img {
     width: 100%;
     height: 170px;
-    margin-top: 20px; 
-    
+    margin-top: 20px;
+
+    @include breakpoint(tablet) {
+      width: 310px;
+      height: 100px;
+      margin-top: 0px;
+    }
+    @include breakpoint(mobile) {
+      width: 310px;
+      height: 100px;
+      margin-top: 0px;
+    }
 
     &.image1 {
       background-color: $color-block1;
       border-radius: 24px;
+
+      @include breakpoint(tablet) {
+        background-color: $color-block1;
+        border-radius: 0px 6px;
+      }
+      @include breakpoint(mobile) {
+        background-color: $color-block1;
+        border-radius: 0px 6px;
+      }
     }
 
     &.image2 {
       background-color: $color-block2;
       border-radius: 24px;
 
+      @include breakpoint(tablet) {
+        background-color: $color-block2;
+        border-radius: 0px 15px;
+      }
+      @include breakpoint(mobile) {
+        background-color: $color-block2;
+        border-radius: 0px 15px;
+      }
     }
 
     &.image3 {
       background-color: $color-block3;
       border-radius: 24px;
 
+      @include breakpoint(tablet) {
+        background-color: $color-block3;
+        border-radius: 0px 15px;
+      }
+      @include breakpoint(mobile) {
+        background-color: $color-block3;
+        border-radius: 0px 15px;
+      }
     }
-
   }
 }

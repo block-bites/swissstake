@@ -6,6 +6,15 @@
   flex-direction: column;
   padding: 170px;
   //border: 1px solid red;
+
+  @include breakpoint(tablet) {
+    display: flex;
+    padding: 60px;
+  }
+  @include breakpoint(mobile) {
+    display: flex;
+    padding: 60px;
+  }
 }
 
 .infrastructure {
@@ -18,7 +27,6 @@
   align-items: center;
   flex-direction: column;
   padding: 0;
-  
 
   &__blocks-in-row {
     display: flex;
@@ -37,8 +45,6 @@
     }
   }
   &__subtitle {
-    color: var(--Black, #1d1d1f);
-    text-align: center;
     padding: 25px;
 
     color: var(--Black, #1d1d1f);
@@ -48,12 +54,32 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 27px */
+
+    @include breakpoint(tablet) {
+      padding: 20px;
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 157.5%; /* 22.05px */
+      width: 300px;
+    }
+    @include breakpoint(mobile) {
+      padding: 20px;
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 157.5%; /* 22.05px */
+      width: 300px;
+    }
   }
 
   &__title {
-    color: var(--Black, #1d1d1f);
-    text-align: center;
-
     color: var(--Black, #1d1d1f);
     text-align: center;
     font-family: Inter;
@@ -61,6 +87,27 @@
     font-style: normal;
     font-weight: 500;
     line-height: 150%; /* 60px */
+
+    @include breakpoint(tablet) {
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 27px */
+      width: 300px;
+    }
+    @include breakpoint(mobile) {
+      color: #000;
+      text-align: center;
+      font-family: Inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 27px */
+      width: 300px;
+    }
   }
 
   &__text {
@@ -73,6 +120,31 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 36px */
+
+    @include breakpoint(tablet) {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      width: 300px;
+      color: var(--grey-disable, #7e7f88);
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+    @include breakpoint(mobile) {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      width: 300px;
+      color: var(--grey-disable, #7e7f88);
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
   }
 
   &__header {
@@ -80,5 +152,18 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      max-width: 300px;
+    }
+    @include breakpoint(mobile) {
+      flex-direction: column;
+      display: flex;
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
