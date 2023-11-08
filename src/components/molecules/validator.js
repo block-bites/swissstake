@@ -6,10 +6,10 @@ function Validator() {
     <div className="validator-positioner">
       <div className="validator">
         <h1 className="validator__title">
-          <span>SwissStake</span>
-          - Your Swiss Validator <br /> on <br /> the Casper Network
+          <span className="validator__title--blue">SwissStake</span> - Your
+          Swiss Validator <br />
+          on <br /> the Casper Network
         </h1>
-
         {/* <div className="validator__mobile">
           <h1 className="validator__mobile">
             <span className="validator__mobile--blue">SwissStake</span> Your Swiss Validator <br /> on{" "}

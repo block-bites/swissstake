@@ -15,7 +15,7 @@ function Index() {
   return (
     <>
       <Navbar />
-      {/* <Intro /> */}
+      <Intro />
       {/* <Animation /> */}
       {/* <Infrastructure /> */}
       {/* <Experienced />
