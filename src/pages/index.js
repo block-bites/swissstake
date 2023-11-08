@@ -14,10 +14,10 @@ function Index() {
 
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       {/* <Intro /> */}
       {/* <Animation /> */}
-      <Infrastructure />
+      {/* <Infrastructure /> */}
       {/* <Experienced />
       <Footer /> */}
     </>
