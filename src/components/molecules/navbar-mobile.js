@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import Navbutton from "../atoms/nav-btn";
 import SwissLogo from "../../assets/mobile-logo.svg";
 import { FiMenu, FiX } from "react-icons/fi";
-import TelegramIcon from "../../assets/navbar-moble-icon.png";
+import TelegramIcon from "../../assets/navbar-mobile-icon.svg";
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,7 +40,7 @@ function MobileNavbar() {
         </div>
 
         {isOpen && (
-          <div className="navbar-mobile__hamburger-close" onClick={toggleMenu}>
+          <div className="navbar-mobile__menu--close" onClick={toggleMenu}>
             <FiX />
           </div>
         )}
@@ -103,10 +103,14 @@ function MobileNavbar() {
             </Link>
 
             <div className="navbar-mobile__menu--line">
-              <img
+              <a
                 className="navbar-mobile__menu--telegram"
-                src={TelegramIcon}
-              ></img>
+                href="https://t.me/piotr_dz"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={TelegramIcon} alt="Telegram" />
+              </a>
             </div>
           </div>
         )}
