@@ -20,13 +20,12 @@
   text-decoration: none;
 
   @include breakpoint(tablet) {
-    border-radius: 100px;
-    padding: 12px 24px;
+    border-radius: 70px;
+    padding: 10px 20px;
+    gap: 10px;
     display: flex;
-    width: 180px;
-    height: 57px;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: 70px;
     background: #2b44e7;
 
     color: #fff;
@@ -42,13 +41,11 @@
     text-decoration: none;
   }
   @include breakpoint(mobile) {
-    border-radius: 100px;
-    padding: 12px 24px;
+    border-radius: 70px;
+    padding: 10px 20px;
     display: flex;
-    width: 260px;
-    height: 80px;
-    justify-content: center;
-    align-items: center;
+    width: 200px;
+    height: 70px;
     background: #2b44e7;
 
     color: #fff;

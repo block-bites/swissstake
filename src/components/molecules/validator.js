@@ -5,29 +5,28 @@ function Validator() {
   return (
     <div className="validator-positioner">
       <div className="validator">
-        <h1 className="validator__title">
-          <span className="validator__title--blue">SwissStake</span> - Your
-          Swiss Validator <br />
+        <h1 className="validator__desktop-title">
+          <span className="validator__desktop-title--blue">SwissStake</span> -
+          Your Swiss Validator <br />
           on <br /> the Casper Network
         </h1>
-        {/* <div className="validator__mobile">
-          <h1 className="validator__mobile">
-            <span className="validator__mobile--blue">SwissStake</span> Your Swiss Validator <br /> on{" "}
-            <br /> the Casper Network
-          </h1>
-        </div> */}
 
-        {/* <div className="validator__desktopSubtitle">
+        <h1 className="validator__mobile-title">
+          <span className="validator__mobile-title--blue">SwissStake</span> -<br />
+          Your Swiss<br /> Validator on <br />the Casper<br /> Network
+        </h1>
+
+        <div className="validator__subtitle">
           <p className="validator__subtitle">
             Start staking with SwissStake and experience the difference that our
             unique <br /> advantages bring. Whether you're new to staking or a
             seasoned pro, we're here to <br /> support you every step of the
             way.
           </p>
-        </div> */}
+        </div>
 
-        {/* <div className="validator__mobile">
-          <p className="validator__mobile">
+        <div className="validator__mobile-subtitle">
+          <p className="validator__mobile-subtitle">
             Start staking with SwissStake and
             <br /> experience the difference that our
             <br />
@@ -36,7 +35,7 @@ function Validator() {
             seasoned pro, we're here to <br /> support you every step of the
             way.
           </p>
-        </div> */}
+        </div>
 
         <div className="validator__button">
           <Primarybtn />
