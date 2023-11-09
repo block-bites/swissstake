@@ -15,7 +15,8 @@
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 20px;
-  margin-right: 70px;
+  margin-right: 40px;
+  margin-left: 40px;
 
   &__logo {
     display: flex;
@@ -23,16 +24,15 @@
     align-items: center;
     width: 60px;
     height: auto;
-    margin-left: 70px;
 
-    &:hover {
+    &:active {
       cursor: pointer;
     }
   }
 
   &__hamburger {
     display: flex;
-    &:hover {
+    &:active {
       cursor: pointer;
     }
   }
@@ -52,6 +52,10 @@
     z-index: 3;
     margin-top: 20px;
 
+    &:active {
+      cursor: pointer;
+    }
+
     &--icon {
       width: 100%;
       color: white;
@@ -62,7 +66,7 @@
       margin-top: 40px;
       margin-right: 180px;
 
-      &:hover {
+      &:active {
         cursor: pointer;
       }
     }

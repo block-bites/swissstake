@@ -4,9 +4,19 @@
   background: url("../assets/Intro-test.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  // background-attachment: fixed;
   background-position: 30% 40%;
-  width: 100%;
+
+  @include breakpoint(mobile) {
+    position: relative;
+    width: 100%;
+    background: url("../assets/Intro-mobile.svg");
+    background-size: 120% 110%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+  }
+  @include breakpoint(tablet) {
+    display: none;
+  }
 
   &__block {
     position: relative;
@@ -19,10 +29,39 @@
       rgba(2, 65, 160, 0.45) 63.32%,
       rgba(0, 59, 147, 0.64) 88%
     );
-    //z-index: 1;
     height: 300px;
     bottom: 0;
-    // transform: translateY(100%);
+
+    @include breakpoint(mobile) {
+      position: relative;
+      margin-top: 260px;
+      width: 100%;
+      height: 300px;
+      bottom: 0;
+
+      background: linear-gradient(
+        187deg,
+        rgba(5, 78, 187, 0),
+        rgba(4, 72, 174, 0.43),
+        rgba(1, 62, 153, 0.79),
+        rgba(0, 59, 147, 1)
+      );
+    }
+    @include breakpoint(tablet) {
+      position: relative;
+      margin-top: 260px;
+      width: 100%;
+      height: 300px;
+      bottom: 0;
+
+      background: linear-gradient(
+        187deg,
+        rgba(5, 78, 187, 0),
+        rgba(4, 72, 174, 0.43),
+        rgba(1, 62, 153, 0.79),
+        rgba(0, 59, 147, 1)
+      );
+    }
   }
 }
 
@@ -40,6 +79,13 @@
   opacity: 0.3;
   filter: blur(270px);
   z-index: -1;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }
 
 .page::after {
@@ -55,4 +101,11 @@
   opacity: 0.3;
   filter: blur(270px);
   z-index: -1;
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
+  @include breakpoint(tablet) {
+    display: none;
+  }
 }

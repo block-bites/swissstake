@@ -10,6 +10,7 @@ function Intro() {
           <Validator />
         </div>
       </div>
+
       <div className="page__block">
         <Whychoose />
       </div>
