@@ -9,11 +9,11 @@
 
   @include breakpoint(tablet) {
     display: flex;
-    padding: 60px;
+    padding: 0px;
   }
   @include breakpoint(mobile) {
     display: flex;
-    padding: 60px;
+    padding: 00px;
   }
 }
 

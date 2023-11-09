@@ -1,20 +1,39 @@
-.parallax-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.parallax {
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  position: relative;
+.outer-container {
   width: 100%;
   max-width: 1440px;
   height: 900px;
+  display: flex;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
+
+  @include breakpoint(tablet) {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+  }
 }
 
-.parallax-image {
-  position: absolute;
+.image {
   width: 100%;
-}
+  max-width: 400px;
+  height: 300px;
+  display: flex;
 
+  @include breakpoint(mobile) {
+    width: 100%;
+  max-width: 400px;
+  height: 300px;
+  display: flex;
+  }
+
+  @include breakpoint(tablet) {
+    width: 100%;
+  max-width: 400px;
+  height: 300px;
+  display: flex;
+  }
+}
