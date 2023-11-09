@@ -15,7 +15,12 @@
     background-position: 60% 50%;
   }
   @include breakpoint(tablet) {
-    display: none;
+    position: relative;
+    width: 100%;
+    background: url("../assets/Intro-mobile.svg");
+    background-size: 120% 110%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
   }
 
   &__block {
