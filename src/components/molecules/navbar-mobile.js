@@ -3,15 +3,11 @@ import { Link } from "react-scroll";
 
 import Navbutton from "../atoms/nav-btn";
 import SwissLogo from "../../assets/mobile-logo.svg";
-import { FiMenu, FiX } from "react-icons/fi";
+import Hamburger from "hamburger-react";
 import TelegramIcon from "../../assets/navbar-mobile-icon.svg";
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   const handleClick = (to) => {
     setIsOpen(false);
@@ -35,28 +31,12 @@ function MobileNavbar() {
           />
         </Link>
 
-        <div className="navbar-mobile__hamburger" onClick={toggleMenu}>
-          {!isOpen && <FiMenu size={40} />}
+        <div className="navbar-mobile__hamburger">
+          <Hamburger toggled={isOpen} onToggle={setIsOpen} />
         </div>
 
         {isOpen && (
-          <div className="navbar-mobile__menu--close" onClick={toggleMenu}>
-            <FiX />
-          </div>
-        )}
-
-        {isOpen && (
-          <div
-            className={
-              isOpen
-                ? "navbar-mobile__menu navbar-mobile__menu--open"
-                : "navbar-mobile__menu"
-            }
-          >
-            <div className="navbar-mobile__menu--icon" onClick={toggleMenu}>
-              <FiX size={40} />
-            </div>
-
+          <div className="navbar-mobile__menu">
             <Link
               to="about"
               spy={true}
