@@ -14,7 +14,7 @@ function Index() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>SwissStake</title>
+        <title>| SwissStake</title>
         <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
       </Helmet>
       <Navbar />
