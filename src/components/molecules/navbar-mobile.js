@@ -23,6 +23,7 @@ function MobileNavbar() {
           duration={500}
           offset={-100}
           exact={true}
+          onClick={() => handleClick("top")}
         >
           <img
             className="navbar-mobile__logo"
