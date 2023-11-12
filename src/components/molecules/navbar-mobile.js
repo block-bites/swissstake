@@ -32,18 +32,25 @@ function MobileNavbar() {
           />
         </Link>
 
-        <div className="navbar-mobile__hamburger">
-          <Hamburger toggled={isOpen} onToggle={setIsOpen} />
+        <div
+          className={`mobile-hamburger ${
+            isOpen
+              ? "mobile-hamburger__toggled"
+              : "mobile-hamburger__deafult"
+          }`}
+        >
+          <Hamburger toggled={isOpen} toggle={setIsOpen} />
         </div>
 
         {isOpen && (
           <div className="navbar-mobile__menu">
+            <div className="navbar-mobile__menu--content" >
             <Link
               to="about"
               spy={true}
               smooth={true}
               duration={500}
-              offset={-85}
+              offset={5}
               exact={true}
               onClick={() => handleClick("about")}
             >
@@ -54,7 +61,7 @@ function MobileNavbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-85}
+              offset={-50}
               exact={true}
               onClick={() => handleClick("infractructure")}
             >
@@ -65,7 +72,7 @@ function MobileNavbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-85}
+              offset={5}
               exact={true}
               onClick={() => handleClick("adopter")}
             >
@@ -76,7 +83,7 @@ function MobileNavbar() {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-255}
+              offset={-25}
               exact={true}
               onClick={() => handleClick("join")}
             >
@@ -92,6 +99,7 @@ function MobileNavbar() {
               >
                 <img src={TelegramIcon} alt="Telegram" />
               </a>
+            </div>
             </div>
           </div>
         )}
