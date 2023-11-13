@@ -14,10 +14,17 @@
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 30px */
-  background: #2b44e7;
+  background: $c-blue-main;
   text-align: center;
   border: none;
   text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #fff;
+    border: 2px solid $c-blue-main;
+    color: $c-blue-main;
+  }
 
   @include breakpoint(tablet) {
     border-radius: 70px;
@@ -26,7 +33,7 @@
     display: flex;
     width: 200px;
     height: 70px;
-    background: #2b44e7;
+    background: $c-blue-main;
 
     color: #fff;
     text-align: center;
@@ -35,7 +42,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 21px */
-    
+
     text-align: center;
     border: none;
     text-decoration: none;
@@ -46,7 +53,7 @@
     display: flex;
     width: 200px;
     height: 70px;
-    background: #2b44e7;
+    background: $c-blue-main;
 
     color: #fff;
     text-align: center;
@@ -55,7 +62,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 150%; /* 21px */
-    
+
     text-align: center;
     border: none;
     text-decoration: none;
