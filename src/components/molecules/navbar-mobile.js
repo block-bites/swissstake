@@ -18,11 +18,10 @@ function MobileNavbar() {
       <div className="navbar-mobile">
         <Link
           to="top"
-          spy={true}
-          smooth={true}
+          spy
+          smooth
           duration={500}
           offset={-100}
-          exact={true}
           onClick={() => handleClick("top")}
         >
           <img
@@ -34,9 +33,7 @@ function MobileNavbar() {
 
         <div
           className={`mobile-hamburger ${
-            isOpen
-              ? "mobile-hamburger__toggled"
-              : "mobile-hamburger__deafult"
+            isOpen ? "mobile-hamburger__toggled" : "mobile-hamburger__deafult"
           }`}
         >
           <Hamburger toggled={isOpen} toggle={setIsOpen} />
@@ -44,62 +41,58 @@ function MobileNavbar() {
 
         {isOpen && (
           <div className="navbar-mobile__menu">
-            <div className="navbar-mobile__menu--content" >
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={5}
-              exact={true}
-              onClick={() => handleClick("about")}
-            >
-              <Navbutton text={"About"} />
-            </Link>
-            <Link
-              to="infractructure"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-50}
-              exact={true}
-              onClick={() => handleClick("infractructure")}
-            >
-              <Navbutton text={"Infrastructure"} />
-            </Link>
-            <Link
-              to="adopter"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={5}
-              exact={true}
-              onClick={() => handleClick("adopter")}
-            >
-              <Navbutton text={"Adopter"} />
-            </Link>
-            <Link
-              to="join"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-25}
-              exact={true}
-              onClick={() => handleClick("join")}
-            >
-              <Navbutton text={"Join"} />
-            </Link>
-
-            <div className="navbar-mobile__menu--line">
-              <a
-                className="navbar-mobile__menu--telegram"
-                href="https://t.me/piotr_dz"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="navbar-mobile__menu--content">
+              <Link
+                to="about"
+                spy
+                smooth
+                duration={500}
+                offset={5}
+                onClick={() => handleClick("about")}
               >
-                <img src={TelegramIcon} alt="Telegram" />
-              </a>
-            </div>
+                <Navbutton text={"About"} />
+              </Link>
+              <Link
+                to="infractructure"
+                spy
+                smooth
+                duration={500}
+                offset={-50}
+                onClick={() => handleClick("infractructure")}
+              >
+                <Navbutton text={"Infrastructure"} />
+              </Link>
+              <Link
+                to="adopter"
+                spy
+                smooth
+                duration={500}
+                offset={5}
+                onClick={() => handleClick("adopter")}
+              >
+                <Navbutton text={"Adopter"} />
+              </Link>
+              <Link
+                to="join"
+                spy
+                smooth
+                duration={500}
+                offset={-25}
+                onClick={() => handleClick("join")}
+              >
+                <Navbutton text={"Join"} />
+              </Link>
+
+              <div className="navbar-mobile__menu--line">
+                <a
+                  className="navbar-mobile__menu--telegram"
+                  href="https://t.me/piotr_dz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={TelegramIcon} alt="Telegram" />
+                </a>
+              </div>
             </div>
           </div>
         )}

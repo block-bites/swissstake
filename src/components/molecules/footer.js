@@ -22,48 +22,20 @@ function Footer() {
         <div className="footer__content">
           <div className="footer__content__left">
             <h4 className="footer__content__left--title">Navigation</h4>
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-85}
-              exact={true}
-            >
+            <Link to="about" spy smooth duration={500} offset={-85}>
               <button className="footer__content__left--subtitle">About</button>
             </Link>
-            <Link
-              to="infractructure"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-85}
-              exact={true}
-            >
+            <Link to="infractructure" spy smooth duration={500} offset={-85}>
               <button className="footer__content__left--subtitle">
                 Infastructure
               </button>
             </Link>
-            <Link
-              to="adopter"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-85}
-              exact={true}
-            >
+            <Link to="adopter" spy smooth duration={500} offset={-85}>
               <button className="footer__content__left--subtitle">
                 Adopter
               </button>
             </Link>
-            <Link
-              to="join"
-              spy={true}
-              smooth={true}
-              duration={500}
-              offset={-85}
-              exact={true}
-            >
+            <Link to="join" spy smooth duration={500} offset={-85}>
               <button className="footer__content__left--subtitle">Join</button>
             </Link>
           </div>
