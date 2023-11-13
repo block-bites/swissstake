@@ -7,14 +7,14 @@ import Animation from "../components/organisms/animation";
 import Navbar from "../components/organisms/navbar";
 import Experienced from "../components/organisms/experienced";
 import Footer from "../components/molecules/footer";
-import favicon from "../assets/favicon.png";
+import favicon from "../assets/Favicon 20_20.png";
 
 function Index() {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>| SwissStake</title>
+        <title> SwissStake</title>
         <link rel="icon" type="image/png" href={favicon} sizes="32x32" />
       </Helmet>
       <Navbar />

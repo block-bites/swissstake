@@ -73,7 +73,7 @@ function Footer() {
 
             <a
               className="footer__content__right--subtitle"
-              href="https://t.me/piotr_dz"
+              href="https://t.me/joinchat/XuVh94v4X3o4Yjk8"
               target="_blank"
               rel="noopener noreferrer"
             >
