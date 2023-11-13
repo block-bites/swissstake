@@ -86,10 +86,12 @@
   z-index: -1;
 
   @include breakpoint(mobile) {
-    display: none;
+    display: flex;
+    opacity: 0.1;
   }
   @include breakpoint(tablet) {
-    display: none;
+    display: flex;
+    opacity: 0.1;
   }
 }
 
@@ -108,9 +110,13 @@
   z-index: -1;
 
   @include breakpoint(mobile) {
-    display: none;
+    display: flex;
+    opacity: 0.2;
+    bottom: 1;
   }
   @include breakpoint(tablet) {
-    display: none;
+    display: flex;
+    opacity: 0.2;
+    bottom: 1;
   }
 }

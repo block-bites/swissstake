@@ -47,7 +47,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={5}
+                offset={-94}
                 onClick={() => handleClick("about")}
               >
                 <Navbutton text={"About"} />
@@ -57,7 +57,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-50}
+                offset={-144}
                 onClick={() => handleClick("infractructure")}
               >
                 <Navbutton text={"Infrastructure"} />
@@ -67,7 +67,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={5}
+                offset={-95}
                 onClick={() => handleClick("adopter")}
               >
                 <Navbutton text={"Adopter"} />
@@ -77,7 +77,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-25}
+                offset={-164}
                 onClick={() => handleClick("join")}
               >
                 <Navbutton text={"Join"} />
@@ -86,7 +86,7 @@ function MobileNavbar() {
               <div className="navbar-mobile__menu--line">
                 <a
                   className="navbar-mobile__menu--telegram"
-                  href="https://t.me/piotr_dz"
+                  href="https://t.me/joinchat/XuVh94v4X3o4Yjk8"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -9,6 +9,7 @@
   border-radius: 135.034px;
   background: #fff;
   text-decoration: none;
+  transition: all 0.3s;
 
   @include breakpoint(mobile) {
     display: flex;
@@ -62,7 +63,19 @@
       font-weight: 600;
       line-height: 150%; /* 18px */
     }
+
   }
+
+  &:hover {
+    background: white;
+    border: 5px solid #3C2350;
+    color: #fff;
+  }
+
+}
+
+.tertiary-btn:hover .tertiary-btn__title {
+  color: #583275;
 }
 
 button:hover {

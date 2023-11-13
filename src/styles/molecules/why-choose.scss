@@ -59,6 +59,22 @@
     border-radius: 24px;
     box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
 
+    @include breakpoint(laptop) {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      gap: 50px;
+      position: relative;
+      background: rgb(88, 50, 117);
+      background: linear-gradient(
+        267deg,
+        #44888b 7.52%,
+        #2b44e7 41.97%,
+        #583275 96.83%
+      );
+      border-radius: 24px;
+      box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
+    }
     @include breakpoint(mobile) {
       display: flex;
       width: 100%;
@@ -193,6 +209,10 @@
     position: relative;
     max-width: 560px;
 
+    @include breakpoint(laptop) {
+      max-width: 460px;
+    }
+
     @include breakpoint(mobile) {
       max-width: 300px;
     }
@@ -210,6 +230,15 @@
     right: -40px;
     bottom: 50px;
 
+    @include breakpoint(laptop) {
+      max-width: 50vw;
+      border-radius: 24px;
+      background: #bcfc07;
+      padding: 40px;
+      position: absolute;
+      right: 0px;
+      bottom: 120px;
+    }
     @include breakpoint(mobile) {
       max-width: 300px;
       border-radius: 15px;
@@ -234,6 +263,10 @@
     width: 100%;
     height: auto;
 
+    @include breakpoint(laptop) {
+      width: 100%;
+      height: auto;
+    }
     @include breakpoint(mobile) {
       width: 250px;
     }

@@ -46,6 +46,12 @@
     text-align: center;
     border: none;
     text-decoration: none;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid $c-blue-main;
+      color: $c-blue-main;
+    }
   }
   @include breakpoint(mobile) {
     border-radius: 70px;
@@ -66,6 +72,12 @@
     text-align: center;
     border: none;
     text-decoration: none;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid $c-blue-main;
+      color: $c-blue-main;
+    }
   }
 }
 

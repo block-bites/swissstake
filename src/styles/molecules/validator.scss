@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 160px;
     padding-bottom: 50px;
   }
   @include breakpoint(tablet) {
@@ -26,12 +26,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 160px;
     padding-bottom: 50px;
   }
 
   &__desktop-title {
-    // min-width: 400px;
     justify-content: center;
     text-align: center;
     color: var(--Black, #1d1d1f);
