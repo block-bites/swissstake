@@ -1,11 +1,31 @@
 import React from "react";
 import { Link } from "react-scroll";
+import useIsMobile from "../atoms/isMobile";
 
 import desktopLogo from "../../assets/swissStake-logo.svg";
 import mobileLogo from "../../assets/mobile-logo.svg";
 import telegram from "../../assets/telegramicon.svg";
 
 function Footer() {
+  const isMobile = useIsMobile();
+
+  const mobileOffset = (linkTarget) => {
+    if (isMobile) {
+      switch (linkTarget) {
+        case "about":
+          return -85;
+        case "infrastructure":
+          return -144;
+        case "adopter":
+          return -85;
+        case "join":
+          return -160;
+      }
+    } else {
+      return -85; //desktop
+    }
+  };
+
   return (
     <div className="footer-positioner">
       <div className="footer">
@@ -22,20 +42,44 @@ function Footer() {
         <div className="footer__content">
           <div className="footer__content__left">
             <h4 className="footer__content__left--title">Navigation</h4>
-            <Link to="about" spy smooth duration={500} offset={-85}>
+            <Link
+              to="about"
+              spy
+              smooth
+              duration={500}
+              offset={mobileOffset("about")}
+            >
               <button className="footer__content__left--subtitle">About</button>
             </Link>
-            <Link to="infractructure" spy smooth duration={500} offset={-85}>
+            <Link
+              to="infractructure"
+              spy
+              smooth
+              duration={500}
+              offset={mobileOffset("infrastructure")}
+            >
               <button className="footer__content__left--subtitle">
                 Infastructure
               </button>
             </Link>
-            <Link to="adopter" spy smooth duration={500} offset={-85}>
+            <Link
+              to="adopter"
+              spy
+              smooth
+              duration={500}
+              offset={mobileOffset("adopter")}
+            >
               <button className="footer__content__left--subtitle">
                 Adopter
               </button>
             </Link>
-            <Link to="join" spy smooth duration={500} offset={-85}>
+            <Link
+              to="join"
+              spy
+              smooth
+              duration={500}
+              offset={mobileOffset("join")}
+            >
               <button className="footer__content__left--subtitle">Join</button>
             </Link>
           </div>
