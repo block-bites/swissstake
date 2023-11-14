@@ -11,9 +11,6 @@ function Tertiarybtn() {
       >
         <p className="tertiary-btn__title">Get Started</p>
       </a>
-      {/* <button className="tertiary-btn">
-        <p className="tertiary-btn__title">Get Started</p>
-      </button> */}
     </div>
   );
 }

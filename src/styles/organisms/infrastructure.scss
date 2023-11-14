@@ -5,7 +5,6 @@
   align-items: center;
   flex-direction: column;
   padding: 170px;
-  //border: 1px solid red;
 
   @include breakpoint(tablet) {
     display: flex;
@@ -20,7 +19,6 @@
 .infrastructure {
   width: 100%;
   max-width: 1440px;
-  //border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

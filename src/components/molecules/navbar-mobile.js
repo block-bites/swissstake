@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
+
 import SwissLogo from "../../assets/mobile-logo.svg";
-import Hamburger from "hamburger-react";
 import TelegramIcon from "../../assets/navbar-mobile-icon.svg";
 
 function MobileNavbar() {

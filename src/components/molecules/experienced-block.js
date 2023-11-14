@@ -1,8 +1,9 @@
 import React from "react";
 
-import Iconknowledge from "../../assets/Iconknowledge.svg"
-import IconInnovation from "../../assets/IconInnovation.svg"
-import Iconcommitment from "../../assets/Iconcommitment.svg"
+import Iconknowledge from "../../assets/Iconknowledge.svg";
+import IconInnovation from "../../assets/IconInnovation.svg";
+import Iconcommitment from "../../assets/Iconcommitment.svg";
+
 
 function ExperiencedBlock() {
   return (

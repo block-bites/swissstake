@@ -1,4 +1,5 @@
 import React from "react";
+
 import Primarybtn from "../atoms/primary-btn";
 
 function Validator() {

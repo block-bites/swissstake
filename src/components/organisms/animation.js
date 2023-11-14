@@ -1,10 +1,11 @@
 import React from "react";
-import First from "../../assets/First-animation.png";
+
+import Animation from "../../assets/Fourth-animation.png";
 
 function ImageScroller() {
   return (
     <div className="outer-container" id="about">
-      <img src={First} alt="first" className="image" />
+      <img src={Animation} alt="animation" className="image" />
     </div>
   );
 }
