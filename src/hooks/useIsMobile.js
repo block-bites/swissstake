@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { MOBILE_BREAKPOINT } from "./constans";
+import { MOBILE_BREAKPOINT } from "../constans";
 
 export const useIsMobile = () => {
   const isBrowser = typeof window !== "undefined";
@@ -16,7 +16,7 @@ export const useIsMobile = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    
+
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);

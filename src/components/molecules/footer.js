@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import useIsMobile from "../atoms/isMobile";
+import useIsMobile from "../../hooks/useIsMobile";
 
 import desktopLogo from "../../assets/swissStake-logo.svg";
 import mobileLogo from "../../assets/mobile-logo.svg";

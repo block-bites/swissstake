@@ -1,6 +1,6 @@
 import React from "react";
 
-import useIsMobile from "../atoms/isMobile";
+import useIsMobile from "../../hooks/useIsMobile";
 
 import MobileNavbar from "../molecules/navbar-mobile";
 import DesktopNavbar from "../molecules/navbar-desktop";
