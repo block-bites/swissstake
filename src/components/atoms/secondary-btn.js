@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Secondarybtn() {
-  return (
-    <button>Book a Call</button>
-  )
+  return <button className="secondary-btn">Book a call</button>;
 }
 
-export default Secondarybtn
+export default Secondarybtn;

@@ -1,0 +1,111 @@
+.mobile-experiencedblocks-positioner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #003b93;
+}
+
+.mobile-experienced-header {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 80px;
+
+  &__subtitle {
+    padding-top: 80px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 27px */
+  }
+
+  &__text {
+    padding-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+  }
+}
+.mobile-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 100px;
+  padding-bottom: 30px;
+  gap: 240px;
+  position: relative;
+
+  .mobile-experiencedblocks {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+
+    &__title {
+      padding-top: 40px;
+      padding-bottom: 10px;
+      color: #fff;
+      text-align: center;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+    }
+
+    &__text {
+      color: #fff;
+      text-align: center;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 21px */
+    }
+
+    &__image1 {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+    }
+    &__image2 {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+    }
+    &__image3 {
+      width: 100%;
+      max-width: 160px;
+      height: auto;
+    }
+  }
+
+  .arrow-left {
+    position: absolute;
+    left: -40%;
+    border: none;
+    background: none;
+    transform: rotate(180deg);
+  }
+
+  .arrow-right {
+    position: absolute;
+    right: -40%;
+    border: none;
+    background: none;
+    transform: rotate(180deg);
+  }
+}

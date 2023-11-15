@@ -1,34 +1,32 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import "../styles/App.scss";
 
 import Intro from "../components/organisms/intro";
 import Infrastructure from "../components/organisms/infrastructure";
-import Join from "../components/molecules/join";
-import Metal from "../components/organisms/metal";
+import Animation from "../components/organisms/animation";
+import Navbar from "../components/organisms/navbar";
+import Experienced from "../components/organisms/experienced";
+import Footer from "../components/molecules/footer";
 
-function index() {
+import favicon from "../../static/favicon.ico";
+
+function Index() {
   return (
-    <div>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>SwissStake</title>
+        <link rel="icon" href={favicon} />
+      </Helmet>
+      <Navbar />
       <Intro />
-      <Metal />
+      <Animation />
       <Infrastructure />
-
-      <div>
-        <h2>Experienced Casper Adopter</h2>
-        <p>
-          Managed by an individual deeply involved with the Casper ecosystem,
-          SwissStake brings unparalleled expertise to the table:
-        </p>
-      </div>
-      <p>
-        Knowledge: In-depth understanding of the Casper Network's intricacies.
-        Commitment: Running since the beginning of the Casper mainnet,
-        reflecting dedication and trust. Innovation: Constantly staying ahead of
-        the curve with the latest developments and best practices.
-      </p>
-      <Join />
-    </div>
+      <Experienced />
+      <Footer />
+    </>
   );
 }
 
-export default index;
+export default Index;

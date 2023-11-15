@@ -1,0 +1,42 @@
+.navbar-positioner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.07);
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 20px;
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: auto;
+    margin-left: 70px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 70px;
+    margin-right: 70px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}

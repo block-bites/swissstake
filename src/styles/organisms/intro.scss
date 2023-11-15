@@ -1,0 +1,122 @@
+.page {
+  position: relative;
+  width: 100%;
+  background: url("../assets/Intro-desktop.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: 30% 40%;
+
+  @include breakpoint(mobile) {
+    position: relative;
+    width: 100%;
+    background: url("../assets/Intro-mobile.svg");
+    background-size: 120% 110%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+  }
+  @include breakpoint(tablet) {
+    position: relative;
+    width: 100%;
+    background: url("../assets/Intro-mobile.svg");
+    background-size: 120% 110%;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+  }
+
+  &__block {
+    position: relative;
+    margin-top: 260px;
+    width: 100%;
+    background: linear-gradient(
+      179deg,
+      rgba(5, 78, 187, 0) 7.37%,
+      rgba(3, 70, 171, 0.18) 29.81%,
+      rgba(2, 65, 160, 0.45) 63.32%,
+      rgba(0, 59, 147, 0.64) 88%
+    );
+    height: 300px;
+    bottom: 0;
+
+    @include breakpoint(mobile) {
+      position: relative;
+      margin-top: 260px;
+      width: 100%;
+      height: 300px;
+      bottom: 0;
+
+      background: linear-gradient(
+        187deg,
+        rgba(5, 78, 187, 0),
+        rgba(4, 72, 174, 0.43),
+        rgba(1, 62, 153, 0.79),
+        rgba(0, 59, 147, 1)
+      );
+    }
+    @include breakpoint(tablet) {
+      position: relative;
+      margin-top: 260px;
+      width: 100%;
+      height: 300px;
+      bottom: 0;
+
+      background: linear-gradient(
+        187deg,
+        rgba(5, 78, 187, 0),
+        rgba(4, 72, 174, 0.43),
+        rgba(1, 62, 153, 0.79),
+        rgba(0, 59, 147, 1)
+      );
+    }
+  }
+}
+
+.page::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  width: 50%;
+  height: 100%;
+  max-width: 400px;
+  background: #2b44e7;
+  border-radius: 909px;
+  opacity: 0.3;
+  filter: blur(270px);
+  z-index: -1;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    opacity: 0.1;
+  }
+  @include breakpoint(tablet) {
+    display: flex;
+    opacity: 0.1;
+  }
+}
+
+.page::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  max-width: 400px;
+  background: #2b44e7;
+  border-radius: 909px;
+  opacity: 0.3;
+  filter: blur(270px);
+  z-index: -1;
+
+  @include breakpoint(mobile) {
+    display: flex;
+    opacity: 0.2;
+    bottom: 1;
+  }
+  @include breakpoint(tablet) {
+    display: flex;
+    opacity: 0.2;
+    bottom: 1;
+  }
+}

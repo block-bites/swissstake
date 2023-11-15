@@ -1,7 +1,47 @@
+//Basics
+@import "./basic/breakpoints";
+@import "./basic/vars";
+
 // Atoms
+@import "./atoms/nav-btn";
 @import "./atoms/primary-btn";
 @import "./atoms/secondary-btn";
+@import "./atoms/tertiary-btn";
 
 //Molecules
+@import "./molecules/navbar-desktop";
+@import "./molecules/navbar-mobile";
+@import "./molecules/join-block";
+@import "./molecules/validator";
+@import "./molecules/why-choose";
+@import "./molecules/infrastructure-block";
+@import "./molecules/experienced-block";
+@import "./molecules/footer";
+@import "./molecules/mobile-experienced-block";
 
 //Organisms
+@import "./organisms/navbar.scss";
+@import "./organisms/animation";
+@import "./organisms/intro";
+@import "./organisms/infrastructure";
+@import "./organisms/experienced";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+
+  @include breakpoint(tablet) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  @include breakpoint(mobile) {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+}

@@ -1,16 +1,20 @@
 import React from "react";
-import Navbar from "../molecules/navBar";
+
 import Validator from "../molecules/validator";
-import Whychoose from "../molecules/whychoose";
-import Business from "../molecules/business";
+import Whychoose from "../molecules/why-choose";
 
 function Intro() {
   return (
-    <div>
-      <Navbar />
-      <Validator />
-      <Whychoose />
-      <Business />
+    <div className="page" id="top">
+      <div className="page__container">
+        <div className="page__content">
+          <Validator />
+        </div>
+      </div>
+
+      <div className="page__block">
+        <Whychoose />
+      </div>
     </div>
   );
 }

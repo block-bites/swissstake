@@ -1,3 +1,86 @@
 .primary-btn {
-  background-color: red;
+  border-radius: 100px;
+  padding: 12px 24px;
+  display: flex;
+  width: 260px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+
+  color: #fff;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  background: $c-blue-main;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover {
+    background: #fff;
+    border: 2px solid $c-blue-main;
+    color: $c-blue-main;
+  }
+
+  @include breakpoint(tablet) {
+    border-radius: 70px;
+    padding: 10px 20px;
+    gap: 10px;
+    display: flex;
+    width: 200px;
+    height: 70px;
+    background: $c-blue-main;
+
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+
+    text-align: center;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid $c-blue-main;
+      color: $c-blue-main;
+    }
+  }
+  @include breakpoint(mobile) {
+    border-radius: 70px;
+    padding: 10px 20px;
+    display: flex;
+    width: 200px;
+    height: 70px;
+    background: $c-blue-main;
+
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%; /* 21px */
+
+    text-align: center;
+    border: none;
+    text-decoration: none;
+
+    &:hover {
+      background: #fff;
+      border: 2px solid $c-blue-main;
+      color: $c-blue-main;
+    }
+  }
+}
+
+button:hover {
+  cursor: pointer;
 }
