@@ -15,20 +15,6 @@ function Whychoose() {
               independence, quality, and experience makes us the ideal choice
               for staking on the Casper Network.
             </p>
-
-            <p className="why-choose__mobile-subtitle">
-              SwissStake is not just
-              <br /> another validator; we offer
-              <br /> unique advantages that
-              <br /> set us apart from the
-              <br /> crowd. Our commitment to
-              <br />
-              independence, quality,
-              <br /> and experience makes us
-              <br /> the ideal choice for
-              <br /> staking on the Casper
-              <br /> Network.
-            </p>
           </div>
           <div className="why-choose__logo-container">
             <div className="why-choose__casperlogo">
