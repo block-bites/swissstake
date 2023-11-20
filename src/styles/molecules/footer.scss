@@ -312,6 +312,7 @@
         @include breakpoint(mobile) {
           display: flex;
           flex-direction: row;
+
           color: #000;
           font-family: Inter;
           font-size: 14px;
@@ -322,6 +323,7 @@
         @include breakpoint(tablet) {
           display: flex;
           flex-direction: row;
+
           color: #000;
           font-family: Inter;
           font-size: 14px;

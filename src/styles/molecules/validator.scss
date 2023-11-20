@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 160px;
+    padding-top: 130px;
     padding-bottom: 50px;
   }
   @include breakpoint(tablet) {
@@ -26,11 +26,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 160px;
+    padding-top: 130px;
     padding-bottom: 50px;
   }
 
   &__desktop-title {
+    width: 100%;
+    max-width: 900px;
+
     justify-content: center;
     text-align: center;
     color: var(--Black, #1d1d1f);
@@ -41,10 +44,32 @@
     line-height: 130%;
 
     @include breakpoint(mobile) {
-      display: none;
+      width: 100%;
+      max-width: 270px;
+      margin-right: 40px;
+      justify-content: center;
+      text-align: left;
+
+      color: var(--Black, #1d1d1f);
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
     }
     @include breakpoint(tablet) {
-      display: none;
+      width: 100%;
+      max-width: 270px;
+      margin-right: 40px;
+      justify-content: center;
+      text-align: left;
+
+      color: var(--Black, #1d1d1f);
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%;
     }
 
     &--blue {
@@ -55,11 +80,30 @@
       font-style: normal;
       font-weight: 500;
       line-height: 130%;
+
+      @include breakpoint(mobile) {
+        color: #2b44e7;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 52px */
+      }
+      @include breakpoint(tablet) {
+        color: #2b44e7;
+        font-family: Inter;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 130%; /* 52px */
+      }
     }
   }
 
   &__subtitle {
     display: flex;
+    width: 100%;
+    max-width: 870px;
 
     color: var(--Black, #1d1d1f);
     text-align: center;
@@ -72,58 +116,14 @@
     line-height: 150%;
 
     @include breakpoint(mobile) {
-      display: none;
-    }
-    @include breakpoint(tablet) {
-      display: none;
-    }
-  }
-
-  &__mobile-title {
-    display: none;
-
-    @include breakpoint(mobile) {
-      display: block;
-      margin-right: 80px;
-
-      color: var(--Black, #1d1d1f);
-      font-family: Inter;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 130%;
-    }
-    @include breakpoint(tablet) {
-      display: block;
-      margin-right: 80px;
-
-      color: var(--Black, #1d1d1f);
-      font-family: Inter;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 130%;
-    }
-
-    &--blue {
-      color: #2b44e7;
-      font-family: Inter;
-      font-size: 40px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 130%; /* 52px */
-    }
-  }
-
-  &__mobile-subtitle {
-    display: none;
-
-    @include breakpoint(mobile) {
       display: flex;
+      width: 100%;
+      max-width: 275px;
       text-align: left;
       justify-content: center;
-      margin-right: 35px;
-      margin-top: 15px;
+      margin-right: 40px;
+      margin-top: 10px;
+      padding: 2px;
 
       color: var(--Black, #1d1d1f);
       font-family: Inter;
@@ -134,10 +134,13 @@
     }
     @include breakpoint(tablet) {
       display: flex;
+      width: 100%;
+      max-width: 275px;
       text-align: left;
       justify-content: center;
-      margin-right: 35px;
-      margin-top: 15px;
+      margin-right: 40px;
+      margin-top: 10px;
+      padding: 2px;
 
       color: var(--Black, #1d1d1f);
       font-family: Inter;
