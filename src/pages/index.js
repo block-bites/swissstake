@@ -21,10 +21,10 @@ function Index() {
       </Helmet>
       <Navbar />
       <Intro />
-      {/* <Animation />
+      <Animation />
       <Infrastructure />
       <Experienced />
-      <Footer /> */}
+      <Footer />
     </>
   );
 }
