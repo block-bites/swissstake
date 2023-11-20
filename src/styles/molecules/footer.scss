@@ -281,12 +281,6 @@
           font-weight: 400;
           line-height: 150%; /* 21px */
         }
-        // &:hover .footer__content__right--text {
-        //   color: #000;
-        //   text-decoration: underline;
-        //   text-decoration-color: #000;
-        //   cursor: pointer;
-        // }
       }
 
       &--icon {
@@ -314,6 +308,27 @@
         font-style: normal;
         font-weight: 400;
         line-height: 150%; /* 27px */
+
+        @include breakpoint(mobile) {
+          display: flex;
+          flex-direction: row;
+          color: #000;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 21px */
+        }
+        @include breakpoint(tablet) {
+          display: flex;
+          flex-direction: row;
+          color: #000;
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%; /* 21px */
+        }
 
         &:hover {
           color: #000;
