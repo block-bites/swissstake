@@ -98,7 +98,7 @@ function Footer() {
                 src={telegram}
                 alt="SwissStake-Logo"
               />
-              Telegram channel
+              <p className="footer__content__right--text">Telegram channel</p>
             </a>
           </div>
         </div>
