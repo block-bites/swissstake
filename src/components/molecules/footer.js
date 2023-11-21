@@ -5,6 +5,7 @@ import useIsMobile from "../../hooks/useIsMobile";
 import desktopLogo from "../../assets/swissStake-logo.svg";
 import mobileLogo from "../../assets/mobile-logo.svg";
 import telegram from "../../assets/telegramicon.svg";
+import blockbites from "../../assets/Blockbites-logo.svg";
 
 function Footer() {
   const isMobile = useIsMobile();
@@ -102,6 +103,22 @@ function Footer() {
             </a>
           </div>
         </div>
+
+        <a
+          className="footer__blockbites-positioner"
+          href="https://blockbit.es"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="footer__blockbites">
+            <p className="footer__blockbites--title">Made by</p>
+            <img
+              className="footer__blockbites--icon"
+              src={blockbites}
+              alt="blockbites-logo"
+            ></img>
+          </div>
+        </a>
       </div>
     </div>
   );
