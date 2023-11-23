@@ -1,0 +1,71 @@
+{
+  "owner": {
+    "name": "Swiss Stake",
+    "description": "Swiss based physical node with lowest fees and secured connection",
+    "type": [
+      "validator"
+    ],
+    "identity": {
+      "ownership_disclosure_url": "",
+      "casper_association_kyc_url": "",
+      "casper_association_kyc_onchain": ""
+    },
+    "resources": {
+      "code_of_conduct_url": "",
+      "terms_of_service_url": "",
+      "privacy_policy_url": "",
+      "other": [
+        {
+          "name": "About Us",
+          "url": "https://t.me/joinchat/XuVh94v4X3o4Yjk8"
+        }
+      ]
+    },
+    "affiliated_accounts": [
+      {
+        "public_key": "02024e09947a46d6738dc0cb3f59e25d916a82ccca8bf763eb2ad201e050e51b6990"
+      }
+    ],
+    "website": "https://swissstake.net",
+    "email": "hello@swissstake.net",
+    "branding": {
+      "logo": {
+        "png_256": "https://swissstake.net/logo.png",
+        "png_1024": "",
+        "svg": ""
+      }
+    },
+    "location": {
+      "name": "Basel",
+      "country": "CH",
+      "latitude": 47.5379,
+      "longitude": 7.5710
+    },
+    "social": {
+      "keybase": "",
+      "telegram": "@piotr_dz",
+      "twitter": "",
+      "github": "",
+      "youtube": "",
+      "facebook": "",
+      "medium": "",
+      "reddit": "",
+      "wechat": ""
+    }
+  },
+  "nodes": [
+    {
+      "public_key": "01ebaebffebe63ee6e35b88697dd9d5bfab23dac47cbd61a45efc8ea8d80ec9c38",
+      "description": "Main node",
+      "location": {
+        "name": "Basel",
+        "country": "CH",
+        "latitude": 47.5379,
+        "longitude": 7.5710
+      },
+      "functionality": [
+        "validator"
+      ]
+    }
+  ]
+}
