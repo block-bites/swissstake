@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-scroll";
 import useIsMobile from "../../hooks/useIsMobile";
 
-import desktopLogo from "../../assets/swissStake-logo.svg";
 import mobileLogo from "../../assets/mobile-logo.svg";
 import telegram from "../../assets/telegramicon.svg";
 import blockbites from "../../assets/Blockbites-logo.svg";
@@ -30,11 +29,11 @@ function Footer() {
   return (
     <div className="footer-positioner">
       <div className="footer">
-        <img
+        {/* <img
           className="footer__content__desktoplogo"
           src={desktopLogo}
           alt="desktop-logo"
-        />
+        /> */}
         <img
           className="footer__content__mobilelogo"
           src={mobileLogo}

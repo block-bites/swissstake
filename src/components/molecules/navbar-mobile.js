@@ -4,7 +4,6 @@ import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
 
-import SwissLogo from "../../assets/mobile-logo.svg";
 import TelegramIcon from "../../assets/navbar-mobile-icon.svg";
 
 function MobileNavbar() {
@@ -17,7 +16,7 @@ function MobileNavbar() {
   return (
     <div className="mobile-positioner">
       <div className="navbar-mobile">
-        <Link
+        {/* <Link
           to="top"
           spy
           smooth
@@ -30,7 +29,7 @@ function MobileNavbar() {
             src={SwissLogo}
             alt="SwissStake-Logo"
           />
-        </Link>
+        </Link> */}
 
         <div
           className={`mobile-hamburger ${
