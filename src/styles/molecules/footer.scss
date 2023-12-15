@@ -1,420 +1,86 @@
 .footer-positioner {
   display: flex;
   width: 100%;
-  max-width: 1300px;
-  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-  gap: 48px;
+  align-items: center;
   padding-top: 70px;
-  border-top: 1px solid var(--grey-disable, #7e7f88);
+  padding-bottom: 50px;
+  background: #161a39;
 
   @include breakpoint(tablet) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 330px;
-    padding-top: 45px;
+    // style dla tabletów
   }
 
   @include breakpoint(mobile) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 330px;
-    padding-top: 45px;
+    // style dla telefonów
   }
 }
 
 .footer {
   display: flex;
-  position: relative;
-  width: 100%;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 240px;
-  flex-wrap: wrap;
-  padding-bottom: 70px;
+  width: 100%;
 
-  @include breakpoint(mobile) {
+  &-left {
     display: flex;
-    width: 100%;
-    align-items: flex-start;
-    gap: 40px;
-    padding-bottom: 40px;
-  }
+    flex-direction: column;
+    margin-left: 70px;
 
-  @include breakpoint(tablet) {
-    display: flex;
-    width: 100%;
-    align-items: flex-start;
-    gap: 40px;
-    padding-bottom: 40px;
-  }
-
-  &__content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 180px;
-
-    @include breakpoint(mobile) {
+    &__logo {
       display: flex;
-      width: 100%;
-      align-items: flex-start;
-      gap: 90px;
-    }
-
-    @include breakpoint(tablet) {
-      display: flex;
-      width: 100%;
-      align-items: flex-start;
-      align-self: stretch;
-      gap: 90px;
-    }
-
-    &__desktoplogo {
-      display: flex;
-
-      @include breakpoint(mobile) {
-        display: none;
-      }
-      @include breakpoint(tablet) {
-        display: none;
-      }
-    }
-
-    &__mobilelogo {
-      display: none;
-
-      @include breakpoint(mobile) {
-        display: flex;
-        justify-content: left;
-      }
-      @include breakpoint(tablet) {
-        display: flex;
-        justify-content: left;
-      }
-    }
-
-    &__left {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-
-      @include breakpoint(mobile) {
-        display: flex;
-        flex-direction: column;
-      }
-      @include breakpoint(tablet) {
-        display: flex;
-        flex-direction: column;
-      }
-
-      &--title {
-        padding-bottom: 10px;
-        color: var(--primary-blue-main, #2b44e7);
-        text-align: center;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 36px */
-        border: none;
-        background: none;
-
-        @include breakpoint(mobile) {
-          padding-bottom: 10px;
-          color: var(--primary-blue-main, #2b44e7);
-          text-align: center;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 24px */
-          border: none;
-          background: none;
-        }
-        @include breakpoint(tablet) {
-          padding-bottom: 10px;
-          color: var(--primary-blue-main, #2b44e7);
-          text-align: center;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 24px */
-          border: none;
-          background: none;
-        }
-      }
-      &--subtitle {
-        padding-bottom: 10px;
-        color: #000;
-        text-align: center;
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 27px */
-        border: none;
-        background: none;
-
-        @include breakpoint(mobile) {
-          padding-bottom: 10px;
-          border: none;
-          background: none;
-
-          color: #000;
-          text-align: center;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 21px */
-        }
-        @include breakpoint(tablet) {
-          padding-bottom: 10px;
-          border: none;
-          background: none;
-
-          color: #000;
-          text-align: center;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 21px */
-        }
-      }
-      button:hover {
-        color: #000;
-        text-decoration: underline;
-        text-decoration-color: #000;
-        cursor: pointer;
-      }
-    }
-
-    &__right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-
-      @include breakpoint(mobile) {
-        display: flex;
-        flex-direction: column;
-      }
-      @include breakpoint(tablet) {
-        display: flex;
-        flex-direction: column;
-      }
-
-      &--title {
-        border: none;
-        background: none;
-        padding-bottom: 10px;
-
-        color: var(--primary-blue-main, #2b44e7);
-        text-align: center;
-        font-family: Inter;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 36px */
-
-        @include breakpoint(mobile) {
-          padding-bottom: 10px;
-          border: none;
-          background: none;
-
-          color: var(--primary-blue-main, #2b44e7);
-          text-align: center;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 24px */
-        }
-        @include breakpoint(tablet) {
-          padding-bottom: 10px;
-          border: none;
-          background: none;
-
-          color: var(--primary-blue-main, #2b44e7);
-          text-align: center;
-          font-family: Inter;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 24px */
-        }
-      }
-      &--subtitle {
-        display: flex;
-        flex-direction: row;
-        color: #000;
-        text-align: center;
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 27px */
-        border: none;
-        background: none;
-        text-decoration: none;
-
-        @include breakpoint(mobile) {
-          color: #000;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 21px */
-        }
-        @include breakpoint(tablet) {
-          color: #000;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 21px */
-        }
-      }
-
-      &--icon {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-
-        @include breakpoint(mobile) {
-          width: 25px;
-          height: 25px;
-          margin-right: 10px;
-        }
-        @include breakpoint(tablet) {
-          width: 25px;
-          height: 25px;
-          margin-right: 10px;
-        }
-      }
-
-      &--text {
-        color: #000;
-        text-align: center;
-        font-family: Inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%; /* 27px */
-
-        @include breakpoint(mobile) {
-          display: flex;
-          flex-direction: row;
-
-          color: #000;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 21px */
-        }
-        @include breakpoint(tablet) {
-          display: flex;
-          flex-direction: row;
-
-          color: #000;
-          font-family: Inter;
-          font-size: 14px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: 150%; /* 21px */
-        }
-
-        &:hover {
-          color: #000;
-          text-decoration: underline;
-          text-decoration-color: #000;
-          cursor: pointer;
-        }
-      }
-    }
-  }
-  &__blockbites-positioner {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    flex-direction: row;
-    justify-content: right;
-    width: 100%;
-    margin-top: 220px;
-    padding-bottom: 10px;
-  }
-  &__blockbites {
-    display: flex;
-    position: absolute;
-
-    @include breakpoint(mobile) {
       align-items: center;
-      margin-top: 100px;
-      padding-bottom: 10px;
-    }
-
-    @include breakpoint(tablet) {
-      align-items: center;
-      margin-top: 100px;
-      padding-bottom: 10px;
-    }
-
-    &--title {
-      display: flex;
-      margin-right: 5px;
-      color: black;
-      text-align: center;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%;
-      letter-spacing: 0.8px;
-
-      border: none;
-      background: none;
+      margin-bottom: 30px;
       text-decoration: none;
 
-      @include breakpoint(mobile) {
-        display: flex;
-        margin-right: 5px;
-
-        color: black;
+      &--text {
+        color: var(--WHITE, #fff);
         text-align: center;
-        font-family: Inter;
-        font-size: 10px;
+        font-family: Poppins;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
-        line-height: 150%;
-        letter-spacing: 0.8px;
+        line-height: 150%; /* 27px */
+        margin-left: 15px;
       }
 
-      @include breakpoint(tablet) {
-        display: flex;
-        margin-right: 5px;
+      &--swiss-logo {
+        width: 30px;
+        height: 30px;
+      }
 
-        color: black;
-        text-align: center;
-        font-family: Inter;
-        font-size: 10px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        letter-spacing: 0.8px;
+      &--telegram-logo {
+        width: 20px;
+        height: 20px;
       }
     }
 
-    &--logo {
-      height: 80px;
-      width: 130px;
+    &__bites-logo {
+      display: flex;
+      align-items: center;
+      img {
+        width: 90px;
+        height: 30px;
+      }
+    }
+  }
+
+  &-right {
+    display: flex;
+
+    &--subtitle {
+      margin-right: 70px;
+      color: var(--WHITE, #fff);
+      text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+      background: none;
+      border: none;
     }
   }
 }

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 
-import Iconknowledge from "../../assets/Iconknowledge.svg";
-import IconInnovation from "../../assets/IconInnovation.svg";
-import Iconcommitment from "../../assets/Iconcommitment.svg";
-import ArrowLeft from "../../assets/Arrow-Right.png";
-import ArrowRight from "../../assets/Arrow-Left.png";
+import Iconknowledge from "../../assets/Knowladge.svg";
+import IconInnovation from "../../assets/Innovation.svg";
+import Iconcommitment from "../../assets/Commitment.svg";
+
 
 function MobileExperiencedBlock() {
     const [currentBlock, setCurrentBlock] = useState(0);
@@ -60,13 +59,13 @@ function MobileExperiencedBlock() {
       </div>
       <div className="mobile-blocks">
         <button onClick={handlePrevClick} className="arrow-left">
-          <img src={ArrowLeft} alt="Previous" />
+          <img src={''} alt="Previous" />
         </button>
 
         {blocks[currentBlock]}
 
         <button onClick={handleNextClick} className="arrow-right">
-          <img src={ArrowRight} alt="Next" />
+          <img src={''} alt="Next" />
         </button>
       </div>
     </div>

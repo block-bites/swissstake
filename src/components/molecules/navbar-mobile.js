@@ -4,7 +4,6 @@ import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
 
-import TelegramIcon from "../../assets/navbar-mobile-icon.svg";
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -90,7 +89,7 @@ function MobileNavbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={TelegramIcon} alt="Telegram" />
+                  <img src={''} alt="Telegram" />
                 </a>
               </div>
             </div>

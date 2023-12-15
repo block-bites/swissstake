@@ -6,9 +6,9 @@ function ImageScroller() {
 
   return (
     <div className="outer-container" id="about">
-      <dvi className="animation">
+      <div className="animation">
         <h1> animation </h1>
-      </dvi>
+      </div>
       {/* {isMobile ? (
         <img src={MobileAnimation} alt="animation" className="image"></img>
       ) : (

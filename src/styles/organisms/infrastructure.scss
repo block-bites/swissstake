@@ -3,16 +3,11 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 170px;
+  padding: 140px;
 
   @include breakpoint(tablet) {
-    display: flex;
-    padding: 0px;
   }
   @include breakpoint(mobile) {
-    display: flex;
-    padding: 00px;
   }
 }
 
@@ -20,130 +15,56 @@
   width: 100%;
   max-width: 1440px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  padding: 0;
 
   &__blocks-in-row {
     display: flex;
-    gap: 24px;
-    padding: 24px 0;
     justify-content: space-between;
     width: 100%;
 
     @include breakpoint(tablet) {
-      flex-direction: column;
-      gap: 0;
     }
     @include breakpoint(mobile) {
-      flex-direction: column;
-      gap: 0;
     }
   }
   &__subtitle {
-    padding: 25px;
+    padding: 15px;
 
     color: var(--Black, #1d1d1f);
     text-align: center;
-    font-family: Inter;
-    font-size: 18px;
+
+    /* P_Body */
+    font-family: Poppins;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 27px */
+    line-height: 150%; /* 24px */
 
     @include breakpoint(tablet) {
-      padding: 20px;
-      color: #000;
-      text-align: center;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 157.5%; /* 22.05px */
-      width: 300px;
     }
     @include breakpoint(mobile) {
-      padding: 20px;
-      color: #000;
-      text-align: center;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 157.5%; /* 22.05px */
-      width: 300px;
     }
   }
 
   &__title {
     color: var(--Black, #1d1d1f);
     text-align: center;
-    font-family: Inter;
+
+    /* P_H2a */
+    font-family: Poppins;
     font-size: 40px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 60px */
+    font-weight: 600;
+    line-height: 130%; /* 52px */
 
     @include breakpoint(tablet) {
-      color: #000;
-      text-align: center;
-      font-family: Inter;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 150%; /* 27px */
-      width: 300px;
     }
     @include breakpoint(mobile) {
-      color: #000;
-      text-align: center;
-      font-family: Inter;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 150%; /* 27px */
-      width: 300px;
     }
   }
 
-  &__text {
-    padding-top: 30px;
-    padding-bottom: 50px;
-    color: var(--grey-disable, #7e7f88);
-    text-align: center;
-    font-family: Inter;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 36px */
-
-    @include breakpoint(tablet) {
-      padding-top: 20px;
-      padding-bottom: 10px;
-      width: 300px;
-      color: var(--grey-disable, #7e7f88);
-      text-align: center;
-      font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
-    }
-    @include breakpoint(mobile) {
-      padding-top: 20px;
-      padding-bottom: 10px;
-      width: 300px;
-      color: var(--grey-disable, #7e7f88);
-      text-align: center;
-      font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
-    }
-  }
 
   &__header {
     display: flex;
@@ -152,16 +73,8 @@
     flex-direction: column;
 
     @include breakpoint(tablet) {
-      flex-direction: column;
-      display: flex;
-      width: 100%;
-      max-width: 300px;
     }
     @include breakpoint(mobile) {
-      flex-direction: column;
-      display: flex;
-      width: 100%;
-      max-width: 300px;
     }
   }
 }

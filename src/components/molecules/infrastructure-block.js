@@ -2,7 +2,7 @@ import React from "react";
 
 import Swiss from "../../assets/Swiss-flag.svg";
 import Lock from "../../assets/Lock.svg";
-import Trophy from "../../assets/Trophy.svg";
+import Star from "../../assets/Star.svg";
 
 function InfrastructureBlock({ title, text, image }) {
   let imgClass = "default";
@@ -11,7 +11,7 @@ function InfrastructureBlock({ title, text, image }) {
     imgClass = "image1";
   } else if (image === Lock) {
     imgClass = "image2";
-  } else if (image === Trophy) {
+  } else if (image === Star) {
     imgClass = "image3";
   }
   return (

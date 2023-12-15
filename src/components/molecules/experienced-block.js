@@ -1,19 +1,19 @@
 import React from "react";
 
-import Iconknowledge from "../../assets/Iconknowledge.svg";
-import IconInnovation from "../../assets/IconInnovation.svg";
-import Iconcommitment from "../../assets/Iconcommitment.svg";
+import Iconknowledge from "../../assets/Knowladge.svg";
+import IconInnovation from "../../assets/Innovation.svg";
+import Iconcommitment from "../../assets/Commitment.svg";
 
 
 function ExperiencedBlock() {
   return (
     <div className="experiencedblocks-positioner">
       <div className="experienced-header">
-        <div className="experienced-header__title">
-          <h2 className="experienced-header__subtitle">
+        <div>
+          <h2 className="experienced-header__title">
             Experienced Casper Adopter
           </h2>
-          <p className="experienced-header__text">
+          <p className="experienced-header__subtitle">
             Managed by an individual deeply involved with the Casper ecosystem,
             <br />
             SwissStake brings unparalleled expertise to the table:
@@ -25,23 +25,23 @@ function ExperiencedBlock() {
         <img src={Iconknowledge} alt="" className="experiencedblocks__image1" />
           <h4 className="experiencedblocks__title">Knowledge</h4>
           <p className="experiencedblocks__text">
-            In-depth understanding of the <br />Casper Network's intricacies.
+            In-depth understanding of the Casper Network's intricacies.
           </p>
         </div>
         <div className="experiencedblocks">
         <img src={IconInnovation} alt="" className="experiencedblocks__image2" />
           <h4 className="experiencedblocks__title">Innovation</h4>
           <p className="experiencedblocks__text">
-            Constantly staying ahead of the <br /> curve with the latest
-            developments <br /> and best practices
+            Constantly staying ahead of the curve with the latest
+            developments and best practices
           </p>
         </div>
         <div className="experiencedblocks">
         <img src={Iconcommitment} alt="" className="experiencedblocks__image3" />
           <h4 className="experiencedblocks__title">Commitment</h4>
           <p className="experiencedblocks__text">
-            Running since the beginning of the <br /> Casper mainnet, reflecting
-            <br /> dedication and trust.
+            Running since the beginning of the Casper mainnet, reflecting
+             dedication and trust.
           </p>
         </div>
       </div>

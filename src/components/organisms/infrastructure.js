@@ -4,7 +4,7 @@ import InfrastructureBlock from "../molecules/infrastructure-block";
 
 import Swiss from "../../assets/Swiss-flag.svg";
 import Lock from "../../assets/Lock.svg";
-import Trophy from "../../assets/Trophy.svg";
+import Star from "../../assets/Star.svg";
 
 function Infrastructure() {
   return (
@@ -16,15 +16,17 @@ function Infrastructure() {
             Our server is proudly hosted in Basel, Switzerland, leveraging the
             robust Swiss infrastructure.
           </h4>
-          <p className="infrastructure__text"> This location offers:</p>
         </div>
-        <InfrastructureBlock
-          title={"Stability"}
-          text={"Benefit from Switzerland's renowned<br />  political and economic stability."}
-          image={Swiss}
-          className="image1"
-        />
         <div className="infrastructure__blocks-in-row">
+          <InfrastructureBlock
+            title={"Stability"}
+            text={
+              "Benefit from Switzerland's renowned<br />  political and economic stability."
+            }
+            image={Swiss}
+            className="image1"
+          />
+
           <InfrastructureBlock
             title={"Privacy"}
             text="Enjoy the stringent privacy laws <br /> that Switzerland is famous for."
@@ -34,7 +36,7 @@ function Infrastructure() {
           <InfrastructureBlock
             title={"Quality"}
             text="Experience top-tier service quality <br /> backed by Swiss precision and reliability."
-            image={Trophy}
+            image={Star}
             className="image3"
           />
         </div>

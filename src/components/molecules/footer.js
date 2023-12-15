@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-scroll";
 import useIsMobile from "../../hooks/useIsMobile";
 
-import mobileLogo from "../../assets/mobile-logo.svg";
-import telegram from "../../assets/telegramicon.svg";
+import telegramicon from "../../assets/TelegramIcon.svg";
+import footerlogo from "../../assets/Footer-logo.svg";
 import blockbites from "../../assets/Blockbites-logo.svg";
 
 function Footer() {
@@ -29,19 +29,31 @@ function Footer() {
   return (
     <div className="footer-positioner">
       <div className="footer">
-        {/* <img
-          className="footer__content__desktoplogo"
-          src={desktopLogo}
-          alt="desktop-logo"
-        /> */}
-        <img
-          className="footer__content__mobilelogo"
-          src={mobileLogo}
-          alt="mobile-logo"
-        />
-        <div className="footer__content">
-          <div className="footer__content__left">
-            <h4 className="footer__content__left--title">Navigation</h4>
+      <div className="footer-left">
+          <div className="footer-left__logo">
+            <img src={footerlogo} alt="desktop-logo" className="footer-left__logo--swiss-logo"/>
+            <p className="footer-left__logo--text">Swiss Stake</p>
+          </div>
+          <a
+            href="https://t.me/joinchat/XuVh94v4X3o4Yjk8"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-left__logo"
+          >
+            <img src={telegramicon} alt="Telegram icon" className="footer-left__logo--telegram-logo"/>
+            <p className="footer-left__logo--text">Telegram channel</p>
+          </a>
+          <a
+            href="https://blockbit.es"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-left__bites-logo"
+          >
+            <img src={blockbites} alt="blockbites-logo" />
+          </a>
+        </div>
+
+        <div className="footer-right">
             <Link
               to="about"
               spy
@@ -49,7 +61,9 @@ function Footer() {
               duration={500}
               offset={mobileOffset("about")}
             >
-              <button className="footer__content__left--subtitle">About</button>
+              <button className="footer-right--subtitle">
+                About
+              </button>
             </Link>
             <Link
               to="infractructure"
@@ -58,7 +72,7 @@ function Footer() {
               duration={500}
               offset={mobileOffset("infrastructure")}
             >
-              <button className="footer__content__left--subtitle">
+              <button className="footer-right--subtitle">
                 Infastructure
               </button>
             </Link>
@@ -69,7 +83,7 @@ function Footer() {
               duration={500}
               offset={mobileOffset("adopter")}
             >
-              <button className="footer__content__left--subtitle">
+              <button className="footer-right--subtitle">
                 Adopter
               </button>
             </Link>
@@ -80,44 +94,9 @@ function Footer() {
               duration={500}
               offset={mobileOffset("join")}
             >
-              <button className="footer__content__left--subtitle">Join</button>
+              <button className="footer-right--subtitle">Join</button>
             </Link>
           </div>
-
-          <div className="footer__content__right">
-            <h4 className="footer__content__right--title">Social</h4>
-
-            <a
-              className="footer__content__right--subtitle"
-              href="https://t.me/joinchat/XuVh94v4X3o4Yjk8"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                className="footer__content__right--icon"
-                src={telegram}
-                alt="SwissStake-Logo"
-              />
-              <p className="footer__content__right--text">Telegram channel</p>
-            </a>
-          </div>
-        </div>
-
-        <a
-          className="footer__blockbites-positioner"
-          href="https://blockbit.es"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="footer__blockbites">
-            <p className="footer__blockbites--title">Made by</p>
-            <img
-              className="footer__blockbites--icon"
-              src={blockbites}
-              alt="blockbites-logo"
-            ></img>
-          </div>
-        </a>
       </div>
     </div>
   );
