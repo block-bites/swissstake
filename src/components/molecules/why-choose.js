@@ -1,6 +1,6 @@
 import React from "react";
 
-import Frame2 from "../../assets/casper-logo.svg";
+import casperlogo from "../../assets/caspereco-logo.svg"
 
 function Whychoose() {
   return (
@@ -20,7 +20,7 @@ function Whychoose() {
             <div className="why-choose__casperlogo">
               <img
                 className="why-chose-logo-size"
-                src={Frame2}
+                src={casperlogo}
                 alt="casper ecosystem img"
               />
             </div>

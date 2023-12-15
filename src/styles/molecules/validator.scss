@@ -4,24 +4,27 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 
   background: var(--RED, #FF202E);
-  background-image: url('../../Intro-mountain.svg');
+
   
 }
 
 .validator {
+  width: 100%;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
   margin-top: 200px;
-  margin-right: 480px;
+  margin-left: 180px;
+
+  background-image: url('/static/Mountain-Intro.svg');
+  background-size: 100% 100%;
 
 
   
-  border: 1px solid black;
 
   @include breakpoint(mobile) {
   }
@@ -121,8 +124,8 @@
     display: flex;
     justify-content: left;
     align-items: center;
-
     margin-top: 100px;
+    margin-bottom: 200px;
 
     @include breakpoint(tablet) {
     }

@@ -2,6 +2,9 @@
   position: flex;
   width: 100%;
 
+  // background: var(--RED, #FF202E);
+  // background-image: url('../../Intro-mountain.svg');
+
 
   @include breakpoint(mobile) {
  

@@ -3,22 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 165px;
 
   @include breakpoint(mobile) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
   }
   @include breakpoint(tablet) {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
   }
 }
 
@@ -27,241 +15,105 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  
 
   @include breakpoint(mobile) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
   }
   @include breakpoint(tablet) {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
   }
 
   &__block {
     width: 100%;
-    max-width: 1300px;
     display: flex;
+    justify-content: space-between;
     gap: 50px;
-    position: relative;
-    background: rgb(88, 50, 117);
-    background: linear-gradient(
-      267deg,
-      #44888b 7.52%,
-      #2b44e7 41.97%,
-      #583275 96.83%
-    );
-    border-radius: 24px;
-    box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
+    padding-left: 70px;
+    padding-top: 90px;
+    background: var(--NAVY, #161a39);
 
     @include breakpoint(laptop) {
-      width: 100%;
-      max-width: 900px;
-      display: flex;
-      gap: 50px;
-      position: relative;
-      background: rgb(88, 50, 117);
-      background: linear-gradient(
-        267deg,
-        #44888b 7.52%,
-        #2b44e7 41.97%,
-        #583275 96.83%
-      );
-      border-radius: 24px;
-      box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
     }
     @include breakpoint(mobile) {
-      display: flex;
-      width: 100%;
-      width: 280px;
-      height: 370px;
-      position: relative;
-      flex-shrink: 0;
-
-      border-radius: 24px;
-      background: linear-gradient(
-        267deg,
-        #44888b 7.52%,
-        #2b44e7 41.97%,
-        #583275 96.83%
-      );
-      box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
     }
     @include breakpoint(tablet) {
-      display: flex;
-      width: 100%;
-      width: 280px;
-      height: 370px;
-      position: relative;
-      flex-shrink: 0;
-
-      border-radius: 24px;
-      background: linear-gradient(
-        267deg,
-        #44888b 7.52%,
-        #2b44e7 41.97%,
-        #583275 96.83%
-      );
-      box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
     }
   }
 
   &__text {
-    position: relative;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    padding: 56px 0 56px 48px;
+    gap: 40px;
+    margin-bottom: 90px;
+    margin-top: 60px;
 
     @include breakpoint(mobile) {
-      width: 100%;
-      position: relative;
-      flex-direction: column;
-      display: flex;
-      justify-content: left;
-      padding: 40px 0 0 40px;
     }
     @include breakpoint(tablet) {
-      width: 100%;
-      position: relative;
-      flex-direction: column;
-      display: flex;
-      justify-content: left;
-      padding: 40px 0 0 40px;
     }
   }
 
   &__title {
-    color: #fff;
-    font-family: Inter;
-    font-size: 24px;
+    color: var(--WHITE, #fff);
+
+    /* P_H2 */
+    font-family: Poppins;
+    font-size: 30px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 36px */
+    font-weight: 400;
+    line-height: 130%; /* 39px */
 
     @include breakpoint(mobile) {
-      color: #fff;
-      font-family: Inter;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 155.5%; /* 31.1px */
     }
     @include breakpoint(tablet) {
-      color: #fff;
-      font-family: Inter;
-      font-size: 20px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 155.5%; /* 31.1px */
     }
   }
 
   &__subtitle {
-    color: #fff;
-    font-family: Inter;
+    width: 600px;
+    height: 100px;
+    color: var(--WHITE, #fff);
+
+    /* P_Body */
+    font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
 
     @include breakpoint(mobile) {
-      width: 100%;
-      color: #fff;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 21px */
-      min-width: 170px;
     }
     @include breakpoint(tablet) {
-      width: 100%;
-      color: #fff;
-      font-family: Inter;
-      font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 21px */
-      min-width: 170px;
     }
   }
 
-
   &__logo-container {
     width: 100%;
-    position: relative;
-    max-width: 560px;
-
-    @include breakpoint(laptop) {
-      max-width: 460px;
-    }
+    display: flex;
+    max-width: 550px;
+    margin-right: 70px;
+    margin-bottom: 60px;
 
     @include breakpoint(mobile) {
-      max-width: 300px;
     }
     @include breakpoint(tablet) {
-      max-width: 300px;
     }
   }
 
   &__casperlogo {
-    max-width: 50vw;
-    border-radius: 24px;
-    background: #bcfc07;
-    padding: 40px;
-    position: absolute;
-    right: -40px;
-    bottom: 50px;
-
-    @include breakpoint(laptop) {
-      max-width: 50vw;
-      border-radius: 24px;
-      background: #bcfc07;
-      padding: 40px;
-      position: absolute;
-      right: 0px;
-      bottom: 120px;
-    }
+    display: flex;
     @include breakpoint(mobile) {
-      max-width: 300px;
-      border-radius: 15px;
-      background: #bcfc07;
-      padding: 20px;
-      position: absolute;
-      right: -35px;
-      bottom: -125px;
     }
     @include breakpoint(tablet) {
-      max-width: 300px;
-      border-radius: 15px;
-      background: #bcfc07;
-      padding: 20px;
-      position: absolute;
-      right: -35px;
-      bottom: -125px;
     }
   }
 
   .why-chose-logo-size {
+    display: flex;
     width: 100%;
-    height: auto;
 
-    @include breakpoint(laptop) {
-      width: 100%;
-      height: auto;
-    }
     @include breakpoint(mobile) {
-      width: 250px;
     }
     @include breakpoint(tablet) {
-      width: 250px;
     }
   }
 }
