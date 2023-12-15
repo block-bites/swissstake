@@ -1,14 +1,11 @@
-
-
 .validator-positioner {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
-  background: var(--RED, #FF202E);
-
-  
+  background: var(--RED, #ff202e);
+  background-image: url("../assets/mountain-intro.svg");
 }
 
 .validator {
@@ -20,11 +17,8 @@
   margin-top: 200px;
   margin-left: 180px;
 
-  background-image: url('/static/Mountain-Intro.svg');
+  background-image: url("/static/Mountain-Intro.svg");
   background-size: 100% 100%;
-
-
-  
 
   @include breakpoint(mobile) {
   }
@@ -37,7 +31,6 @@
     align-items: center;
 
     margin-bottom: 25px;
-
 
     color: var(--NAVY, #161a39);
     /* P_H1 */
@@ -86,7 +79,6 @@
     width: 410px;
     height: 85px;
 
-
     color: var(--NAVY, #161a39);
 
     /* P_H2 */
@@ -108,7 +100,6 @@
 
     width: 600px;
     height: 70px;
-
 
     color: var(--NAVY, #161a39);
 
