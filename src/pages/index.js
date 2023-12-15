@@ -21,8 +21,8 @@ function Index() {
       </Helmet>
       <Navbar />
       <Intro />
-      {/* <Animation />
-      <Infrastructure />
+      <Animation />
+      {/* <Infrastructure />
       <Experienced />
       <Footer /> */}
     </>
