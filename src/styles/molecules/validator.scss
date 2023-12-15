@@ -6,8 +6,9 @@
 
   background: var(--RED, #ff202e);
   //background-image: url("../assets/mountain-intro.svg");
-  background-image: url("../../asseta/intro-mountain.svg") ;
+  background-image: url("../assets/intro-mountain.svg") ;
   background-repeat: no-repeat;
+  background-position: 100% 105%;
 }
 
 .validator {
