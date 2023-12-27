@@ -22,7 +22,8 @@
   &__blocks-in-row {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    gap: 125px;
+    
 
     @include breakpoint(tablet) {
     }

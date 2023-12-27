@@ -1,5 +1,4 @@
 .infrastructure-block {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -49,7 +48,7 @@
   &__img {
     display: flex;
     width: 100%;
-    height: 240px;
+    height: 250px;
     margin-top: 35px;
 
     @include breakpoint(tablet) {
@@ -57,28 +56,5 @@
     @include breakpoint(mobile) {
     }
 
-    // &.image1 {
-
-    //   @include breakpoint(tablet) {
-    //   }
-    //   @include breakpoint(mobile) {
-    //   }
-    // }
-
-    // &.image2 {
-
-    //   @include breakpoint(tablet) {
-    //   }
-    //   @include breakpoint(mobile) {
-    //   }
-    // }
-
-    // &.image3 {
-
-    //   @include breakpoint(tablet) {
-    //   }
-    //   @include breakpoint(mobile) {
-    //   }
-    // }
   }
 }
