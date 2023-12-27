@@ -1,6 +1,5 @@
 .experiencedblocks-positioner {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -46,6 +45,7 @@
   margin-top: 70px;
   padding-bottom: 185px;
   gap: 90px;
+  flex-wrap: wrap;
 
   .experiencedblocks {
     align-items: center;
