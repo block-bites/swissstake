@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--NAVY, #161a39);
 
   @include breakpoint(mobile) {
   }
@@ -24,12 +25,12 @@
 
   &__block {
     width: 100%;
+    max-width: 1440px;
     display: flex;
     justify-content: space-between;
     gap: 50px;
     padding-left: 70px;
     padding-top: 90px;
-    background: var(--NAVY, #161a39);
 
     @include breakpoint(laptop) {
     }
@@ -53,6 +54,7 @@
   }
 
   &__title {
+    display: flex;
     color: var(--WHITE, #fff);
 
     /* P_H2 */
@@ -69,7 +71,9 @@
   }
 
   &__subtitle {
-    width: 600px;
+    display: flex;
+    width: 100%;
+    max-width: 600px;
     height: 100px;
     color: var(--WHITE, #fff);
 
@@ -90,7 +94,6 @@
     width: 100%;
     display: flex;
     max-width: 550px;
-    margin-right: 70px;
     margin-bottom: 60px;
 
     @include breakpoint(mobile) {
