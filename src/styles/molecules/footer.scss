@@ -21,6 +21,7 @@
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
+  max-width: 1440px;
 
   &-left {
     display: flex;
@@ -67,6 +68,7 @@
 
   &-right {
     display: flex;
+    flex-wrap: wrap;
 
     &--subtitle {
       margin-right: 70px;
