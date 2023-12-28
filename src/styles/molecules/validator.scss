@@ -8,25 +8,25 @@
   background: var(--RED, #ff202e);
   background-image: url("../assets/intro-mountain.svg");
   background-repeat: no-repeat;
-  background-size: auto 80%;
-  background-position: right 105%;
+  background-size: 1000px 80%;
+  background-position: right bottom -5%;
 }
 
 .validator {
   width: 100%;
   max-width: 1440px;
-  align-items: center;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 200px;
-  
 
-   &__content{
+  &__content {
     display: flex;
     flex-direction: column;
     margin-left: 150px;
-   }
+    justify-content: center;
+    max-width: 1440px;
+  }
 
   @include breakpoint(mobile) {
   }
@@ -34,12 +34,6 @@
   }
 
   &__title {
-    display: flex;
-    width: 100%;
-    max-width: 50px;
-    justify-content: left;
-    align-items: center;
-
     margin-bottom: 25px;
 
     color: var(--NAVY, #161a39);
@@ -57,14 +51,8 @@
   }
 
   &__subtitle {
-    display: flex;
-    justify-content: left;
-    align-items: center;
     margin-bottom: 40px;
-
     max-width: 410px;
-    height: 85px;
-
     color: var(--NAVY, #161a39);
 
     /* P_H2 */
@@ -80,13 +68,7 @@
   }
 
   &__text {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
     max-width: 600px;
-    height: 70px;
-
     color: var(--NAVY, #161a39);
 
     /* P_Body */

@@ -2,6 +2,7 @@ import React from "react";
 
 import Primarybtn from "../atoms/primary-btn";
 
+
 function Validator() {
   return (
     <div className="validator-positioner">

@@ -28,7 +28,7 @@ function Infrastructure() {
 
           <InfrastructureBlock
             title={"Privacy"}
-            text="Enjoy the stringent privacy laws <br /> that Switzerland is famous for."
+            text="Enjoy the stringent privacy laws that <br /> Switzerland is famous for."
             image={Lock}
           />
           <InfrastructureBlock

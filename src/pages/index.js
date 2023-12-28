@@ -20,10 +20,10 @@ function Index() {
         <link rel="icon" href={favicon} />
       </Helmet>
       <Navbar />
-      {/* <Intro />
-      <Animation /> */}
-      <Infrastructure />
-      {/* <Experienced />
+      <Intro />
+      <Animation />
+      {/* <Infrastructure />
+      <Experienced />
       <Footer /> */}
     </>
   );
