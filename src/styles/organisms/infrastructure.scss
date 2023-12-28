@@ -23,12 +23,13 @@
   box-sizing: border-box;
 
   &__blocks-in-row {
+    max-width: 1440px;
+    width: 100%;
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start; 
-    max-width: 1440px;
-    width: 100%;
+    align-items: flex-start;
 
     @include breakpoint(tablet) {
     }

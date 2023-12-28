@@ -24,20 +24,17 @@ function Infrastructure() {
               "Benefit from Switzerland's renowned<br />  political and economic stability."
             }
             image={Swiss}
-            //className="image1"
           />
 
           <InfrastructureBlock
             title={"Privacy"}
             text="Enjoy the stringent privacy laws <br /> that Switzerland is famous for."
             image={Lock}
-            //className="image2"
           />
           <InfrastructureBlock
             title={"Quality"}
             text="Experience top-tier service quality <br /> backed by Swiss precision and reliability."
             image={Star}
-            //className="image3"
           />
         </div>
       </div>
