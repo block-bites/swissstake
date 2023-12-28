@@ -1,9 +1,10 @@
 .infrastructure-positioner {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 140px;
+  box-sizing: border-box;
 
   @include breakpoint(tablet) {
   }
@@ -12,24 +13,42 @@
 }
 
 .infrastructure {
-  width: 100%;
   max-width: 1440px;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 
   &__blocks-in-row {
     display: flex;
-    justify-content: space-between;
-    gap: 125px;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start; 
+    max-width: 1440px;
+    width: 100%;
 
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
     }
   }
+
+  &__header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(mobile) {
+    }
+  }
+
   &__subtitle {
     padding: 15px;
 
@@ -59,19 +78,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 52px */
-
-    @include breakpoint(tablet) {
-    }
-    @include breakpoint(mobile) {
-    }
-  }
-
-
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 
     @include breakpoint(tablet) {
     }

@@ -12,10 +12,10 @@ function Infrastructure() {
       <div className="infrastructure">
         <div className="infrastructure__header">
           <h2 className="infrastructure__title">Swiss Infrastructure</h2>
-          <h4 className="infrastructure__subtitle">
+          <p className="infrastructure__subtitle">
             Our server is proudly hosted in Basel, Switzerland, leveraging the
             robust Swiss infrastructure.
-          </h4>
+          </p>
         </div>
         <div className="infrastructure__blocks-in-row">
           <InfrastructureBlock
@@ -24,20 +24,20 @@ function Infrastructure() {
               "Benefit from Switzerland's renowned<br />  political and economic stability."
             }
             image={Swiss}
-            className="image1"
+            //className="image1"
           />
 
           <InfrastructureBlock
             title={"Privacy"}
             text="Enjoy the stringent privacy laws <br /> that Switzerland is famous for."
             image={Lock}
-            className="image2"
+            //className="image2"
           />
           <InfrastructureBlock
             title={"Quality"}
             text="Experience top-tier service quality <br /> backed by Swiss precision and reliability."
             image={Star}
-            className="image3"
+            //className="image3"
           />
         </div>
       </div>
