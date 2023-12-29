@@ -1,50 +1,53 @@
 .mobile-experiencedblocks-positioner {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: #003b93;
+  background-color: var(--NAVY, #161a39);
 }
 
 .mobile-experienced-header {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 80px;
+  padding-top: 100px;
 
-  &__subtitle {
-    padding-top: 80px;
-    color: #fff;
+  &__title {
+    padding: 25px;
+    color: var(--WHITE, #fff);
     text-align: center;
-    font-family: Inter;
-    font-size: 18px;
+
+    /* P_H2a */
+    font-family: Poppins;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 150%; /* 27px */
+    font-weight: 600;
+    line-height: 130%; /* 52px */
   }
 
-  &__text {
-    padding-top: 15px;
-    color: #fff;
+  &__subtitle {
+    color: var(--WHITE, #fff);
     text-align: center;
-    font-family: Inter;
+
+    width: 400px;
+
+    /* P_Body */
+    font-family: Poppins;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 21px */
+    line-height: 150%; /* 24px */
   }
 }
 .mobile-blocks {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  margin: 100px;
-  padding-bottom: 30px;
-  gap: 240px;
-  position: relative;
+  margin-top: 70px;
+  padding-bottom: 185px;
+  gap: 90px;
+  flex-wrap: wrap;
 
   .mobile-experiencedblocks {
     align-items: center;
@@ -53,27 +56,31 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-
     &__title {
-      padding-top: 40px;
-      padding-bottom: 10px;
-      color: #fff;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      color: var(--WHITE, #fff);
       text-align: center;
-      font-family: Inter;
-      font-size: 16px;
+
+      /* P_H2 */
+      font-family: Poppins;
+      font-size: 30px;
       font-style: normal;
-      font-weight: 500;
-      line-height: 150%; /* 24px */
+      font-weight: 400;
+      line-height: 130%; /* 39px */
     }
 
     &__text {
-      color: #fff;
+      width: 310px;
+      color: var(--WHITE, #fff);
       text-align: center;
-      font-family: Inter;
-      font-size: 14px;
+
+      /* P_Body */
+      font-family: Poppins;
+      font-size: 16px;
       font-style: normal;
       font-weight: 400;
-      line-height: 150%; /* 21px */
+      line-height: 150%; /* 24px */
     }
 
     &__image1 {
@@ -91,21 +98,5 @@
       max-width: 160px;
       height: auto;
     }
-  }
-
-  .arrow-left {
-    position: absolute;
-    left: -40%;
-    border: none;
-    background: none;
-    transform: rotate(180deg);
-  }
-
-  .arrow-right {
-    position: absolute;
-    right: -40%;
-    border: none;
-    background: none;
-    transform: rotate(180deg);
   }
 }

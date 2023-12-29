@@ -12,9 +12,9 @@ function Intro() {
         </div>
       </div>
 
-      <div className="page__block">
+      {/* <div className="page__block">
         <Whychoose />
-      </div>
+      </div> */}
     </div>
   );
 }

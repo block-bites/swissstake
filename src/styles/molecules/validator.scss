@@ -6,10 +6,20 @@
   align-items: center;
 
   background: var(--RED, #ff202e);
-  background-image: url("../assets/intro-mountain.svg");
-  background-repeat: no-repeat;
-  background-size: 1000px 80%;
-  background-position: right bottom -5%;
+  // background-image: url("../assets/intro-mountain.svg");
+  // background-repeat: no-repeat;
+  // background-size: 1100px 80%;
+  // background-position: right bottom -30%;
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include breakpoint(tablet) {
+  }
 }
 
 .validator {
@@ -20,17 +30,34 @@
   align-items: flex-start;
   margin-top: 200px;
 
+  @include breakpoint(mobile) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  @include breakpoint(tablet) {
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
     margin-left: 150px;
     justify-content: center;
     max-width: 1440px;
-  }
 
-  @include breakpoint(mobile) {
-  }
-  @include breakpoint(tablet) {
+    @include breakpoint(tablet) {
+    }
+    @include breakpoint(mobile) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-width: none;
+      margin-left: 45px;
+      margin-right: 45px;
+    }
   }
 
   &__title {
@@ -45,6 +72,15 @@
     line-height: 130%; /* 83.2px */
 
     @include breakpoint(mobile) {
+      color: var(--NAVY, #161a39);
+      text-align: center;
+
+      /* P_H1 */
+      font-family: Poppins;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 83.2px */
     }
     @include breakpoint(tablet) {
     }
@@ -61,7 +97,17 @@
     font-style: normal;
     font-weight: 400;
     line-height: 130%; /* 39px */
+
     @include breakpoint(mobile) {
+      color: var(--NAVY, #161a39);
+      text-align: center;
+
+      /* P_H2 */
+      font-family: Poppins;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 39px */
     }
     @include breakpoint(tablet) {
     }
@@ -77,6 +123,31 @@
     font-style: normal;
     font-weight: 400;
     line-height: 150%; /* 24px */
+
+    @include breakpoint(tablet) {
+      color: var(--NAVY, #161a39);
+      text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
+    @include breakpoint(mobile) {
+      max-width: 400px;
+
+      color: var(--NAVY, #161a39);
+      text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
   }
 
   &__button {

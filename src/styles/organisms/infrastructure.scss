@@ -39,7 +39,6 @@
 
   &__header {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -51,8 +50,7 @@
   }
 
   &__subtitle {
-    padding: 15px;
-
+    margin-top: 15px;
     color: var(--Black, #1d1d1f);
     text-align: center;
 
@@ -66,6 +64,7 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
+      width: 300px;
     }
   }
 

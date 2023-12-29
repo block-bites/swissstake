@@ -27,6 +27,13 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
+      color: var(--NAVY, #161a39);
+      text-align: center;
+      font-family: Poppins;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 27px */
     }
   }
 

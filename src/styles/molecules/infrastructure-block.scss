@@ -11,7 +11,7 @@
   }
 
   &__title {
-    padding: 30px;
+    //padding: 30px;
     color: var(--Black, #1d1d1f);
 
     /* P_H2 */
@@ -24,6 +24,8 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
   }
 
@@ -42,6 +44,9 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
+      width: 330px;
+      justify-content: center;
+      
     }
   }
 
@@ -49,8 +54,6 @@
     display: flex;
     width: 250px;
     margin-top: 35px;
-
-
 
     @include breakpoint(tablet) {
     }

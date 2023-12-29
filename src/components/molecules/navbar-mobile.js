@@ -4,7 +4,6 @@ import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
 
-
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -15,21 +14,6 @@ function MobileNavbar() {
   return (
     <div className="mobile-positioner">
       <div className="navbar-mobile">
-        {/* <Link
-          to="top"
-          spy
-          smooth
-          duration={500}
-          offset={-100}
-          onClick={() => handleClick("top")}
-        >
-          <img
-            className="navbar-mobile__logo"
-            src={SwissLogo}
-            alt="SwissStake-Logo"
-          />
-        </Link> */}
-
         <div
           className={`mobile-hamburger ${
             isOpen ? "mobile-hamburger__toggled" : "mobile-hamburger__deafult"
@@ -89,7 +73,7 @@ function MobileNavbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={''} alt="Telegram" />
+                  <img src={""} alt="Telegram" />
                 </a>
               </div>
             </div>
