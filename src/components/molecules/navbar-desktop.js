@@ -14,19 +14,19 @@ function DesktopNavbar() {
         </Link>
 
         <div className="navbar__buttons">
-          <Link to="about" spy smooth duration={500} offset={-85}>
+          <Link to="about" spy smooth duration={500} offset={-80}>
             <Navbutton text={"About"} />
           </Link>
 
-          <Link to="infractructure" spy smooth duration={500} offset={-85}>
+          <Link to="infractructure" spy smooth duration={500} offset={-80}>
             <Navbutton text={"Infrastructure"} />
           </Link>
 
-          <Link to="adopter" spy smooth duration={500} offset={-85}>
+          <Link to="adopter" spy smooth duration={500} offset={-80}>
             <Navbutton text={"Adopter"} />
           </Link>
 
-          <Link to="join" spy smooth duration={500} offset={-85}>
+          <Link to="join" spy smooth duration={500} offset={-80}>
             <Navbutton text={"Join"} />
           </Link>
         </div>
