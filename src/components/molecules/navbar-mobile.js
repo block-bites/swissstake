@@ -3,6 +3,8 @@ import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
+import telegramicon from "../../assets/TelegramIcon.svg";
+
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,7 +75,7 @@ function MobileNavbar() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={""} alt="Telegram" />
+                  <img src={telegramicon} alt="Telegram" />
                 </a>
               </div>
             </div>

@@ -19,11 +19,11 @@ function Index() {
         <title>SwissStake</title>
         <link rel="icon" href={favicon} />
       </Helmet>
-      {/* <Navbar />
-      <Intro /> */}
+      <Navbar />
+      {/* <Intro /> */}
       {/* <Animation /> */}
-      <Infrastructure />
-      <Experienced />
+      {/* <Infrastructure />
+      <Experienced /> */}
       {/* <Footer /> */}
     </>
   );
