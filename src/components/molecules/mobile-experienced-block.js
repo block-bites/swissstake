@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import Iconknowledge from "../../assets/Knowladge.svg";
 import IconInnovation from "../../assets/Innovation.svg";
@@ -8,16 +8,15 @@ function MobileExperiencedBlock() {
   return (
     <div className="mobile-experiencedblocks-positioner">
       <div className="mobile-experienced-header">
-        <div>
-          <h2 className="mobile-experienced-header__title">
-            Experienced Casper Adopter
-          </h2>
-          <p className="mobile-experienced-header__subtitle">
-            Managed by an individual deeply involved with the Casper ecosystem,
-            SwissStake brings unparalleled expertise to the table:
-          </p>
-        </div>
+        <h2 className="mobile-experienced-header__title">
+          Experienced Casper Adopter
+        </h2>
+        <p className="mobile-experienced-header__subtitle">
+          Managed by an individual deeply involved with the Casper ecosystem,
+          SwissStake brings unparalleled expertise to the table:
+        </p>
       </div>
+
       <div className="mobile-blocks">
         <div className="mobile-experiencedblocks">
           <img

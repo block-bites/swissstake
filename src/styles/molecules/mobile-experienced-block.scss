@@ -11,15 +11,18 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 100px;
+  align-items: center;
+  justify-content: center;
 
   &__title {
     padding: 25px;
     color: var(--WHITE, #fff);
     text-align: center;
+    justify-content: center;
 
     /* P_H2a */
     font-family: Poppins;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     line-height: 130%; /* 52px */
@@ -28,8 +31,9 @@
   &__subtitle {
     color: var(--WHITE, #fff);
     text-align: center;
+    justify-content: center;
 
-    width: 400px;
+    width: 390px;
 
     /* P_Body */
     font-family: Poppins;

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  
 
   @include breakpoint(tablet) {
   }
@@ -11,7 +12,7 @@
   }
 
   &__title {
-    //padding: 30px;
+    margin-top: 20px;
     color: var(--Black, #1d1d1f);
 
     /* P_H2 */
@@ -33,6 +34,8 @@
     color: var(--Black, #1d1d1f);
     display: flex;
     text-align: center;
+    margin-top: 30px;
+
 
     /* P_Body */
     font-family: Poppins;
