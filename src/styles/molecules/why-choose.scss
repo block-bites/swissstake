@@ -16,9 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   @include breakpoint(mobile) {
+    flex-direction: column;
   }
   @include breakpoint(tablet) {
   }
@@ -35,6 +35,11 @@
     @include breakpoint(laptop) {
     }
     @include breakpoint(mobile) {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
     }
     @include breakpoint(tablet) {
     }
@@ -48,6 +53,12 @@
     margin-top: 60px;
 
     @include breakpoint(mobile) {
+      margin-bottom: 0; 
+      margin-top: 80px; 
+      align-items: center; 
+      text-align: center; 
+      gap: 25px;
+
     }
     @include breakpoint(tablet) {
     }
@@ -65,16 +76,22 @@
     line-height: 130%; /* 39px */
 
     @include breakpoint(mobile) {
+      color: var(--WHITE, #fff);
+      text-align: center;
+
+      /* P_H2 */
+      font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 39px */
     }
     @include breakpoint(tablet) {
     }
   }
 
   &__subtitle {
-    display: flex;
     width: 100%;
-    max-width: 600px;
-    height: 100px;
     color: var(--WHITE, #fff);
 
     /* P_Body */
@@ -85,6 +102,18 @@
     line-height: 150%; /* 24px */
 
     @include breakpoint(mobile) {
+      display: flex;
+      max-width: 340px;
+
+      color: var(--WHITE, #fff);
+      text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
     }
     @include breakpoint(tablet) {
     }
@@ -97,6 +126,10 @@
     margin-bottom: 60px;
 
     @include breakpoint(mobile) {
+      justify-content: center; 
+      max-width: 400px; 
+      margin-bottom: 100px;
+
     }
     @include breakpoint(tablet) {
     }
@@ -115,6 +148,8 @@
     width: 100%;
 
     @include breakpoint(mobile) {
+      max-width: 230px; 
+      height: auto; 
     }
     @include breakpoint(tablet) {
     }
