@@ -11,6 +11,8 @@
   transition: all 0.3s;
 
   @include breakpoint(mobile) {
+    width: 200px;
+    height: 50px;
   }
   @include breakpoint(tablet) {
   }
@@ -30,7 +32,7 @@
       color: var(--NAVY, #161a39);
       text-align: center;
       font-family: Poppins;
-      font-size: 18px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 600;
       line-height: 150%; /* 27px */

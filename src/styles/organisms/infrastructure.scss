@@ -9,6 +9,7 @@
   @include breakpoint(tablet) {
   }
   @include breakpoint(mobile) {
+    padding: 100px;
   }
 }
 
@@ -65,7 +66,8 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
-      width: 300px;
+      width: 350px;
+      font-size: 14px;
     }
   }
 
@@ -83,6 +85,7 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
+      font-size: 35px;
     }
   }
 }

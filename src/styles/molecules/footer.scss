@@ -67,6 +67,10 @@
         font-weight: 400;
         line-height: 150%; /* 27px */
         margin-left: 15px;
+
+        @include breakpoint(mobile) {
+          font-size: 14px;
+        }
       }
 
       &--swiss-logo {
@@ -86,6 +90,11 @@
       img {
         width: 90px;
         height: 30px;
+
+        @include breakpoint(mobile) {
+          width: 70px;
+          height: 30px;
+        }
       }
       @include breakpoint(mobile) {
         margin-top: 10px;
