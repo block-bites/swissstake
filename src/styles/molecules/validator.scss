@@ -20,10 +20,32 @@
 
     background-image: url("../assets/mobile-intro-mountain.svg");
     background-repeat: no-repeat;
-    background-size: 380px 390px;
-    background-position: right -60%  bottom -15%;
+    background-size: contain;
+    background-position: right bottom -5%;
   }
   @include breakpoint(tablet) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../assets/tablet-intro-mountain.svg");
+    background-repeat: no-repeat;
+    background-size: 600px 500px;
+    background-position: right bottom -5%;
+  }
+  @include breakpoint(laptop) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("../assets/tablet-intro-mountain.svg");
+    background-repeat: no-repeat;
+    background-size: 600px 590px;
+    background-position: right -5% bottom -5%;
   }
 }
 
@@ -43,6 +65,14 @@
     margin-top: 100px;
   }
   @include breakpoint(tablet) {
+    margin-top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @include breakpoint(laptop) {
+    margin-top: 80px;
   }
 
   &__content {
@@ -53,6 +83,13 @@
     max-width: 1440px;
 
     @include breakpoint(tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: none;
+      margin-left: 70px;
+      margin-right: 0;
     }
     @include breakpoint(mobile) {
       display: flex;
@@ -62,6 +99,15 @@
       max-width: none;
       margin-left: 45px;
       margin-right: 45px;
+    }
+    @include breakpoint(laptop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      max-width: none;
+      margin-left: 70px;
+      margin-right: 0;
     }
   }
 
@@ -81,7 +127,6 @@
       text-align: center;
       margin-bottom: 10px;
 
-
       /* P_H1 */
       font-family: Poppins;
       font-size: 55px;
@@ -90,6 +135,17 @@
       line-height: 130%; /* 83.2px */
     }
     @include breakpoint(tablet) {
+      color: var(--NAVY, #161a39);
+      margin-bottom: 10px;
+
+      /* P_H1 */
+      font-family: Poppins;
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 83.2px */
+    }
+    @include breakpoint(laptop) {
     }
   }
 
@@ -110,7 +166,6 @@
       text-align: center;
       margin-bottom: 20px;
 
-
       /* P_H2 */
       font-family: Poppins;
       font-size: 25px;
@@ -119,6 +174,18 @@
       line-height: 130%; /* 39px */
     }
     @include breakpoint(tablet) {
+      color: var(--NAVY, #161a39);
+      margin-bottom: 20px;
+
+      /* P_H2 */
+      font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 39px */
+    }
+
+    @include breakpoint(laptop) {
     }
   }
 
@@ -134,12 +201,14 @@
     line-height: 150%; /* 24px */
 
     @include breakpoint(tablet) {
+      max-width: 400px;
+      margin-bottom: 20px;
+
       color: var(--NAVY, #161a39);
-      text-align: center;
 
       /* P_Body */
       font-family: Poppins;
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 24px */
@@ -158,6 +227,18 @@
       font-weight: 400;
       line-height: 150%; /* 24px */
     }
+
+    @include breakpoint(laptop) {
+      max-width: 500px;
+      color: var(--NAVY, #161a39);
+
+      /* P_Body */
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
+    }
   }
 
   &__button {
@@ -168,6 +249,8 @@
     margin-bottom: 200px;
 
     @include breakpoint(tablet) {
+      margin-top: 50px;
+      margin-bottom: 240px;
     }
     @include breakpoint(mobile) {
       display: flex;
@@ -175,6 +258,11 @@
       align-items: center;
       margin-top: 0;
       margin-bottom: 310px;
+    }
+
+    @include breakpoint(laptop) {
+      margin-top: 50px;
+      margin-bottom: 240px;
     }
   }
 }
