@@ -110,6 +110,11 @@
     @include breakpoint(mobile) {
       display: none;
     }
+    @include breakpoint(tablet) {
+      flex-wrap: nowrap;
+      flex-direction: column;
+      gap: 20px;
+    }
 
     &--subtitle {
       margin-right: 70px;

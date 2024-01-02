@@ -13,6 +13,7 @@
   padding-top: 100px;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   &__title {
     padding: 25px;
@@ -35,7 +36,7 @@
     text-align: center;
     justify-content: center;
 
-    width: 350px;
+    width: 330px;
 
     /* P_Body */
     font-family: Poppins;
@@ -69,20 +70,20 @@
 
       /* P_H2 */
       font-family: Poppins;
-      font-size: 30px;
+      font-size: 25px;
       font-style: normal;
       font-weight: 400;
       line-height: 130%; /* 39px */
     }
 
     &__text {
-      width: 310px;
+      width: 220px;
       color: var(--WHITE, #fff);
       text-align: center;
 
       /* P_Body */
       font-family: Poppins;
-      font-size: 16px;
+      font-size: 14px;
       font-style: normal;
       font-weight: 400;
       line-height: 150%; /* 24px */

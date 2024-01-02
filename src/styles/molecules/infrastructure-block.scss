@@ -4,14 +4,19 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  
 
   @include breakpoint(tablet) {
+
   }
   @include breakpoint(mobile) {
   }
+  @include breakpoint(laptop) {
+
+  }
 
   &__title {
+    text-align: center;
+    justify-content: center;
     margin-top: 20px;
     color: var(--Black, #1d1d1f);
 
@@ -23,19 +28,23 @@
     line-height: 130%; /* 39px */
 
     @include breakpoint(tablet) {
+
     }
     @include breakpoint(mobile) {
       margin-top: 0;
-      margin-bottom: 0px;
+      margin-bottom: 0;
+    }
+    @include breakpoint(laptop) {
+
     }
   }
 
   &__text {
+    justify-content: center;
     color: var(--Black, #1d1d1f);
     display: flex;
     text-align: center;
     margin-top: 30px;
-
 
     /* P_Body */
     font-family: Poppins;
@@ -45,11 +54,18 @@
     line-height: 150%; /* 24px */
 
     @include breakpoint(tablet) {
+
     }
     @include breakpoint(mobile) {
       width: 330px;
       justify-content: center;
-      
+      text-align: center;
+
+    }
+    @include breakpoint(laptop) {
+
+
+
     }
   }
 
@@ -61,6 +77,9 @@
     @include breakpoint(tablet) {
     }
     @include breakpoint(mobile) {
+    }
+    @include breakpoint(laptop) {
+
     }
   }
 }
