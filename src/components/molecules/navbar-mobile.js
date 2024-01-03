@@ -4,6 +4,8 @@ import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
 import telegramicon from "../../assets/TelegramIcon.svg";
+import mobilestakelogo from "../../assets/Navbar-logo.svg";
+
 
 
 function MobileNavbar() {
@@ -16,6 +18,7 @@ function MobileNavbar() {
   return (
     <div className="mobile-positioner">
       <div className="navbar-mobile">
+      <img className="navbar-mobile__logo" src={mobilestakelogo} alt="Logo" />
         <div
           className={`mobile-hamburger ${
             isOpen ? "mobile-hamburger__toggled" : "mobile-hamburger__deafult"
