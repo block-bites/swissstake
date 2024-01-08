@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
-import telegramicon from "../../assets/telegramicon.svg";
+import telegramicon from "../../assets/telegram-icon.svg";
 import mobilestakelogo from "../../assets/navbar-logo.svg";
 
 
