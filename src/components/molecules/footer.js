@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import useIsMobile from "../../hooks/useIsMobile";
 
-import telegramicon from "../../assets/TelegramIcon.svg";
+import telegramicon from "../../assets/telegramIcon.svg";
 import footerlogo from "../../assets/Footer-logo.svg";
 import blockbites from "../../assets/Blockbites-logo.svg";
 

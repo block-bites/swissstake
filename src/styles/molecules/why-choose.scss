@@ -103,38 +103,17 @@
     line-height: 130%; /* 39px */
 
     @include breakpoint(mobile) {
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%; /* 39px */
     }
     @include breakpoint(tablet) {
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%; /* 39px */
     }
 
     @include breakpoint(laptop) {
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 30px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%; /* 39px */
     }
   }
 
@@ -153,43 +132,22 @@
       display: flex;
       max-width: 340px;
 
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
     @include breakpoint(tablet) {
       display: flex;
       max-width: 340px;
 
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
     @include breakpoint(laptop) {
       display: flex;
       max-width: 510px;
 
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
   }
 

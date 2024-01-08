@@ -33,11 +33,10 @@
     padding-bottom: 0;
   }
 
-@include breakpoint (laptop){
+  @include breakpoint(laptop) {
     margin-left: 70px;
     margin-right: 70px;
-
-}
+  }
 
   &__title {
     color: var(--WHITE, #fff);
@@ -50,13 +49,13 @@
 
     @include breakpoint(tablet) {
       color: var(--WHITE, #fff);
-    text-align: center;
-    font-family: Inter;
-    font-size: 40px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 65px */
-    width: 400px;
+      text-align: center;
+      font-family: Inter;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 130%; /* 65px */
+      width: 400px;
     }
     @include breakpoint(mobile) {
       color: var(--WHITE, #fff);

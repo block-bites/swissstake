@@ -3,9 +3,7 @@ import { MOBILE_BREAKPOINT } from "../constans";
 
 export const useIsMobile = () => {
   const isBrowser = typeof window !== "undefined";
-  const [isMobile, setIsMobile] = useState(
-    window.innerWidth <= MOBILE_BREAKPOINT
-  );
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     if (!isBrowser) {

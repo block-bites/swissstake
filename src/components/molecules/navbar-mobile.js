@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
-import telegramicon from "../../assets/TelegramIcon.svg";
+import telegramicon from "../../assets/telegramicon.svg";
 import mobilestakelogo from "../../assets/Navbar-logo.svg";
 
 
@@ -35,7 +35,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-94}
+                offset={-74}
                 onClick={() => handleClick("about")}
               >
                 <Navbutton text={"About"} />
@@ -45,7 +45,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-144}
+                offset={-74}
                 onClick={() => handleClick("infractructure")}
               >
                 <Navbutton text={"Infrastructure"} />
@@ -55,7 +55,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-95}
+                offset={-74}
                 onClick={() => handleClick("adopter")}
               >
                 <Navbutton text={"Adopter"} />
@@ -65,7 +65,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-164}
+                offset={-100}
                 onClick={() => handleClick("join")}
               >
                 <Navbutton text={"Join"} />
