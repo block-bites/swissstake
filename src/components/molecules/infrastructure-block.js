@@ -1,8 +1,8 @@
 import React from "react";
 
-import Swiss from "../../assets/Swiss-flag.svg";
-import Lock from "../../assets/Lock.svg";
-import Star from "../../assets/Star.svg";
+import Swiss from "../../assets/swiss-flag.svg";
+import Lock from "../../assets/lock.svg";
+import Star from "../../assets/star.svg";
 
 function InfrastructureBlock({ title, text, image }) {
   let imgClass = "default";

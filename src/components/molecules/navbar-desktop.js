@@ -3,7 +3,7 @@ import { Link } from "react-scroll";
 
 import Navbutton from "../atoms/nav-btn";
 
-import stakelogo from "../../assets/Navbar-logo.svg";
+import stakelogo from "../../assets/navbar-logo.svg";
 
 function DesktopNavbar() {
   return (

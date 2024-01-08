@@ -1,8 +1,8 @@
 import React from "react";
 
-import Iconknowledge from "../../assets/Knowladge.svg";
-import IconInnovation from "../../assets/Innovation.svg";
-import Iconcommitment from "../../assets/Commitment.svg";
+import Iconknowledge from "../../assets/knowladge.svg";
+import IconInnovation from "../../assets/innovation.svg";
+import Iconcommitment from "../../assets/commitment.svg";
 
 function MobileExperiencedBlock() {
   return (

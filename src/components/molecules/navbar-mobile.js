@@ -4,7 +4,7 @@ import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
 import telegramicon from "../../assets/telegramicon.svg";
-import mobilestakelogo from "../../assets/Navbar-logo.svg";
+import mobilestakelogo from "../../assets/navbar-logo.svg";
 
 
 
