@@ -14,7 +14,7 @@ function DesktopNavbar() {
         </Link>
 
         <div className="navbar__buttons">
-          <Link to="about" spy smooth duration={500} offset={-80}>
+          <Link to="about" spy smooth duration={500} offset={-420}>
             <Navbutton text={"About"} />
           </Link>
 

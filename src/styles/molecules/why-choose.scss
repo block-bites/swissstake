@@ -34,30 +34,33 @@
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    gap: 50px;
     padding-left: 70px;
-    padding-top: 90px;
+    margin-top: 80px;
+    margin-bottom: 85px;
 
     @include breakpoint(mobile) {
       flex-direction: column;
       align-items: center;
+      gap: 35px;
       padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     @include breakpoint(tablet) {
       flex-direction: column;
       align-items: center;
+      gap: 30px;
       padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
     @include breakpoint(laptop) {
       flex-direction: column;
       align-items: center;
+      gap: 30px;
       padding-left: 0;
-      padding-right: 0;
-      padding-top: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -65,12 +68,10 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-bottom: 90px;
-    margin-top: 60px;
 
     @include breakpoint(mobile) {
       margin-bottom: 0;
-      margin-top: 80px;
+      margin-top: 50px;
       align-items: center;
       text-align: center;
       gap: 25px;
@@ -80,46 +81,69 @@
       margin-top: 60px;
       align-items: center;
       text-align: center;
-      gap: 50px;
+      gap: 20px;
     }
     @include breakpoint(laptop) {
       margin-bottom: 0;
       margin-top: 60px;
       align-items: center;
       text-align: center;
-      gap: 50px;
+      gap: 20px;
     }
   }
 
   &__title {
     display: flex;
-    color: var(--WHITE, #fff);
+    color: var(--Gray-6, #f2f2f2);
 
-    /* P_H2 */
+    /* P_H2a */
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 40px;
     font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 39px */
+    font-weight: 600;
+    line-height: 130%; /* 52px */
 
     @include breakpoint(mobile) {
+      color: var(--Gray-6, #f2f2f2);
       text-align: center;
-      font-size: 25px;
+
+      /* P_H2a */
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 52px */
     }
     @include breakpoint(tablet) {
+      color: var(--Gray-6, #f2f2f2);
       text-align: center;
-      font-size: 25px;
+      width: 300px;
+
+      /* P_H2a */
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 52px */
     }
 
     @include breakpoint(laptop) {
+      color: var(--Gray-6, #f2f2f2);
       text-align: center;
-      font-size: 30px;
+
+      /* P_H2a */
+      font-family: Poppins;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 130%; /* 52px */
     }
   }
 
   &__subtitle {
     width: 100%;
     color: var(--WHITE, #fff);
+    max-width: 1070px;
 
     /* P_Body */
     font-family: Poppins;
@@ -132,35 +156,56 @@
       display: flex;
       max-width: 340px;
 
+      color: var(--WHITE, #fff);
       text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
       font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
     }
     @include breakpoint(tablet) {
       display: flex;
       max-width: 340px;
 
+      color: var(--WHITE, #fff);
       text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
       font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
     }
     @include breakpoint(laptop) {
       display: flex;
-      max-width: 510px;
+      max-width: 580px;
 
+      color: var(--WHITE, #fff);
       text-align: center;
+
+      /* P_Body */
+      font-family: Poppins;
       font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%; /* 24px */
     }
   }
 
   &__logo-container {
     width: 100%;
     display: flex;
-    max-width: 550px;
-    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
 
     @include breakpoint(mobile) {
       justify-content: center;
       max-width: 400px;
-      margin-bottom: 100px;
+      margin-bottom: 80px;
     }
     @include breakpoint(tablet) {
       justify-content: center;
@@ -176,6 +221,7 @@
 
   &__casperlogo {
     display: flex;
+
     @include breakpoint(mobile) {
     }
     @include breakpoint(tablet) {
@@ -187,6 +233,7 @@
   .why-chose-logo-size {
     display: flex;
     width: 100%;
+    max-width: 400px;
 
     @include breakpoint(mobile) {
       max-width: 230px;

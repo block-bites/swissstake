@@ -59,7 +59,9 @@
       border-top: 1px solid white;
       justify-content: center;
       align-items: center;
-      flex-direction: column;    }
+      flex-direction: row;
+      gap: 25px;
+    }
 
     &--telegram {
       display: flex;
@@ -68,7 +70,6 @@
       margin-top: 10px;
       justify-content: center;
       align-items: center;
-
     }
   }
 }

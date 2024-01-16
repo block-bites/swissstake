@@ -44,7 +44,9 @@
     color: var(--Black, #1d1d1f);
     display: flex;
     text-align: center;
+    align-items: center;
     margin-top: 30px;
+    width: 330px;
 
     /* P_Body */
     font-family: Poppins;
@@ -54,6 +56,7 @@
     line-height: 150%; /* 24px */
 
     @include breakpoint(tablet) {
+      width: 330px;
 
     }
     @include breakpoint(mobile) {
@@ -62,16 +65,16 @@
       text-align: center;
 
     }
+    
     @include breakpoint(laptop) {
-
-
-
+      width: 340px;
     }
+
   }
 
   &__img {
     display: flex;
-    width: 250px;
+    width: 210px;
     margin-top: 35px;
 
     @include breakpoint(tablet) {

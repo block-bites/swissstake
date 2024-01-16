@@ -37,7 +37,7 @@
     line-height: 130%; /* 52px */
 
     @include breakpoint(tablet) {
-      width: 500px;
+      width: 485px;
       text-align: center;
       justify-content: center;
     }
@@ -48,7 +48,7 @@
     text-align: center;
     justify-content: center;
 
-    width: 330px;
+    width: 310px;
 
     /* P_Body */
     font-family: Poppins;
@@ -58,7 +58,7 @@
     line-height: 150%; /* 24px */
 
     @include breakpoint(tablet) {
-      width: 500px;
+      width: 470px;
       margin-bottom: 50px;
     }
   }
@@ -109,6 +109,7 @@
         width: 290px;
       }
     }
+  
 
     &__image1 {
       width: 100%;

@@ -2,7 +2,6 @@ import React from "react";
 
 import Primarybtn from "../atoms/primary-btn";
 
-
 function Validator() {
   return (
     <div className="validator-positioner">
@@ -15,9 +14,9 @@ function Validator() {
           </h2>
 
           <p className="validator__text">
-            Start staking with SwissStake and experience the difference that our
-            unique advantages bring. Whether you're new to staking or a seasoned
-            pro, we're here to support you every step of the way.
+            Unlock the full potential of staking with SwissStake and elevate
+            your experience with our unparalleled advantages. Whether you're a
+            staking novice or a seasoned pro, we'll guide you at every step!
           </p>
 
           <div className="validator__button">

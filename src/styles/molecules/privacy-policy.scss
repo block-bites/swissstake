@@ -1,0 +1,127 @@
+.privacy-policy-positioner {
+  position: fixed;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1000;
+  @include breakpoint(laptop) {
+    bottom: 0;
+  }
+  @include breakpoint(tablet) {
+    bottom: 0;
+  }
+
+  @include breakpoint(mobile) {
+    bottom: 0;
+  }
+}
+
+.privacy-policy-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  max-height: 90%;
+  overflow-y: auto;
+
+  border-radius: 74px;
+  border: 2px solid white;
+  background-color: var(--NAVY, #161a39);
+  padding: 50px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  @include breakpoint(laptop) {
+  }
+  @include breakpoint(tablet) {
+    padding: 20px;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 15px;
+  }
+
+  &--button {
+    display: flex;
+    align-self: flex-end;
+    width: 25px;
+    justify-content: center;
+
+    color: var(--WHITE, #fff);
+
+    /* P_H2 */
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 39px */
+
+    background: none;
+    border: none;
+    margin-right: 20px;
+    cursor: pointer;
+    @include breakpoint(laptop) {
+    }
+    @include breakpoint(tablet) {
+    }
+
+    @include breakpoint(mobile) {
+    }
+  }
+
+  &__text {
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+
+    &--title {
+      margin-bottom: 10px;
+      margin-left: 50px;
+      color: var(--WHITE, #fff);
+
+      /* P_H2 */
+      font-family: Poppins;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%; /* 39px */
+
+      @include breakpoint(laptop) {
+      }
+      @include breakpoint(tablet) {
+        width: 300px;
+      }
+
+      @include breakpoint(mobile) {
+      }
+    }
+
+    &--subtitle {
+      width: 1100px;
+      margin-bottom: 10px;
+      margin-left: 50px;
+      color: var(--WHITE, #fff);
+      font-family: Poppins;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 200;
+      line-height: 150%; /* 21px */
+
+      @include breakpoint(laptop) {
+        width: 700px;
+      }
+      @include breakpoint(tablet) {
+        width: 400px;
+      }
+
+      @include breakpoint(mobile) {
+        width: 300px;
+      }
+    }
+  }
+}

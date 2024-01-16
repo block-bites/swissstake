@@ -28,6 +28,7 @@
   &__subtitle {
     color: var(--WHITE, #fff);
     text-align: center;
+    width: 700px;
 
     /* P_Body */
     font-family: Poppins;
@@ -44,7 +45,7 @@
   flex-direction: row;
   margin-top: 70px;
   padding-bottom: 185px;
-  gap: 90px;
+  gap: 110px;
   flex-wrap: wrap;
 
   .experiencedblocks {

@@ -16,15 +16,39 @@
 
     @include breakpoint(tablet) {
       color: white;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 24px */
+
+      padding: 0;
+      border: none;
+      background: none;
     }
     @include breakpoint(mobile) {
       color: white;
+      text-align: center;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 24px */
+
+      padding: 0;
+      border: none;
+      background: none;
     }
   }
-
   button:hover {
-    text-decoration: underline;
-    text-decoration-color: #ffffff;
+    box-shadow: 0px 1px 0px 0px #000;
     cursor: pointer;
+    @include breakpoint(mobile) {
+      box-shadow: 0px 1px 0px 0px white;
+    }
+    @include breakpoint(tablet) {
+      box-shadow: 0px 1px 0px 0px white;
+    }
   }
 }

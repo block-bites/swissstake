@@ -28,7 +28,10 @@
     height: 200px;
   }
   @include breakpoint(mobile) {
-    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100px;
     height: 320px;
     padding-left: 30px;
     padding-right: 30px;

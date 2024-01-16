@@ -7,7 +7,7 @@
   box-sizing: border-box;
 
   @include breakpoint(mobile) {
-    padding: 100px;
+    padding: 50px;
   }
   @include breakpoint(tablet) {
     padding: 100px;
@@ -40,9 +40,9 @@
 
     @include breakpoint(tablet) {
 
-
     }
     @include breakpoint(mobile) {
+      margin-top: 80px;
     }
     @include breakpoint(laptop) {
 
@@ -67,6 +67,7 @@
     margin-top: 15px;
     color: var(--Black, #1d1d1f);
     text-align: center;
+    width: 870px;
 
     /* P_Body */
     font-family: Poppins;
@@ -76,6 +77,7 @@
     line-height: 150%; /* 24px */
 
     @include breakpoint(tablet) {
+      width: 400px;
 
     }
     @include breakpoint(mobile) {
@@ -83,7 +85,7 @@
       font-size: 14px;
     }
     @include breakpoint(laptop) {
-
+      width: 730px;
     }
   }
 
@@ -99,13 +101,13 @@
     line-height: 130%; /* 52px */
 
     @include breakpoint(tablet) {
-
+      width: 400px;
     }
     @include breakpoint(mobile) {
       font-size: 35px;
     }
     @include breakpoint(laptop) {
-
+      width: 670px;
     }
   }
 }

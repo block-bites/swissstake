@@ -5,7 +5,6 @@
 // Atoms
 @import "./atoms/nav-btn";
 @import "./atoms/primary-btn";
-@import "./atoms/secondary-btn";
 @import "./atoms/tertiary-btn";
 
 //Molecules
@@ -16,15 +15,17 @@
 @import "./molecules/why-choose";
 @import "./molecules/infrastructure-block";
 @import "./molecules/experienced-block";
-@import "./molecules/footer";
 @import "./molecules/mobile-experienced-block";
+@import "./molecules/animation";
+@import "./molecules/mobile-animation.scss";
+@import "./molecules/privacy-policy.scss";
 
 //Organisms
 @import "./organisms/navbar.scss";
-@import "./organisms/animation";
 @import "./organisms/intro";
 @import "./organisms/infrastructure";
 @import "./organisms/experienced";
+@import "./organisms/footer";
 
 * {
   margin: 0;

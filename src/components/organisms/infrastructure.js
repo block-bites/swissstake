@@ -11,29 +11,33 @@ function Infrastructure() {
     <div className="infrastructure-positioner" id="infractructure">
       <div className="infrastructure">
         <div className="infrastructure__header">
-          <h2 className="infrastructure__title">Swiss Infrastructure</h2>
+          <h2 className="infrastructure__title">
+            Discover the Swiss Infrastructure
+          </h2>
           <p className="infrastructure__subtitle">
             Our server is proudly hosted in Basel, Switzerland, leveraging the
-            robust Swiss infrastructure.
+            robust Swiss infrastructure. In addition, we're running backup nodes
+            in the cloud environment ready for scaling up and adjusting to the
+            market conditions.
           </p>
         </div>
         <div className="infrastructure__blocks-in-row">
           <InfrastructureBlock
             title={"Stability"}
             text={
-              "Benefit from Switzerland's renowned<br />  political and economic stability."
+              "Benefit from Switzerland's renowned political and economic stability, ensuring a secure staking environment."
             }
             image={Swiss}
           />
 
           <InfrastructureBlock
             title={"Privacy"}
-            text="Enjoy the stringent privacy laws that <br /> Switzerland is famous for."
+            text="Embrace stringent privacy laws that Switzerland is globally acclaimed for, safeguarding your assets."
             image={Lock}
           />
           <InfrastructureBlock
             title={"Quality"}
-            text="Experience top-tier service quality <br /> backed by Swiss precision and reliability."
+            text="Immerse yourself in top-tier service quality, backed by Swiss reliability for a seamless staking experience."
             image={Star}
           />
         </div>
