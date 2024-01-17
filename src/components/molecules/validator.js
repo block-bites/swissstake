@@ -6,21 +6,22 @@ function Validator() {
   return (
     <div className="validator-positioner">
       <div className="validator">
-        <h1 className="validator__desktop-title">
-          <span className="validator__desktop-title--blue">SwissStake</span> -
-          Your Swiss Validator on <br /> the Casper Network
-        </h1>
+        <div className="validator__content">
+          <h1 className="validator__title">SwissStake</h1>
 
-        <div className="validator__subtitle">
-          <p className="validator__subtitle">
-            Start staking with SwissStake and experience the difference that our
-            unique advantages bring. Whether you're new to staking or a seasoned
-            pro, we're here to support you every step of the way.
+          <h2 className="validator__subtitle">
+            Your Swiss Validator on the Casper Network
+          </h2>
+
+          <p className="validator__text">
+            Unlock the full potential of staking with SwissStake and elevate
+            your experience with our unparalleled advantages. Whether you're a
+            staking novice or a seasoned pro, we'll guide you at every step!
           </p>
-        </div>
 
-        <div className="validator__button">
-          <Primarybtn />
+          <div className="validator__button">
+            <Primarybtn />
+          </div>
         </div>
       </div>
     </div>

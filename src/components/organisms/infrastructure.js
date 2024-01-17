@@ -2,40 +2,43 @@ import React from "react";
 
 import InfrastructureBlock from "../molecules/infrastructure-block";
 
-import Swiss from "../../assets/Swiss-flag.svg";
-import Lock from "../../assets/Lock.svg";
-import Trophy from "../../assets/Trophy.svg";
+import Swiss from "../../assets/swiss-flag.svg";
+import Lock from "../../assets/lock.svg";
+import Star from "../../assets/star.svg";
 
 function Infrastructure() {
   return (
     <div className="infrastructure-positioner" id="infractructure">
       <div className="infrastructure">
         <div className="infrastructure__header">
-          <h2 className="infrastructure__title">Swiss Infrastructure</h2>
-          <h4 className="infrastructure__subtitle">
+          <h2 className="infrastructure__title">
+            Discover the Swiss Infrastructure
+          </h2>
+          <p className="infrastructure__subtitle">
             Our server is proudly hosted in Basel, Switzerland, leveraging the
-            robust Swiss infrastructure.
-          </h4>
-          <p className="infrastructure__text"> This location offers:</p>
+            robust Swiss infrastructure. In addition, we're running backup nodes
+            in the cloud environment ready for scaling up and adjusting to the
+            market conditions.
+          </p>
         </div>
-        <InfrastructureBlock
-          title={"Stability"}
-          text={"Benefit from Switzerland's renowned<br />  political and economic stability."}
-          image={Swiss}
-          className="image1"
-        />
         <div className="infrastructure__blocks-in-row">
           <InfrastructureBlock
+            title={"Stability"}
+            text={
+              "Benefit from Switzerland's renowned political and economic stability, ensuring a secure staking environment."
+            }
+            image={Swiss}
+          />
+
+          <InfrastructureBlock
             title={"Privacy"}
-            text="Enjoy the stringent privacy laws <br /> that Switzerland is famous for."
+            text="Embrace stringent privacy laws that Switzerland is globally acclaimed for, safeguarding your assets."
             image={Lock}
-            className="image2"
           />
           <InfrastructureBlock
             title={"Quality"}
-            text="Experience top-tier service quality <br /> backed by Swiss precision and reliability."
-            image={Trophy}
-            className="image3"
+            text="Immerse yourself in top-tier service quality, backed by Swiss reliability for a seamless staking experience."
+            image={Star}
           />
         </div>
       </div>

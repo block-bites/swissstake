@@ -1,3 +1,5 @@
+$overlay-color: #161a39;
+
 .tertiary-btn {
   display: flex;
   width: 240px;
@@ -5,77 +7,62 @@
   padding: 16px 32px;
   justify-content: center;
   align-items: center;
-  gap: 13px;
-  border-radius: 135.034px;
-  background: #fff;
+  border-radius: 135px;
+  position: relative;
+  overflow: hidden;
+
+  color: var(--NAVY, #161a39);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  border: 1px solid white;
+  background-color: white;
   text-decoration: none;
-  transition: all 0.3s;
 
   @include breakpoint(mobile) {
-    display: flex;
-    width: 130px;
-    height: 40px;
-    padding: 15px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    border-radius: 40px;
-    background: #fff;
-    text-decoration: none;
-  }
-  @include breakpoint(tablet) {
-    display: flex;
-    width: 130px;
-    height: 40px;
-    padding: 15px 10px;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    border-radius: 40px;
-    background: #fff;
-    text-decoration: none;
-  }
+    width: 200px;
+    height: 50px;
 
-  &__title {
-    color: #583275;
+    color: var(--NAVY, #161a39);
+    background-color: white;
     text-align: center;
-    font-family: Inter;
-    font-size: 18px;
+    font-family: Poppins;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 150%; /* 27px */
+  }
 
-    @include breakpoint(tablet) {
-      color: #583275;
-      text-align: center;
-      font-family: Inter;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 150%; /* 18px */
-    }
-    @include breakpoint(mobile) {
-      color: #583275;
-      text-align: center;
-      font-family: Inter;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 150%; /* 18px */
-    }
+  &:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 30px;
+    background-color: rgba($overlay-color, 0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0, 1);
+    transform-origin: left center;
+    transition: all 0.2s linear;
   }
 
   &:hover {
-    background: white;
-    border: 5px solid #3C2350;
-    color: #fff;
+    text-indent: 30px;
+
+    &:before {
+      transform: scale(1, 1);
+      text-indent: 0;
+    }
   }
-
-}
-
-.tertiary-btn:hover .tertiary-btn__title {
-  color: #583275;
 }
 
 button:hover {

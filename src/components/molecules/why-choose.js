@@ -1,6 +1,6 @@
 import React from "react";
 
-import Frame2 from "../../assets/casper-logo.svg";
+import casperlogo from "../../assets/caspereco-logo.svg";
 
 function Whychoose() {
   return (
@@ -10,17 +10,17 @@ function Whychoose() {
           <div className="why-choose__text">
             <h2 className="why-choose__title">Why Choose SwissStake?</h2>
             <p className="why-choose__subtitle">
-              SwissStake is not just another validator; we offer unique
-              advantages that set us apart from the crowd. Our commitment to
-              independence, quality, and experience makes us the ideal choice
-              for staking on the Casper Network.
+              SwissStake isn't just another validator; we redefine excellence
+              with distinct advantages that set us apart. Our commitment to
+              independence, quality, and experience positions us as the ultimate
+              choice for staking on the Casper Network.
             </p>
           </div>
           <div className="why-choose__logo-container">
             <div className="why-choose__casperlogo">
               <img
                 className="why-chose-logo-size"
-                src={Frame2}
+                src={casperlogo}
                 alt="casper ecosystem img"
               />
             </div>

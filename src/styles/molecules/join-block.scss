@@ -8,41 +8,39 @@
   height: 500px;
   padding-top: 90px;
   padding-bottom: 90px;
+
   border-radius: 24px;
-  background: #583275;
-  background-repeat: no-repeat;
+  border: 3px solid var(--NAVY, #161a39);
+  background: var(--NAVY, #161a39);
+  box-shadow: 0px 13px 23px 0px rgba(0, 0, 0, 0.1);
 
   @include breakpoint(tablet) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     width: 100%;
-    max-width: 600px;
-    height: 320px;
+    max-width: 900px;
+    height: 400px;
     padding-top: 90px;
-    padding-bottom: 115px;
-    border-radius: 7px;
-    background: #583275;
-    background-repeat: no-repeat;
+    padding-bottom: 90px;
   }
   @include breakpoint(mobile) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 600px;
-    height: 320px;
-    padding-top: 90px;
-    padding-bottom: 115px;
-    border-radius: 7px;
-    background: #583275;
-    background-repeat: no-repeat;
+    border-radius: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+
+    max-width: none;
+    height: none;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
+@include breakpoint (laptop){
+    margin-left: 70px;
+    margin-right: 70px;
+
+}
+
   &__title {
-    color: #fff;
+    color: var(--WHITE, #fff);
     text-align: center;
     font-family: Inter;
     font-size: 50px;
@@ -51,36 +49,33 @@
     line-height: 130%; /* 65px */
 
     @include breakpoint(tablet) {
-      color: #fff;
-      text-align: center;
-      font-family: Inter;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 130%; /* 19.7px */
+      color: var(--WHITE, #fff);
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 65px */
+    width: 400px;
     }
     @include breakpoint(mobile) {
-      color: #fff;
+      color: var(--WHITE, #fff);
       text-align: center;
       font-family: Inter;
-      font-size: 16px;
+      font-size: 35px;
       font-style: normal;
       font-weight: 500;
-      line-height: 130%; /* 19.7px */
+      line-height: 130%; /* 65px */
     }
   }
 
   &__button {
     display: flex;
-    padding-top: 70px;
+    padding-top: 40px;
 
     @include breakpoint(tablet) {
-      display: flex;
-      padding-top: 30px;
     }
     @include breakpoint(mobile) {
-      display: flex;
-      padding-top: 30px;
     }
   }
 }

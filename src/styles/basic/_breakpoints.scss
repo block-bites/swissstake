@@ -11,6 +11,7 @@
     @media screen and (max-width: 1200px) and (min-width: 769px) {
       @content;
     }
+    
   } @else if $point == desktop {
     @media screen and (max-width: 1600px) and (min-width: 1201px) {
       @content;

@@ -6,7 +6,6 @@
   position: fixed;
   background: white;
 
-  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.07);
   z-index: 1;
 }
 
@@ -24,8 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 140px;
     height: auto;
+    margin-right: auto;
 
     &:active {
       cursor: pointer;
@@ -33,13 +33,13 @@
   }
 
   &__menu {
-    background-color: #003b93;
     width: 100vw;
     height: 100vh;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 0;
     z-index: 2;
+    background: var(--NAVY, #161a39);
 
     &--content {
       display: flex;
@@ -59,30 +59,34 @@
       border-top: 1px solid white;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      padding: 80px;
+      flex-direction: row;
+      gap: 25px;
     }
 
     &--telegram {
       display: flex;
-      max-width: 50px;
-      height: 50px;
+      max-width: 60px;
+      height: 60px;
+      margin-top: 10px;
       justify-content: center;
       align-items: center;
     }
   }
 }
 
-
-
 .mobile-hamburger {
+  display: flex;
+  position: absolute;
+  right: 0;
+  padding-right: 40px;
+
   &__toggled {
     display: flex;
     position: absolute;
     right: 0;
-    color: white;
     z-index: 3;
     padding-right: 40px;
+    color: white;
 
     &:active {
       cursor: pointer;

@@ -9,7 +9,7 @@ function Tertiarybtn() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <p className="tertiary-btn__title">Get Started</p>
+        Get Started
       </a>
     </div>
   );

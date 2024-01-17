@@ -4,8 +4,10 @@ import Hamburger from "hamburger-react";
 
 import Navbutton from "../atoms/nav-btn";
 
-import SwissLogo from "../../assets/mobile-logo.svg";
-import TelegramIcon from "../../assets/navbar-mobile-icon.svg";
+import telegramicon from "../../assets/telegram-icon.svg";
+import twittericon from "../../assets/twitter-icon.svg";
+import linkedinicon from "../../assets/linkedin-icon.svg";
+import mobilestakelogo from "../../assets/navbar-logo.svg";
 
 function MobileNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,25 +15,16 @@ function MobileNavbar() {
   const handleClick = (to) => {
     setIsOpen(false);
   };
-
   return (
     <div className="mobile-positioner">
       <div className="navbar-mobile">
-        <Link
-          to="top"
-          spy
-          smooth
-          duration={500}
-          offset={-100}
-          onClick={() => handleClick("top")}
-        >
+        <Link to="top" spy smooth duration={500} offset={-100}>
           <img
             className="navbar-mobile__logo"
-            src={SwissLogo}
+            src={mobilestakelogo}
             alt="SwissStake-Logo"
           />
         </Link>
-
         <div
           className={`mobile-hamburger ${
             isOpen ? "mobile-hamburger__toggled" : "mobile-hamburger__deafult"
@@ -48,7 +41,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-94}
+                offset={-600}
                 onClick={() => handleClick("about")}
               >
                 <Navbutton text={"About"} />
@@ -58,7 +51,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-144}
+                offset={-74}
                 onClick={() => handleClick("infractructure")}
               >
                 <Navbutton text={"Infrastructure"} />
@@ -68,7 +61,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-95}
+                offset={-74}
                 onClick={() => handleClick("adopter")}
               >
                 <Navbutton text={"Adopter"} />
@@ -78,7 +71,7 @@ function MobileNavbar() {
                 spy
                 smooth
                 duration={500}
-                offset={-164}
+                offset={-55}
                 onClick={() => handleClick("join")}
               >
                 <Navbutton text={"Join"} />
@@ -86,12 +79,28 @@ function MobileNavbar() {
 
               <div className="navbar-mobile__menu--line">
                 <a
-                  className="navbar-mobile__menu--telegram"
                   href="https://t.me/joinchat/XuVh94v4X3o4Yjk8"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="navbar-mobile__menu--telegram"
                 >
-                  <img src={TelegramIcon} alt="Telegram" />
+                  <img src={telegramicon} alt="blockbites-logo" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/blockbites/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="navbar-mobile__menu--telegram"
+                >
+                  <img src={linkedinicon} alt="blockbites-logo" />
+                </a>
+                <a
+                  href="https://twitter.com/theblockbites"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="navbar-mobile__menu--telegram"
+                >
+                  <img src={twittericon} alt="blockbites-logo" />
                 </a>
               </div>
             </div>

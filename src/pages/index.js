@@ -4,12 +4,11 @@ import "../styles/App.scss";
 
 import Intro from "../components/organisms/intro";
 import Infrastructure from "../components/organisms/infrastructure";
-import Animation from "../components/organisms/animation";
 import Navbar from "../components/organisms/navbar";
 import Experienced from "../components/organisms/experienced";
-import Footer from "../components/molecules/footer";
+import Footer from "../components/organisms/footer";
 
-import favicon from "../../static/favicon.ico";
+import favicon from "../../static/favicon.svg";
 
 function Index() {
   return (
@@ -17,11 +16,14 @@ function Index() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>SwissStake</title>
-        <link rel="icon" href={favicon} />
+        <link rel="icon" href={favicon} type="image/svg+xml" />
+        <link 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+          rel="stylesheet" 
+        />
       </Helmet>
       <Navbar />
       <Intro />
-      <Animation />
       <Infrastructure />
       <Experienced />
       <Footer />
