@@ -31,13 +31,11 @@
   overflow-y: auto;
 
   border-radius: 74px;
-  border: 2px solid white;
-  background-color: var(--NAVY, #161a39);
+  border: 2px solid $c-white-main;
+  background-color: $c-navy-main;
   padding: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  @include breakpoint(laptop) {
-  }
   @include breakpoint(tablet) {
     padding: 20px;
   }
@@ -52,7 +50,7 @@
     width: 25px;
     justify-content: center;
 
-    color: var(--WHITE, #fff);
+    color: $c-white-main;
 
     /* P_H2 */
     font-family: Poppins;
@@ -65,13 +63,6 @@
     border: none;
     margin-right: 20px;
     cursor: pointer;
-    @include breakpoint(laptop) {
-    }
-    @include breakpoint(tablet) {
-    }
-
-    @include breakpoint(mobile) {
-    }
   }
 
   &__text {
@@ -82,7 +73,7 @@
     &--title {
       margin-bottom: 10px;
       margin-left: 50px;
-      color: var(--WHITE, #fff);
+      color: $c-white-main;
 
       /* P_H2 */
       font-family: Poppins;
@@ -91,13 +82,8 @@
       font-weight: 400;
       line-height: 130%; /* 39px */
 
-      @include breakpoint(laptop) {
-      }
       @include breakpoint(tablet) {
         width: 300px;
-      }
-
-      @include breakpoint(mobile) {
       }
     }
 
@@ -105,7 +91,7 @@
       width: 1100px;
       margin-bottom: 10px;
       margin-left: 50px;
-      color: var(--WHITE, #fff);
+      color: $c-white-main;
       font-family: Poppins;
       font-size: 14px;
       font-style: italic;

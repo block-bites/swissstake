@@ -3,14 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: var(--NAVY, #161a39);
-
-  @include breakpoint(mobile) {
-  }
-  @include breakpoint(tablet) {
-  }
-  @include breakpoint(laptop) {
-  }
+  background: $c-navy-main;
 }
 
 .why-choose {
@@ -94,7 +87,7 @@
 
   &__title {
     display: flex;
-    color: var(--Gray-6, #f2f2f2);
+    color: $c-gray-main;
 
     /* P_H2a */
     font-family: Poppins;
@@ -104,45 +97,24 @@
     line-height: 130%; /* 52px */
 
     @include breakpoint(mobile) {
-      color: var(--Gray-6, #f2f2f2);
       text-align: center;
-
-      /* P_H2a */
-      font-family: Poppins;
       font-size: 40px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%; /* 52px */
     }
     @include breakpoint(tablet) {
-      color: var(--Gray-6, #f2f2f2);
       text-align: center;
       width: 300px;
-
-      /* P_H2a */
-      font-family: Poppins;
       font-size: 40px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%; /* 52px */
     }
 
     @include breakpoint(laptop) {
-      color: var(--Gray-6, #f2f2f2);
       text-align: center;
-
-      /* P_H2a */
-      font-family: Poppins;
       font-size: 40px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%; /* 52px */
     }
   }
 
   &__subtitle {
     width: 100%;
-    color: var(--WHITE, #fff);
+    color: $c-white-main;
     max-width: 1070px;
 
     /* P_Body */
@@ -155,44 +127,20 @@
     @include breakpoint(mobile) {
       display: flex;
       max-width: 340px;
-
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
     @include breakpoint(tablet) {
       display: flex;
       max-width: 340px;
-
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
     @include breakpoint(laptop) {
       display: flex;
       max-width: 580px;
-
-      color: var(--WHITE, #fff);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
   }
 
@@ -203,17 +151,14 @@
     align-items: center;
 
     @include breakpoint(mobile) {
-      justify-content: center;
       max-width: 400px;
       margin-bottom: 80px;
     }
     @include breakpoint(tablet) {
-      justify-content: center;
       max-width: 400px;
       margin-bottom: 50px;
     }
     @include breakpoint(laptop) {
-      justify-content: center;
       max-width: 400px;
       margin-bottom: 50px;
     }
@@ -221,13 +166,6 @@
 
   &__casperlogo {
     display: flex;
-
-    @include breakpoint(mobile) {
-    }
-    @include breakpoint(tablet) {
-    }
-    @include breakpoint(laptop) {
-    }
   }
 
   .why-chose-logo-size {

@@ -5,7 +5,7 @@
   justify-content: center;
   flex-direction: column;
 
-  background: var(--NAVY, #161a39);
+  background: $c-navy-main;
 }
 
 .mobileanimation-content {
@@ -22,7 +22,7 @@
     width: 320px;
     
     
-    color: var(--Gray-6, #f2f2f2);
+    color: $c-gray-main;
 
     /* P_H2a */
     font-family: Poppins;
@@ -37,7 +37,7 @@
     margin-bottom: 60px;
     width: 315px;
 
-    color: var(--Gray-6, #f2f2f2);
+    color: $c-gray-main;
 
     /* P_Body */
     font-family: Poppins;

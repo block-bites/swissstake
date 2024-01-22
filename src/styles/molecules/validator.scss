@@ -4,7 +4,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-
 }
 
 .validator {
@@ -17,17 +16,11 @@
 
   @include breakpoint(mobile) {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 100px;
   }
   @include breakpoint(tablet) {
     margin-top: 80px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
   }
   @include breakpoint(laptop) {
     margin-top: 80px;
@@ -42,8 +35,6 @@
 
     @include breakpoint(tablet) {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: flex-start;
       max-width: none;
       margin-left: 70px;
@@ -51,8 +42,6 @@
     }
     @include breakpoint(mobile) {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
       max-width: none;
       margin-left: 45px;
@@ -60,8 +49,6 @@
     }
     @include breakpoint(laptop) {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: flex-start;
       max-width: none;
       margin-left: 70px;
@@ -71,7 +58,7 @@
 
   &__title {
     display: flex;
-    color: var(--NAVY, #161a39);
+    color: $c-navy-main;
     /* P_H1 */
     font-family: Poppins;
     font-size: 64px;
@@ -80,30 +67,13 @@
     line-height: 130%; /* 83.2px */
 
     @include breakpoint(mobile) {
-      color: var(--NAVY, #161a39);
       text-align: center;
       margin-bottom: 10px;
-
-      /* P_H1 */
-      font-family: Poppins;
       font-size: 55px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%; /* 83.2px */
     }
     @include breakpoint(tablet) {
-      color: var(--NAVY, #161a39);
       margin-bottom: 10px;
-      //text-align: center;
-
-      /* P_H1 */
-      font-family: Poppins;
       font-size: 55px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: 130%; /* 83.2px */
-    }
-    @include breakpoint(laptop) {
     }
   }
 
@@ -111,7 +81,7 @@
     display: flex;
     margin-bottom: 40px;
     max-width: 410px;
-    color: var(--NAVY, #161a39);
+    color: $c-navy-main;
 
     /* P_H2 */
     font-family: Poppins;
@@ -121,30 +91,13 @@
     line-height: 130%; /* 39px */
 
     @include breakpoint(mobile) {
-      color: var(--NAVY, #161a39);
       text-align: center;
       margin-bottom: 20px;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%; /* 39px */
     }
     @include breakpoint(tablet) {
-      color: var(--NAVY, #161a39);
       margin-bottom: 20px;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%; /* 39px */
-    }
-
-    @include breakpoint(laptop) {
     }
   }
 
@@ -152,7 +105,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
-    color: var(--NAVY, #161a39);
+    color: $c-navy-main;
 
     /* P_Body */
     font-family: Poppins;
@@ -164,41 +117,18 @@
     @include breakpoint(tablet) {
       max-width: 420px;
       margin-bottom: 20px;
-
-      color: var(--NAVY, #161a39);
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
     @include breakpoint(mobile) {
       max-width: 400px;
       margin-bottom: 20px;
-
-      color: var(--NAVY, #161a39);
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
 
     @include breakpoint(laptop) {
       max-width: 500px;
-      color: var(--NAVY, #161a39);
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
     }
   }
 
@@ -214,9 +144,6 @@
       margin-bottom: 240px;
     }
     @include breakpoint(mobile) {
-      display: flex;
-      justify-content: left;
-      align-items: center;
       margin-top: 0;
       margin-bottom: 310px;
     }
