@@ -10,17 +10,17 @@ import Mobileanimation from "../molecules/mobile-animation";
 function Intro() {
   const isMobile = useIsMobile();
   return (
-    <div className="page" id="top">
-      <div className="page__container">
-        <div className="page__content">
+    <div className="intro-page" id="top">
+      <div className="intro-page__container">
+        <div className="intro-page__content">
           <Validator />
         </div>
 
-        <div className="page__block">
+        <div className="intro-page__block">
           <Whychoose />
         </div>
 
-        <div className="page__animation" id="about">
+        <div className="intro-page__animation" id="about">
           {isMobile ? <Mobileanimation /> : <Animation />}
         </div>
       </div>
