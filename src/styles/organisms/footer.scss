@@ -78,11 +78,9 @@
       margin-left: 10px;
       margin-top: 5px;
       color: $c-white-main;
-      font-family: Poppins;
       font-size: 18px;
-      font-style: normal;
       font-weight: 300;
-      line-height: 150%; /* 27px */
+      line-height: 150%;
     }
 
     &--subtitle {
@@ -90,11 +88,10 @@
       width: 470px;
       margin-top: 20px;
       color: $c-white-main;
-      font-family: Poppins;
       font-size: 14px;
       font-style: italic;
       font-weight: 200;
-      line-height: 150%; /* 21px */
+      line-height: 150%;
 
       @include breakpoint(tablet) {
         width: 350px;
@@ -112,11 +109,9 @@
 
     &--title {
       color: $c-white-main;
-      font-family: Poppins;
       font-size: 12px;
-      font-style: normal;
       font-weight: 300;
-      line-height: 150%; /* 18px */
+      line-height: 150%;
       letter-spacing: 0.6px;
     }
     &--icon {
@@ -125,6 +120,10 @@
       width: 28px;
       height: 28px;
       cursor: pointer;
+    }
+    &--btn {
+      background-color: transparent;
+      border: none;
     }
   }
 }
@@ -166,13 +165,9 @@
 
   &--subtitle {
     color: $c-white-main;
-
-    /* P_Body */
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 200;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
     background: none;
     border: none;
   }
@@ -183,18 +178,15 @@
 
     &--item {
       color: $c-white-main;
-      font-family: Poppins;
       font-size: 16px;
       font-weight: 200;
       line-height: 150%;
       background: none;
       border: none;
       cursor: pointer;
-      
       margin-bottom: 16px;
-      
     }
-   
+
     button:hover {
       box-shadow: 0px 1px 0px 0px $c-white-main;
       cursor: pointer;
@@ -237,9 +229,7 @@
   &--title {
     display: flex;
     margin-top: 40px;
-
     color: $c-gray-main;
-    font-family: Poppins;
     font-size: 11px;
     font-weight: 200;
     line-height: 150%;
@@ -277,11 +267,9 @@
       justify-content: center;
 
       color: $c-white-main;
-      font-family: Poppins;
       font-size: 12px;
-      font-style: normal;
       font-weight: 300;
-      line-height: 150%; /* 18px */
+      line-height: 150%;
       letter-spacing: 0.6px;
     }
     &--icon {

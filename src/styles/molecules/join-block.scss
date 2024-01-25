@@ -41,11 +41,9 @@
   &__title {
     color: $c-white-main;
     text-align: center;
-    font-family: Poppins;
     font-size: 50px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 130%; /* 65px */
+    line-height: 130%;
 
     @include breakpoint(tablet) {
       color: $c-white-main;

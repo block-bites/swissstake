@@ -88,13 +88,9 @@
   &__title {
     display: flex;
     color: $c-gray-main;
-
-    /* P_H2a */
-    font-family: Poppins;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 52px */
+    line-height: 130%;
 
     @include breakpoint(mobile) {
       text-align: center;
@@ -116,13 +112,9 @@
     width: 100%;
     color: $c-white-main;
     max-width: 1070px;
-
-    /* P_Body */
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
 
     @include breakpoint(mobile) {
       display: flex;

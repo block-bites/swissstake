@@ -55,17 +55,11 @@
     color: $c-black-main;
     text-align: center;
     width: 870px;
-
-    /* P_Body */
-    font-family: Poppins;
     font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
 
     @include breakpoint(tablet) {
       width: 400px;
-
     }
     @include breakpoint(mobile) {
       width: 350px;
@@ -79,13 +73,9 @@
   &__title {
     color: $c-black-main;
     text-align: center;
-
-    /* P_H2a */
-    font-family: Poppins;
     font-size: 40px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 52px */
+    line-height: 130%;
 
     @include breakpoint(tablet) {
       width: 400px;

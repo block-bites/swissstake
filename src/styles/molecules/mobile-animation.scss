@@ -9,41 +9,30 @@
 }
 
 .mobileanimation-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: flex-start;
+  margin-left: 30px;
 
-    gap: 10px;
+  gap: 10px;
 
   &--title {
     display: flex;
     width: 320px;
-    
-    
     color: $c-gray-main;
-
-    /* P_H2a */
-    font-family: Poppins;
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 52px */
+    line-height: 130%;
   }
 
   &--subtitle {
     display: flex;
     margin-bottom: 60px;
     width: 315px;
-
     color: $c-gray-main;
-
-    /* P_Body */
-    font-family: Poppins;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
   }
 }

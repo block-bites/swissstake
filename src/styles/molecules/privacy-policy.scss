@@ -49,16 +49,11 @@
     align-self: flex-end;
     width: 25px;
     justify-content: center;
-
     color: $c-white-main;
-
-    /* P_H2 */
-    font-family: Poppins;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 39px */
-
+    line-height: 130%;
     background: none;
     border: none;
     margin-right: 20px;
@@ -74,13 +69,9 @@
       margin-bottom: 10px;
       margin-left: 50px;
       color: $c-white-main;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 25px;
-      font-style: normal;
       font-weight: 400;
-      line-height: 130%; /* 39px */
+      line-height: 130%;
 
       @include breakpoint(tablet) {
         width: 300px;
@@ -92,11 +83,10 @@
       margin-bottom: 10px;
       margin-left: 50px;
       color: $c-white-main;
-      font-family: Poppins;
       font-size: 14px;
       font-style: italic;
       font-weight: 200;
-      line-height: 150%; /* 21px */
+      line-height: 150%;
 
       @include breakpoint(laptop) {
         width: 700px;
