@@ -84,7 +84,7 @@ function MobileNavbar() {
                   rel="noopener noreferrer"
                   className="navbar-mobile__menu--telegram"
                 >
-                  <img src={telegramicon} alt="blockbites-logo" />
+                  <img src={telegramicon} alt="telegram-icon" />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/blockbites/"
@@ -92,7 +92,7 @@ function MobileNavbar() {
                   rel="noopener noreferrer"
                   className="navbar-mobile__menu--telegram"
                 >
-                  <img src={linkedinicon} alt="blockbites-logo" />
+                  <img src={linkedinicon} alt="linkedin-icon" />
                 </a>
                 <a
                   href="https://twitter.com/theblockbites"
@@ -100,7 +100,7 @@ function MobileNavbar() {
                   rel="noopener noreferrer"
                   className="navbar-mobile__menu--telegram"
                 >
-                  <img src={twittericon} alt="blockbites-logo" />
+                  <img src={twittericon} alt="twitter-icon" />
                 </a>
               </div>
             </div>

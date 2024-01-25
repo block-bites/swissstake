@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  background-color: var(--NAVY, #161a39);
+  background-color: $c-navy-main;
 }
 
 .mobile-experienced-header {
@@ -15,47 +15,30 @@
   justify-content: center;
   flex-direction: column;
 
-  @include breakpoint(tablet) {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
   &__title {
     padding: 25px;
     width: 300px;
 
-    color: var(--WHITE, #fff);
+    color: $c-white-main;
     text-align: center;
     justify-content: center;
-
-    /* P_H2a */
-    font-family: Poppins;
     font-size: 30px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 130%; /* 52px */
+    line-height: 130%;
 
     @include breakpoint(tablet) {
       width: 485px;
-      text-align: center;
-      justify-content: center;
     }
   }
 
   &__subtitle {
-    color: var(--WHITE, #fff);
+    color: $c-white-main;
     text-align: center;
     justify-content: center;
-
     width: 310px;
-
-    /* P_Body */
-    font-family: Poppins;
     font-size: 14px;
-    font-style: normal;
     font-weight: 400;
-    line-height: 150%; /* 24px */
+    line-height: 150%;
 
     @include breakpoint(tablet) {
       width: 470px;
@@ -82,34 +65,23 @@
     &__title {
       padding-top: 20px;
       padding-bottom: 20px;
-      color: var(--WHITE, #fff);
+      color: $c-white-main;
       text-align: center;
-
-      /* P_H2 */
-      font-family: Poppins;
       font-size: 25px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 130%; /* 39px */
+      line-height: 130%;
     }
 
     &__text {
       width: 220px;
-      color: var(--WHITE, #fff);
+      color: $c-white-main;
       text-align: center;
-
-      /* P_Body */
-      font-family: Poppins;
       font-size: 14px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 150%; /* 24px */
-      
+      line-height: 150%;
+
       @include breakpoint(tablet) {
         width: 290px;
       }
     }
-  
 
     &__image1 {
       width: 100%;

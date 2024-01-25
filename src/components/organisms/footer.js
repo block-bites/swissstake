@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PrivacyPolicy from "../molecules/privacy-policy";
 import { Link } from "react-scroll";
 import useIsMobile from "../../hooks/useIsMobile";
-import Swal from 'sweetalert2';
+import Swal from "sweetalert2";
 
 import footerlogo from "../../assets/footer-logo.svg";
 import blockbites from "../../assets/blockbites-logo.svg";
@@ -13,11 +13,10 @@ import emailicon from "../../assets/email-icon.svg";
 
 function Footer() {
   const [isPrivacyPolicyOpen, setIsPrivacyPolicyOpen] = useState(false);
+  const isMobile = useIsMobile();
 
   const openPrivacyPolicy = () => setIsPrivacyPolicyOpen(true);
   const closePrivacyPolicy = () => setIsPrivacyPolicyOpen(false);
-
-  const isMobile = useIsMobile();
 
   const mobileOffset = (linkTarget) => {
     switch (linkTarget) {
@@ -33,25 +32,27 @@ function Footer() {
         return isMobile ? -100 : -80;
     }
   };
+
   const copyEmailToClipboard = () => {
-    const email = 'hello@swissstake.net'; 
-    navigator.clipboard.writeText(email)
+    const email = "hello@swissstake.net";
+    navigator.clipboard
+      .writeText(email)
       .then(() => {
         Swal.fire({
-          title: 'Success!',
-          text: 'The email was copied to the clipboard',
-          icon: 'success',
+          title: "Success!",
+          text: "The email was copied to the clipboard",
+          icon: "success",
           showConfirmButton: false,
-          timer: 2000
+          timer: 2000,
         });
       })
       .catch(() => {
         Swal.fire({
-          title: 'Error!',
-          text: 'Failed to copy e-mail',
-          icon: 'error',
+          title: "Error!",
+          text: "Failed to copy e-mail",
+          icon: "error",
           showConfirmButton: false,
-          timer: 2000
+          timer: 2000,
         });
       });
   };
@@ -94,17 +95,20 @@ function Footer() {
                   className="footer-left__social--icon"
                 />
               </a>
-              <a id="emailLink" onClick={copyEmailToClipboard}>
+              <button
+                id="emailLink"
+                onClick={copyEmailToClipboard}
+                className="footer-left__social--btn"
+              >
                 <img
                   src={emailicon}
                   alt="e-mail"
                   className="footer-left__social--icon"
                 />
-              </a>
+              </button>
             </div>
           </div>
         </div>
-
         <div className="footer-right">
           <div className="footer-right__column">
             <Link

@@ -1,5 +1,3 @@
-$overlay-color: #fff;
-
 .primary-btn {
   display: flex;
   justify-content: center;
@@ -10,15 +8,11 @@ $overlay-color: #fff;
   height: 50px;
   position: relative;
   overflow: hidden;
-
-  color: var(--WHITE, #fff);
+  color: $c-white-main;
   text-align: center;
-  font-family: Poppins;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 20.8px */
-  background: var(--NAVY, #161a39);
+  line-height: 130%;
+  background: $c-navy-main;
   border: none;
   text-decoration: none;
 
@@ -26,37 +20,22 @@ $overlay-color: #fff;
     display: flex;
     width: 170px;
     height: 50px;
-
+    font-size: 14px;
     padding: 14px 30px;
-    justify-content: center;
-    align-items: center;
     gap: 12px;
     border-radius: 200px;
-    background: #161a39;
-    border: none;
-    text-decoration: none;
+    background: $c-navy-main;
   }
   @include breakpoint(mobile) {
     display: flex;
     width: 150px;
     height: 50px;
-
     padding: 14px 30px;
-    justify-content: center;
-    align-items: center;
     gap: 12px;
     border-radius: 200px;
-    border: none;
-    text-decoration: none;
-
-    color: var(--WHITE, #fff);
-    text-align: center;
-    font-family: Poppins;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 130%; /* 20.8px */
-    background: var(--NAVY, #161a39);
+    color: $c-white-main;
+    background: $c-navy-main;
   }
 
   &:before {
@@ -71,7 +50,7 @@ $overlay-color: #fff;
     left: 0;
     height: 100%;
     width: 30px;
-    background-color: rgba($overlay-color, 0.3);
+    background-color: rgba($c-white-main, 0.3);
     border-radius: 0 50% 50% 0;
     transform: scale(0, 1);
     transform-origin: left center;
@@ -79,7 +58,7 @@ $overlay-color: #fff;
   }
 
   &:hover {
-    text-indent: 30px;
+    text-indent: 10px;
 
     &:before {
       transform: scale(1, 1);

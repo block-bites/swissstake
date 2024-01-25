@@ -1,4 +1,4 @@
-.page {
+.intro-page {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -6,7 +6,7 @@
   &__container {
     display: flex;
     width: 100%;
-    background: var(--RED, #ff202e);
+    background: $c-red-main;
     flex-direction: column;
 
     background-image: url("../assets/mountain-deskop.svg");
